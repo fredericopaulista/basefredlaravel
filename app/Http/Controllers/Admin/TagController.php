@@ -44,9 +44,7 @@ class TagController extends Controller
      */
     public function show($id)
     {
-        $tag = Tag::where('id', $id)->first();
-        $services = Service::all();;
-        return view('admin.tags.show', compact('tag', 'services'));
+        //
     }
 
     /**
@@ -96,8 +94,5 @@ class TagController extends Controller
         return redirect()->route('tags.index')->banner('Tag apagada com sucesso.');
     }
 
-    public function deleteService(){
 
-
-    }
 }

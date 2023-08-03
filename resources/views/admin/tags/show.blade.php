@@ -46,12 +46,10 @@
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
 
-                                            <a href="{{ route('tags.edit', $tag->id) }}" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Editar</a>
-                                            <form class="inline-block" action="{{ route('tags.destroy', $tag->id) }}" method="POST" onsubmit="return confirm('Tem certeza?');">
-                                                <input type="hidden" name="_method" value="delete">
-                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                <input type="submit" class="text-red-600 hover:text-red-900 mb-2 mr-2" value="Apagar">
-                                            </form>
+
+                                            <a class="inline-block" href="{{ route('tags.deleteService', [ $tag->id, $service->id ]) }}" onclick="return confirm('Tem certeza que deseja apagar?')">
+                                                Apagar
+                                            </a>
                                         </td>
                                     </tr>
                                     @endforeach

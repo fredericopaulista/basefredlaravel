@@ -55,9 +55,7 @@
                                                 @endforeach
 
                                         </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                            <a href="{{ route('tags.show', $tag->id) }}" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Visualizar</a>
-                                        </td>
+                                        
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                             <a href="{{ route('tags.edit', $tag->id) }}" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Editar</a>
                                             <form class="inline-block" action="{{ route('tags.destroy', $tag->id) }}" method="POST" onsubmit="return confirm('Tem certeza?');">
