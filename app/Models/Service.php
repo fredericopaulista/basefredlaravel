@@ -26,5 +26,9 @@ class Service extends Model
 
         return $this->belongsToMany(Category::class);
     }
-    
+    public function tags()
+{
+    return $this->hasMany(Tag::class);
+}
+
 }

@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Lista de Tags') }}
+            {{ __('Lista de Serviços Vinculados a Tag ') }}: {{ $tag->name }}
         </h2>
         <div class="flex items-center justify-end ">
 
@@ -15,7 +15,7 @@
     <div>
         <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
             <div class="block mb-1">
-                <a href="{{ route('tags.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Cadastrar Tag</a>
+                <a href="{{ route('tags.index') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Lista de Tags</a>
             </div>
             <div class="flex flex-col">
                 <div class="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -24,41 +24,28 @@
                             <table class="min-w-full divide-y divide-gray-200 w-full">
                                 <thead>
                                 <tr>
-                                    <th scope="col" width="50" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        ID
-                                    </th>
+
                                     <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        Tag
+                                        Serviço Vinculado
                                     </th>
-                                    <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        Serviços Vinculados
-                                    </th>
+
                                     <th scope="col" width="200" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                        Ações
+                                        Excluir Tag do Serviço
                                     </th>
                                 </tr>
                                 </thead>
                                 <tbody class="bg-white divide-y divide-gray-200">
-                                @foreach ($tags as $tag)
+                                    @foreach($services as $service)
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $tag->id }}
-                                        </td>
+
 
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $tag->name }}
+                                            {{ $service->name }}
                                         </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
 
-                                                @foreach ($tag->services as $service)
-                                                    {{ $service->name }} /
-                                                @endforeach
 
-                                        </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                            <a href="{{ route('tags.show', $tag->id) }}" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Visualizar</a>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+
                                             <a href="{{ route('tags.edit', $tag->id) }}" class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Editar</a>
                                             <form class="inline-block" action="{{ route('tags.destroy', $tag->id) }}" method="POST" onsubmit="return confirm('Tem certeza?');">
                                                 <input type="hidden" name="_method" value="delete">
@@ -67,7 +54,7 @@
                                             </form>
                                         </td>
                                     </tr>
-                                @endforeach
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
