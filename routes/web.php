@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TagController;
@@ -28,6 +29,6 @@ Route::middleware([
         Route::get('categorias/{categoryId}/imagem/{photoId}/apagar',[CategoryController::class, 'deletePhoto'])->name('categorias.deletePhoto');
     Route::resource('/categorias', CategoryController::class);
     Route::resource('/servicos', ServiceController::class);
-    Route::get('tags/{tagId}/servico/{servicoId}/apagar',[TagController::class, 'deleteService'])->name('tags.deleteService');
     Route::resource('/tags', TagController::class);
+    Route::resource('/banners', BannerController::class);
 });

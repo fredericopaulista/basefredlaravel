@@ -16,6 +16,7 @@
         <script src="https://cdn.ckeditor.com/4.16.1/full/ckeditor.js"></script>
         <!-- Styles -->
         @livewireStyles
+        @yield('personalcss')
     </head>
     <body class="font-sans antialiased">
         <x-banner />
@@ -42,5 +43,6 @@
 
         @livewireScripts
         @stack('scripts')
+        @yield('personalscripts')
     </body>
 </html>

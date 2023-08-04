@@ -27,7 +27,8 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('admin.services.create');
+        $categories = Category::all();
+        return view('admin.services.create', compact('categories'));
     }
 
     /**
@@ -35,12 +36,22 @@ class ServiceController extends Controller
      */
     public function store(StoreServiceRequest $request)
     {
-        $data = Service::create($request->validated());
 
+        $service = Service::create($request->validated());
 
+        $service->categories()->attach($request->categories);
+        $tags = explode(",", $request->tags);
+        $service->tag($tags);
+
+        
+
+         $service->tags()->attach($tags);
+
+        $extensionImage = $request->file('image')->extension();
+        $newFileName = $request->title .'.'.$extensionImage;
         if($request->hasFile('image')){
 
-            $data->addMediaFromRequest('image')->toMediaCollection('services');
+            $service->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('categories');
         }
 
         return redirect()->route('servicos.index')->banner('Serviço criado com sucesso.');;

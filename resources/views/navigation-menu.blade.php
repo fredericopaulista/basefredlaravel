@@ -28,7 +28,7 @@
                     <x-nav-link href="{{ route('tags.index') }}" :active="request()->routeIs('tags.index')">
                         {{ __('Configurações Gerais') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('tags.index') }}" :active="request()->routeIs('tags.index')">
+                    <x-nav-link href="{{ route('banners.index') }}" :active="request()->routeIs('banners.index')">
                         {{ __('Banners') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('tags.index') }}" :active="request()->routeIs('tags.index')">

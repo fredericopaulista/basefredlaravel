@@ -14,7 +14,15 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            
+            $table->string('title');
+            $table->string('subtitle');
+            $table->string('briefDescription');
+            $table->string('description');
+            $table->string('videoTitle');
+            $table->string('video');
+            $table->string('slug');
+            $table->boolean('print');
+            $table->boolean('home');
             $table->timestamps();
         });
     }
