@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreFaqRequest;
-use App\Http\Requests\UpdateFaqRequest;
-use App\Models\Faq;
+use App\Http\Requests\StoreCityRequest;
+use App\Http\Requests\UpdateCityRequest;
+use App\Models\City;
 
-class FaqController extends Controller
+class CityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class FaqController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreFaqRequest $request)
+    public function store(StoreCityRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class FaqController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Faq $faq)
+    public function show(City $city)
     {
         //
     }
@@ -43,7 +43,7 @@ class FaqController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Faq $faq)
+    public function edit(City $city)
     {
         //
     }
@@ -51,7 +51,7 @@ class FaqController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateFaqRequest $request, Faq $faq)
+    public function update(UpdateCityRequest $request, City $city)
     {
         //
     }
@@ -59,7 +59,7 @@ class FaqController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Faq $faq)
+    public function destroy(City $city)
     {
         //
     }

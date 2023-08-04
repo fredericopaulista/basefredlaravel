@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TagController;
+use App\Http\Controllers\Admin\DepoimentsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,4 +33,6 @@ Route::middleware([
     Route::resource('/servicos', ServiceController::class);
     Route::resource('/tags', TagController::class);
     Route::resource('/banners', BannerController::class);
+    Route::resource('/faqs', FaqController::class);
+    Route::resource('/depoimentos', DepoimentsController::class);
 });
