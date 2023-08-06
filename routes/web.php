@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site.home');
 });
 
 Route::middleware([
@@ -31,6 +31,9 @@ Route::middleware([
         Route::get('categorias/{categoryId}/imagem/{photoId}/apagar',[CategoryController::class, 'deletePhoto'])->name('categorias.deletePhoto');
     Route::resource('/categorias', CategoryController::class);
     Route::resource('/servicos', ServiceController::class);
+    Route::get('/servico/{serviceId}/faq/create', [ServiceController::class, 'createFaq'])->name('servicos.faq.create');
+    Route::post('/servico/{serviceId}/faq/store', [ServiceController::class, 'storeFaq'])->name('servicos.faq.store');
+    Route::get('/servico/{serviceId}/faqs', [ServiceController::class, 'showFaq'])->name('servicos.faq.show');
     Route::resource('/tags', TagController::class);
     Route::resource('/banners', BannerController::class);
     Route::resource('/faqs', FaqController::class);

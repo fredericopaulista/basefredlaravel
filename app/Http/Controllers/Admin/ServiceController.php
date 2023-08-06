@@ -6,7 +6,9 @@ use App\Http\Requests\StoreServiceRequest;
 use App\Http\Requests\UpdateServiceRequest;
 use App\Models\Category;
 use App\Models\Service;
+use App\Models\ServiceFaq;
 use App\Models\Tag;
+use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
@@ -40,18 +42,18 @@ class ServiceController extends Controller
         $service = Service::create($request->validated());
 
         $service->categories()->attach($request->categories);
-        $tags = explode(",", $request->tags);
-        $service->tag($tags);
+        // $tags = explode(",", $request->tags);
+        // $service->tag($tags);
 
-        
 
-         $service->tags()->attach($tags);
+
+        //  $service->tags()->attach($tags);
 
         $extensionImage = $request->file('image')->extension();
         $newFileName = $request->title .'.'.$extensionImage;
         if($request->hasFile('image')){
 
-            $service->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('categories');
+            $service->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('services');
         }
 
         return redirect()->route('servicos.index')->banner('Serviço criado com sucesso.');;
@@ -72,7 +74,7 @@ class ServiceController extends Controller
     {
         $service = Service::where('id', $id)->first();
         $media = $service->getMedia('services');
-        return view('admin.services.edit', compact('services', 'media'));
+        return view('admin.services.edit', compact('service', 'media'));
 
     }
 
@@ -113,5 +115,30 @@ class ServiceController extends Controller
 
 
         return redirect()->route('servicos.index')->banner('Serviço apagada com sucesso.');
+    }
+
+    public function createFaq($serviceId)
+    {
+        $service = Service::findOrfail($serviceId)->get();
+
+        return view('admin.services.faq.create', compact('service'));
+
+
+    }
+    public function storeFaq(Request $request)
+    {
+        $serviceFaq = ServiceFaq::create($request->all());
+
+        return redirect()->route('servicos.index')->banner('Faq do Serviço criado com sucesso.');
+
+
+    }
+    public function showFaq($serviceId)
+    {
+        $serviceFaq = ServiceFaq::findOrfail($serviceId);
+
+        return view('admin.services.faq.show', compact('serviceFaq'));
+
+
     }
 }

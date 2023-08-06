@@ -1,13 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Lista de Serviços') }}
+            {{ __('Lista de Faqs do Serviço') }} {{ $service->name }}
         </h2>
         <div class="flex items-center justify-end ">
 
             <a class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150 ml-4"
                 href="{{ route('servicos.create') }}">
-                {{ __('Cadastrar Serviço') }}
+                {{ __('Cadastrar Novo Faq') }}
             </a>
         </div>
     </x-slot>
@@ -21,9 +21,9 @@
                     <thead>
                         <tr>
                             <th class="relative px-6 py-3 col-span-2">ID</th>
-                            <th class="relative px-6 py-3 col-span-2">Imagem</th>
-                            <th class="relative px-6 py-3 col-span-2">Nome</th>
+                            <th class="relative px-6 py-3 col-span-2">Título</th>
                             <th class="relative px-6 py-3 col-span-2"></th>
+                            <th class="relative px-6 py-3 col-span-2">Texto</th>
                             <th class="relative px-6 py-3 col-span-2"></th>
                             <th class="relative px-6 py-3 col-span-2">Ações</th>
                         </tr>
@@ -50,10 +50,6 @@
                                             href="{{ route('servicos.faq.create', $service->id ) }}">Criar Faq</a>
 
                                     </td>
-                                    <td><a class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150 ml-4"
-                                        href="{{ route('servicos.faq.show', $service->id ) }}">Todos Faqs</a>
-
-                                </td>
                                 </form>
                             </td>
                             </tr>
