@@ -13,7 +13,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 class Service extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia, HasSlug;
-   
+
 
     protected $fillable = [
         'print',
@@ -61,6 +61,10 @@ class Service extends Model implements HasMedia
     public function tags(){
 
     return $this->hasMany(Tag::class);
+    }
+    public function servicefaqs(){
+
+        return $this->hasMany(ServiceFaq::class);
     }
 
 }

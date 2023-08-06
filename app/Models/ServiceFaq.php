@@ -14,4 +14,8 @@ class ServiceFaq extends Model
         'description',
         'service_id'
     ];
+    public function services(){
+
+        return $this->belongsToMany(Service::class);
+    }
 }
