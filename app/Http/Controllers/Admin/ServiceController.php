@@ -62,9 +62,10 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Service $service)
+    public function show($id)
     {
-        //
+        $serviceId = Service::findOrfail($id);
+        return view('admin.services.show', compact('serviceId'));
     }
 
     /**
@@ -136,6 +137,8 @@ class ServiceController extends Controller
     public function showFaq($serviceId)
     {
         $serviceFaq = ServiceFaq::findOrfail($serviceId);
+
+        dd($serviceFaq);
 
         return view('admin.services.faq.show', compact('serviceFaq'));
 

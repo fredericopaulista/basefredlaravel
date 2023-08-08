@@ -25,7 +25,7 @@
                         {{ __('Tags') }}
                     </x-nav-link>
 
-                    <x-nav-link href="{{ route('tags.index') }}" :active="request()->routeIs('tags.index')">
+                    <x-nav-link href="{{ route('configuracoes.index') }}" :active="request()->routeIs('configuracoes.index')">
                         {{ __('Configurações Gerais') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('banners.index') }}" :active="request()->routeIs('banners.index')">
@@ -36,6 +36,9 @@
                     </x-nav-link>
                     <x-nav-link href="{{ route('depoimentos.index') }}" :active="request()->routeIs('depoimentos.index')">
                         {{ __('Depoimentos') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('depoimentos.index') }}" :active="request()->routeIs('depoimentos.index')">
+                        {{ __('Seo Manual') }}
                     </x-nav-link>
 
                 </div>

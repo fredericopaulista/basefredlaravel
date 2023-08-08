@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ConfigurationController;
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TagController;
@@ -38,4 +39,5 @@ Route::middleware([
     Route::resource('/banners', BannerController::class);
     Route::resource('/faqs', FaqController::class);
     Route::resource('/depoimentos', DepoimentsController::class);
+    Route::resource('/configuracoes', ConfigurationController::class);
 });

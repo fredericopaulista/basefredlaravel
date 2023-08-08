@@ -13,7 +13,7 @@
                 <form method="POST" action="{{ route('categorias.update', $category->id) }}" enctype="multipart/form-data">
                     @csrf
                     @method('put')
-                    
+
                     <div class="mt-4 px-4">
                         @livewire('form-checkbox-element')
                     </div>
