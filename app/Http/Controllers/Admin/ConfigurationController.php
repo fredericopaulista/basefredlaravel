@@ -7,11 +7,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 
+
 class ConfigurationController extends Controller
 {
+
+
     public function index(){
 
-        return view('admin.configurations.index');
+        $configuration = Configuration::get()->first();
+        return view('admin.configurations.index', compact('configuration'));
     }
     public function create(){
 
@@ -39,17 +43,33 @@ class ConfigurationController extends Controller
     public function update(Request $request, $id){
 
         $data = Configuration::where('id', $id)->first();
+        if ($request->hasFile('image')) {
+			if (Storage::disk('public')->exists($data->image)) {
+				Storage::disk('public')->delete($data->image);
+			}
 
-        $fileName = $request->segment.'.'.$request->image->extension();
+            $filePath = Storage::disk('public')->put('site/img', request()->file('image'));
+            $data['image'] = $filePath;
+		}
+        if ($request->hasFile('logoheader')) {
+			if (!empty($data->logoheader)) {
+				Storage::disk('public')->delete($data->logoheader);
+			}
 
-        $request->image->move(public_path('site/img'), $fileName);
-        $data->image = Str::slug($fileName);
-        $save = new Photo;
+			$filePath = Storage::disk('public')->put('site/img', request()->file('logoheader'));
+            $data['logoheader'] = $filePath;
+		}
 
-        $save->name = $name;
-        $save->path = $path;
+		if ($request->hasFile('logofooter')) {
+			if (!empty($data->logofooter)) {
+				Storage::disk('public')->delete($data->logofooter);
+			}
 
-        $save->save();
+			$filePath = Storage::disk('public')->put('site/img', request()->file('logofooter'));
+            $data['logofooter'] = $filePath;
+		}
+
+        $data->save();
 
         return redirect()->back()->banner('Configurações atualizadas com sucesso.');;
 

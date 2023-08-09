@@ -13,7 +13,8 @@
                 <form method="POST" action="{{ route('configuracoes.update', $configuration->id) }}" enctype="multipart/form-data">
                     @csrf
                     @method('put')
-
+                    <x-input id="country" class="block mt-1 w-full" type="hidden" name="country"
+                            value="Brasil" hidden />
                     <div class="mt-4 px-4">
                         <x-label for="company" value="{{ __('Nome da Empresa') }}" />
                         <x-input id="company" class="block mt-1 w-full" type="text" name="company"
@@ -45,7 +46,7 @@
                             <x-label for="state" value="{{ __('Estado') }}" />
                             {{-- <x-input id="state" class="block mt-1 w-2/4" type="text" name="state" required
                                 :value="old('state')" placeholder="Estado" /> --}}
-                                <select class="block mt-1 w-2/4" required>
+                                <select name="state" class="block mt-1 w-2/4" required>
                                     <option selected>Selecione um Estado</option>
                                 <option value="MG">MG</option>
                                 <option value="RJ">RJ</option>
@@ -101,22 +102,18 @@
                         <div class="mt-4 px-4">
                             <x-label for="logoheader" value="{{ __('Logo Header') }}" />
                             <div class="mt-2 mb-4">
-                                @if(isset($media[1]))
-                                <img width="40%" src="{{ $media[1]->getUrl('thumb') }}" >
-
+                                <img width="30%" src="{{ asset('storage/' . $configuration->logoheader)}}" >
                                 <br>
-                                @endif
                                </div>
                             <x-input id="logoheader" class="block mt-1 w-full" type="file" name="logoheader" />
                         </div>
                         <div class="mt-4 px-4">
                             <x-label for="logofooter" value="{{ __('Logo Footer') }}" />
                             <div class="mt-2 mb-4">
-                                @if(isset($media[0]))
-                                <img width="40%" src="{{ $media[0]->getUrl('thumb') }}" >
+                                <img width="30%" src="{{ asset('storage/' . $configuration->logofooter)}}" >
 
                                 <br>
-                                @endif
+
                                </div>
                             <x-input id="logofooter" class="block mt-1 w-full" type="file" name="logofooter" />
                         </div>
@@ -126,7 +123,7 @@
                         <x-label for="image" value="{{ __('OG Imagem') }}" />
                         <div class="mt-2 mb-4">
 
-                            <img width="40%" src="{{ asset($configuration->image)}}" >
+                            <img width="30%" src="{{ asset('storage/' . $configuration->image)}}" >
 
                             <br>
 
