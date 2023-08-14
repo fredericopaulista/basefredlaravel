@@ -10,8 +10,11 @@ use App\Models\ServiceFaq;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 
+
+
 class ServiceController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      */
@@ -40,15 +43,10 @@ class ServiceController extends Controller
     {
 
         $service = Service::create($request->validated());
-
-        $service->categories()->attach($request->categories);
-        // $tags = explode(",", $request->tags);
-        // $service->tag($tags);
+        $alltags = explode(',' , $request->tags);
 
 
-
-        //  $service->tags()->attach($tags);
-
+          $service->categories()->attach($request->categories);
         $extensionImage = $request->file('image')->extension();
         $newFileName = $request->title .'.'.$extensionImage;
         if($request->hasFile('image')){

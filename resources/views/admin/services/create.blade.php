@@ -3,18 +3,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css"
         rel="stylesheet" />
-    <style>
-        .bootstrap-tagsinput .tag {
-            margin-right: 2px;
-            color: #ffffff;
-            background: #2196f3;
-            padding: 3px 7px;
-            border-radius: 3px;
-        }
-        .bootstrap-tagsinput {
-            width: 100%;
-        }
-    </style>
+        <style>
+            .tagify {
+                height: 30vh !important;
+                line-height: 30vh !important;
+            }
+        </style>
     @endsection
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -111,7 +105,7 @@
                     </div> --}}
 <div class="mt-4 px-4">
     <x-label for="tags" value="{{ __('Tags') }}" />
-    <input class="form-control" type="text" data-role="tagsinput" name="tags">
+    <input name="tags" id="tags" value="{{old('tags')}}" class="form-control">
 </div>
 
 
@@ -130,16 +124,92 @@
                             this.set('message', event.editor.getData());
                         })
                     </script>
+ <script src="https://cdn.rawgit.com/plentz/jquery-maskmoney/master/dist/jquery.maskMoney.min.js"></script>
+ <script>
 
+
+     // The DOM element you wish to replace with Tagify
+     var input = document.querySelector('input[name=tags]');
+
+     // initialize Tagify on the above input node reference
+     new Tagify(input)
+
+     new Tagify(input)
+
+         var myEditor;
+
+         ClassicEditor.create( document.querySelector( '#editor' ), {
+
+             licenseKey: '',
+
+             link: {
+                     decorators: {
+                         toggleDownloadable: {
+                             mode: 'manual',
+                             label: 'Downloadable',
+                             attributes: {
+                                 download: 'file'
+                             }
+                         },
+                         openInNewTab: {
+                             mode: 'manual',
+                             label: 'Open in a new tab',
+                             defaultValue: true,			// This option will be selected by default.
+                             attributes: {
+                                 target: '_blank',
+                                 rel: 'noopener noreferrer'
+                             }
+                         }
+                     }
+                 },
+             htmlEmbed: {
+                 showPreviews: true,
+             }
+
+
+         } )
+         .then( editor => {
+             window.editor = editor;
+             myEditor = editor;
+             // Set a custom container for the toolbar.
+            //  document.querySelector( '.document-editor__toolbar' ).appendChild( editor.ui.view.toolbar.element );
+           //   document.querySelector( '.ck-toolbar' ).classList.add( 'ck-reset_all' );
+         } )
+         .catch( error => {
+             console.error( 'Oops, something went wrong!' );
+             console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+             console.warn( 'Build id: 9i9i9hewfymf-ak8ig74wt7az' );
+             console.error( error );
+         } );
+
+         const video = document.getElementById('video');
+         video.onblur = function onblur(e){
+         var value = e.currentTarget.value;
+         console.log (value);
+         var url = '';
+         if (validURL(value)) {
+         url = new URL(value);
+         if (url.searchParams.has("v")) {
+         value = url.searchParams.get("v");
+         }
+         video.value = value;
+         }
+     }
+
+         function validURL(str) {
+             var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+             '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+             '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+             '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+             '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+             '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+             return !!pattern.test(str);
+         }
+
+ </script>
                 @endpush
             </div>
         </div>
     </div>
-@section('personalscript')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
 
-</script>
-
-@endsection
 </x-app-layout>

@@ -28,7 +28,7 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');})->name('dashboard');
+        return view('admin/dashboard');})->name('dashboard');
         Route::get('categorias/{categoryId}/imagem/{photoId}/apagar',[CategoryController::class, 'deletePhoto'])->name('categorias.deletePhoto');
     Route::resource('/categorias', CategoryController::class);
     Route::resource('/servicos', ServiceController::class);

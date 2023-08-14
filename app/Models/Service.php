@@ -60,7 +60,7 @@ class Service extends Model implements HasMedia
 
     public function tags(){
 
-    return $this->hasMany(Tag::class);
+    return $this->belongsToMany(Tag::class);
     }
     public function servicefaqs(){
 
