@@ -45,8 +45,21 @@ class ServiceController extends Controller
         $service = Service::create($request->validated());
         $alltags = explode(',' , $request->tags);
 
+        $newtags = collect([]);
+        foreach($alltags as $newtag){
 
-          $service->categories()->attach($request->categories);
+            $tag = Tag::firstOrCreate(
+                ['name' => $newtag],
+                ['name' => $newtag]
+            );
+            $newtags->push([
+                'tag_id' => $tag->id
+            ]);
+
+        }
+
+        $service->tags()->sync($newtags);
+        $service->categories()->attach($request->categories);
         $extensionImage = $request->file('image')->extension();
         $newFileName = $request->title .'.'.$extensionImage;
         if($request->hasFile('image')){
@@ -62,6 +75,7 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
+
         $serviceId = Service::findOrfail($id);
         return view('admin.services.show', compact('serviceId'));
     }
@@ -71,9 +85,10 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
+        $categories = Category::all();
         $service = Service::where('id', $id)->first();
         $media = $service->getMedia('services');
-        return view('admin.services.edit', compact('service', 'media'));
+        return view('admin.services.edit', compact('service', 'media', 'categories'));
 
     }
 

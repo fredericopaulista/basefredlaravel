@@ -11,6 +11,7 @@ class Tag extends Model
 {
     use HasFactory , HasSlug;
 
+    
     protected $fillable = [
         'name',
         'slug'

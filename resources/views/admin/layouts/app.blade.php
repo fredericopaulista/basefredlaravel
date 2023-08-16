@@ -13,7 +13,8 @@
     <link type="text/css" href="{{ asset('admin/assets/css/vendor-materialicons.css') }}" rel="stylesheet">
 
     <!-- Perfect Scrollbar -->
-    <link type="text/css" href="{{ asset('admin/assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('admin/assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css') }}"
+        rel="stylesheet">
 
 
     <!-- Vector Maps -->
@@ -61,13 +62,13 @@
                     <!-- <section class="max-w-6xl  mx-auto px-8 my-8"> -->
                     <section class="px-8 my-8">
 
-@yield('content')
+                        @yield('content')
 
 
 
 
 
-                    <!-- // END PAGE CONTENT -->
+                        <!-- // END PAGE CONTENT -->
 
 
                 </div>

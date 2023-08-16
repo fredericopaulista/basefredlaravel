@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
@@ -14,13 +15,11 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('users')->delete();
-        
-        \DB::table('users')->insert(array (
-            0 => 
-            array (
+
+        User::create([
                 'id' => 1,
                 'name' => 'Frederico',
                 'email' => 'fredericopaulista@gmail.com',
@@ -34,9 +33,6 @@ class UsersTableSeeder extends Seeder
                 'profile_photo_path' => NULL,
                 'created_at' => '2023-08-01 02:39:35',
                 'updated_at' => '2023-08-01 02:39:35',
-            ),
-        ));
-        
-        
+            ])->assignRole('admin');
     }
 }

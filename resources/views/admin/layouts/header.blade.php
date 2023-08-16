@@ -56,55 +56,14 @@
 
             <ul
                 class="lg:flex items-center justify-between text-md text-gray-900 font-semibold pt-4 lg:pt-0">
-                <li class="relative inline-block text-left">
-                    <button
-                        class="flex items-center lg:p-4 py-3 px-0 block hover:text-blue-600 font-semibold"
-                        id="options-menue1" aria-haspopup="true" aria-expanded="true">
-                        Features
-                    </button>
 
-                    <div
-                        class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg">
-                        <div class="rounded-md bg-white shadow-xs">
-                            <div class="py-1" role="menu" aria-orientation="vertical">
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">Learning</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">E-Commerce</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">Real-Estate</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">SAAS</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">Hosting</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">Marketing</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">Restaurant</a>
-                            </div>
-                        </div>
-                    </div>
 
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center lg:p-4 py-3 px-0 block hover:text-blue-600 font-semibold"
-                        id="options-menue" aria-haspopup="true" aria-expanded="true">
-                        Pricing
-                    </a>
-                </li>
-                <li>
-                <li>
-                    <a href="#"
-                        class="flex items-center lg:p-4 py-3 px-0 block hover:text-blue-600 font-semibold"
-                        id="options-menue2" aria-haspopup="true" aria-expanded="true">
-                        Sign in
-                    </a>
-                </li>
+                <li class="mt-3">
 
-                <li class="mr-4 text-muted">or</li>
-                <li>
-                    <a class="btn btn-success" href="login.html">Login</a>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button class="btn btn-success" type="submit" >{{ __('Log Out') }}</button>
+                    </form>
                 </li>
             </ul>
 
