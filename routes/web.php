@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\DepoimentsController;
+use App\Http\Controllers\Site\SiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,16 +21,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site.home');
-});
+Route::get('/', [SiteController::class, 'home'])->name('site.home');
+Route::get('/{category}', [SiteController::class, 'category'])->name('site.categoria');
+Route::get('/{category}/{id}', [SiteController::class, 'service'])->name('site.servico');
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('admin/dashboard');})->name('dashboard');
-        Route::get('categorias/{categoryId}/imagem/{photoId}/apagar',[CategoryController::class, 'deletePhoto'])->name('categorias.deletePhoto');
+    Route::get('categorias/{categoryId}/imagem/{photoId}/apagar',[CategoryController::class, 'deletePhoto'])->name('categorias.deletePhoto');
     Route::resource('/categorias', CategoryController::class);
     Route::resource('/servicos', ServiceController::class);
     Route::get('/servico/{serviceId}/faq/create', [ServiceController::class, 'createFaq'])->name('servicos.faq.create');

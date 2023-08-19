@@ -11,7 +11,7 @@ class UpdateServiceRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,16 @@ class UpdateServiceRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => 'required|min:10|max:70',
+            'subtitle' => 'required|min:10|max:70',
+            'title' => 'required|min:10|max:70',
+            'description' => 'required|min:10',
+            'briefDescription' => 'required|min:1|max:260',
+            'image' => 'mimes:png,jpg,webp,jpeg',
+'video' => 'required',
+'videoTitle' => 'required|min:10|max:70',
+            'home' => 'boolean',
+            'print' => 'boolean'
         ];
     }
 }

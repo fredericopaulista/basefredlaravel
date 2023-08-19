@@ -86,9 +86,10 @@ class ServiceController extends Controller
     public function edit($id)
     {
         $categories = Category::all();
+        $tags = Tag::all();
         $service = Service::where('id', $id)->first();
         $media = $service->getMedia('services');
-        return view('admin.services.edit', compact('service', 'media', 'categories'));
+        return view('admin.services.edit', compact('service', 'media', 'categories', 'tags'));
 
     }
 
@@ -97,11 +98,28 @@ class ServiceController extends Controller
      */
     public function update(UpdateServiceRequest $request, $id)
     {
+
         $data = Service::where('id', $id)->first();
         $data->fill($request->validated());
-        $extensionImage = $request->file('image')->extension();
-        $newFileName = $request->title .'.'.$extensionImage;
+        $alltags = explode(',' , $request->tags);
+        $newtags = collect([]);
+        foreach($alltags as $newtag){
+
+            $tag = Tag::firstOrCreate(
+                ['name' => $newtag],
+                ['name' => $newtag]
+            );
+            $newtags->push([
+                'tag_id' => $tag->id
+            ]);
+
+        }
+        $data->tags()->sync($newtags);
+        $data->categories()->sync($request->categories);
+
         if($request->hasFile('image')){
+            $extensionImage = $request->file('image')->extension();
+        $newFileName = $request->title .'.'.$extensionImage;
             $data->media()->delete();
             $data->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('services');
         }

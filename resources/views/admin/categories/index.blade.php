@@ -189,7 +189,7 @@
           <th>Imagem</th>
           <th>Categoria</th>
           <th>Título</th>
-
+          <th></th>
           <th>Ações</th>
         </tr>
       </thead>
