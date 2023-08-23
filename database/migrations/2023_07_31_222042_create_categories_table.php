@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('title');
             $table->string('seoDescription');
-            $table->string('description');
+            $table->text('description');
             $table->boolean('print')->default(false);
             $table->boolean('main')->default(false);
             $table->timestamps();

@@ -34,7 +34,11 @@
                         <x-label for="image" value="{{ __('Imagem do Cliente') }}" />
                         <x-input id="image" class="block mt-1 w-full" type="file" name="image"  />
                     </div>
-
+                    <div class="mt-4 px-4">
+                        <x-label for="star" value="{{ __('Estrelas') }}" />
+                        <x-input id="star" class="block mt-1 w-full" type="text" name="star" :value="old('star')"
+                            required placeholder="Digite de 1 a 5 apenas" />
+                    </div>
 
                     <x-button class="ml-4 mb-4 mt-4">
                         {{ __('Cadastrar') }}

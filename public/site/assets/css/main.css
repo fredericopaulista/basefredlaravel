@@ -84,7 +84,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -218,7 +218,7 @@ section {
 }
 
 .header.sticked {
-  background: var(--color-white);
+  background: {{var(--color-white)}};
   box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
 }
 
@@ -243,7 +243,7 @@ section {
 .header .btn-getstarted:focus {
   font-size: 16px;
   color: var(--color-white);
-  background: var(--color-primary);
+  background: linear-gradient(180deg,#ffb501 0,#ff9101 50%,#ff7701 100%);
   padding: 8px 23px;
   border-radius: 4px;
   transition: 0.3s;
@@ -265,7 +265,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Desktop Navigation 
+# Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
@@ -558,8 +558,8 @@ section {
 --------------------------------------------------------------*/
 .hero-animated {
   width: 100%;
-  min-height: 50vh;
-  background: url("../img/hero-bg.png") center center;
+  min-height: 110vh;
+  background: url("../img/advocacia.png") center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
@@ -614,8 +614,8 @@ section {
   padding: 10px 28px;
   border-radius: 4px;
   transition: 0.5s;
-  color: var(--color-white);
-  background: var(--color-primary);
+  color: #fff;
+  background: #156527;
   font-family: var(--font-secondary);
 }
 
@@ -673,7 +673,14 @@ section {
     transform: translateY(-10px);
   }
 }
-
+#hero{
+width: 100%;
+height: 100vh;
+background: url(https://vidracaria.curitibapro.com.br/wp-content/uploads/2023/06/cortina-de-vidro-sem-roldanas-e-rolamentos-rj.webp) top center;
+background-size: cover;
+position: relative;
+padding: 0;
+}
 /*--------------------------------------------------------------
 # Carousel Hero Section
 --------------------------------------------------------------*/
@@ -2789,6 +2796,56 @@ section {
   padding-left: 5px;
   color: rgba(var(--color-default-rgb), 0.4);
   font-size: 14px;
+}
+/* (A) HIDE CHECKBOX */
+.togCheck { display: none; }
+
+/* (B) HIDE CONTENT BY DEFAULT */
+.togContent {
+  height: 0;
+  display:none;
+  transition: max-height 1s;
+}
+/* (C) SHOW CONTENT WHEN CHECKED */
+.togCheck:checked + .togContent {
+
+  display:block;
+  height: 100%;
+}
+.togContent > #meuConteudo{
+    font-size:1em;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color:var(--secundaria-cor);
+    text-align:justify;
+    }
+.togContent > #meuConteudo>h3{
+    text-align:left;
+    }
+
+/* (X) COSMETICS - DOES NOT MATTER */
+
+
+/* (X2) TOGGLE BUTTON */
+.togButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* (X3) CONTENT */
+.togContent { background: #FFF; }
+.togContent > p{
+  padding: 20px 10px;
+  margin: 0;
+  text-align: justify;
+}
+.togContent > H3{
+  padding: 20px 10px;
+  margin: 0;
 }
 
 .blog .sidebar .recent-posts .post-item {

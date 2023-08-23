@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('depoiments', function (Blueprint $table) {
+        Schema::create('pages', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('description');
-            $table->string('company');
+            $table->string('title');
             $table->string('slug');
-            $table->string('star');
+            $table->string('briefDescription');
+            $table->text('description');
+            $table->boolean('status')->default('1');
+            $table->boolean('visible')->default('1');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('depoiments');
+        Schema::dropIfExists('pages');
     }
 };

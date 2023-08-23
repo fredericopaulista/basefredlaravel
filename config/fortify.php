@@ -17,6 +17,7 @@ return [
     */
 
     'guard' => 'web',
+    'path' => 'admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -74,7 +75,7 @@ return [
     |
     */
 
-    'prefix' => '',
+    'prefix' => 'admin',
 
     'domain' => null,
 
@@ -142,6 +143,8 @@ return [
             'confirmPassword' => true,
             // 'window' => 0,
         ]),
+
     ],
+
 
 ];

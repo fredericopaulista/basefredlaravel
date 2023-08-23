@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('subtitle');
             $table->string('briefDescription');
-            $table->string('description');
+            $table->text('description');
             $table->string('videoTitle');
             $table->string('video');
             $table->string('slug');

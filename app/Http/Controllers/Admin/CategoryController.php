@@ -71,9 +71,10 @@ class CategoryController extends Controller
 
         $data = Category::where('id', $id)->first();
         $data->fill($request->validated());
-        $extensionImage = $request->file('image')->extension();
-        $newFileName = $request->title .'.'.$extensionImage;
+
         if($request->hasFile('image')){
+            $extensionImage = $request->file('image')->extension();
+            $newFileName = $request->title .'.'.$extensionImage;
             $data->media()->delete();
             $data->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('categories');
         }

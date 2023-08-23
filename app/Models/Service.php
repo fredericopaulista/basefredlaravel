@@ -55,7 +55,7 @@ class Service extends Model implements HasMedia
     }
     public function categories(){
 
-        return $this->belongsToMany(Category::class);
+        return $this->hasOne(Category::class);
     }
 
     public function tags(){

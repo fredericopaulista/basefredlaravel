@@ -53,6 +53,16 @@
                 </a>
                 </li>
                 <li class="sidebar-menu-item ">
+                    <a class="sidebar-menu-button" href="{{ route('paginas.index') }}" :active="request()->routeIs('paginas.index')">
+                        <span class="sidebar-menu-text">{{ __('Páginas') }}</span>
+                    </a>
+                    </li>
+                    <li class="sidebar-menu-item ">
+                        <a class="sidebar-menu-button" href="{{ route('customiza.index') }}" active="request()->routeIs('customiza.index')">
+                            <span class="sidebar-menu-text">{{ __('Customização') }}</span>
+                        </a>
+                        </li>
+                <li class="sidebar-menu-item ">
 
                     <a class="sidebar-menu-button" href="{{ route('depoimentos.index') }}" :active="request()->routeIs('depoimentos.index')">
                         <span class="sidebar-menu-text">{{ __('Seo Manual') }}</span>

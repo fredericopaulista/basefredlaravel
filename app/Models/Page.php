@@ -10,23 +10,34 @@ use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
-class Depoiments extends Model implements HasMedia
+class Page extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia, HasSlug;
 
     protected $fillable = [
-        'name',
-        'description',
-        'company',
-         'star',
-        'slug'
+        'title',
+        'slug',
+        'briefDescription',
+        'status',
+        'visible',
+        'description'
     ];
+
     public function getSlugOptions() : SlugOptions
     {
         return SlugOptions::create()
             ->generateSlugsFrom('title')
             ->saveSlugsTo('slug');
     }
+    public function setStatusAttribute($value)
+    {
+        $this->attributes['status'] = ($value == '1' ? 1 : 0);
+    }
+    public function setVisibleAttribute($value)
+    {
+        $this->attributes['visible'] = ($value == '1' ? 1 : 0);
+    }
+
     public function registerMediaConversions(Media $media = null): void
     {
         $this->addMediaConversion('thumb')

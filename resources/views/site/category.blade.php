@@ -1,80 +1,100 @@
 @extends('site.layout.master')
 
-@section('title', "  $category->name  BH |  $category->name  em BH ")
+
 @section('content')
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <ol>
+                        <li><a href="{{ route('site.home') }}">Início</a></li>
+                        <li>{{ $category->name }}</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div><!-- End Breadcrumbs -->
+
+        <!-- ======= Blog Section ======= -->
+        <section id="blog" class="blog">
+
+            <div class="container" data-aos="fade-up">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div id="meuConteudo">
 
 
-<main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-
-          <ol>
-            <li><a href="{{ route('site.home') }}">Início</a></li>
-            <li>{{  $category->name }}</li>
-          </ol>
-        </div>
-
-      </div>
-    </div><!-- End Breadcrumbs -->
-
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog">
-
-      <div class="container" data-aos="fade-up">
-        <div class="d-flex justify-content-between align-items-center">
-            <h2>{{  $category->name }}</h2>
-
-          </div>
+                        <label for="check" class="togButton">
+                            <h2>
+                                {{ $category->name }}
+                            </h2>
+                        </label>
 
 
-        <div class="row g-5">
+                        <input type="checkbox" class="togCheck" id="check">
+                        <div class="togContent">
 
-          <div class="col-lg-12">
-
-            <div class="row gy-4 posts-list">
+                            {{ $category->description }}
 
 
-              @foreach ($services as $service )
-              <div class="col-lg-4">
-                <article class="d-flex flex-column">
+                        </div>
 
-                  <div class="post-img">
+                    </div>
 
-                    <img src="{{ $service->getFirstMediaUrl('services')}}"  alt="{{ $service->title }}" title="{{ $service->title }}" class="img-fluid">
+                </div>
 
-                  </div>
 
-                  <h2 class="title">
-                    <a href="{{ route('site.servico', [ $category->slug, $service->id]) }}" title="{{ $service->title }}">{{ $service->title }}</a>
-                  </h2>
+                <div class="row g-5">
+
+                    <div class="col-lg-12">
+
+                        <div class="row gy-4 posts-list">
+
+
+                            @foreach ($services as $service)
+                                <div class="col-lg-4">
+                                    <article class="d-flex flex-column">
+
+                                        <div class="post-img">
+                                            <a href="{{ route('site.servico', [$category->slug, $service->slug]) }}"
+                                                title="{{ $service->title }}">
+                                            <img src="{{ $service->getFirstMediaUrl('services') }}"
+                                                alt="{{ $service->title }}" title="{{ $service->title }}" class="img-fluid"></a>
+
+                                        </div>
+
+                                        <h2 class="title">
+                                            <a href="{{ route('site.servico', [$category->slug, $service->slug]) }}"
+                                                title="{{ $service->title }}">{{ $service->title }}</a>
+                                        </h2>
 
 
 
-                  <div class="content">
-                    <p>
-                      {{ $service->briefDescription }}
-                    </p>
-                  </div>
+                                        <div class="content">
+                                            <p>
+                                                {{ $service->briefDescription }}
+                                            </p>
+                                        </div>
 
-                  <div class="read-more mt-auto align-self-end">
-                    <a href="{{ route('site.servico', [$category->slug, $service->id]) }}" title="{{ $service->title }}">Leia Mais</a>
-                  </div>
+                                        <div class="read-more mt-auto align-self-end">
+                                            <a href="{{ route('site.servico', ['categorySlug' => $category->slug, 'serviceSlug' => $service->slug]) }}"
+                                                title="{{ $service->title }}">Leia Mais</a>
+                                        </div>
 
-                </article>
-              </div><!-- End post list item -->
-              @endforeach
+                                    </article>
+                                </div><!-- End post list item -->
+                            @endforeach
 
 
 
 
 
-            </div><!-- End blog posts list -->
+                        </div><!-- End blog posts list -->
 
-            {{-- <div class="blog-pagination">
+                        {{-- <div class="blog-pagination">
               <ul class="justify-content-center">
                 <li><a href="#">1</a></li>
                 <li class="active"><a href="#">2</a></li>
@@ -82,9 +102,9 @@
               </ul>
             </div><!-- End blog pagination --> --}}
 
-          </div>
+                    </div>
 
-          {{-- <div class="col-lg-4">
+                    {{-- <div class="col-lg-4">
 
             <div class="sidebar">
 
@@ -178,11 +198,12 @@
 
           </div> --}}
 
-        </div>
+                </div>
 
-      </div>
-    </section><!-- End Blog Section -->
+            </div>
+        </section><!-- End Blog Section -->
 
-  </main><!-- End #main -->
-
-  @endsection
+    </main><!-- End #main -->
+@endsection
+@section('scripts')
+@endsection

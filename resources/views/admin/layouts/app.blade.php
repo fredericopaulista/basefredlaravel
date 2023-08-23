@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -23,8 +23,10 @@
     <!-- Flatpickr -->
     <link type="text/css" href="{{ asset('admin/assets/css/vendor-flatpickr.css') }}" rel="stylesheet">
     <link type="text/css" href="{{ asset('admin/assets/css/vendor-flatpickr-airbnb.css') }}" rel="stylesheet">
+{{-- CKEditor CDN --}}
 
 
+@yield('css')
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
@@ -113,8 +115,8 @@
     <script src="{{ asset('admin/assets/js/plugins/flatpickr.js') }}"></script>
 
     <script src="{{ asset('admin/assets/js/pages/dashboard.js') }}"></script>
-
-
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    @yield('scriptsfooter')
 </body>
 
 </html>

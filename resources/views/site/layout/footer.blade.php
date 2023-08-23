@@ -8,22 +8,24 @@
             <div class="footer-info">
               <h3>HeroBiz</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                {{ $configuration->address }} <br>
+                {{ $configuration->city }}<br><br>
+                <strong>Telefone:</strong> {{ $configuration->phone }}<br>
+                <strong>Whatsapp:</strong> {{ $configuration->whatsapp }}<br>
+                <strong>Email:</strong> {{ $configuration->email }}<br>
               </p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Links Úteis</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ env('APP_URL') }}">Início</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('site.contato') }}">Contato</a></li>
+              @foreach($pages as $page)
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ env('APP_URL') }}/{{ $page->slug }}" alt="{{ $page->title }}" title="{{ $page->title }}">{{ $page->title }}</a></li>
+              @endforeach
+
             </ul>
           </div>
 
@@ -56,7 +58,7 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div class="copyright">
-            &copy; Copyright <strong><span>{{ env('APP_NAME') }}</span></strong>. Todos os Direitos Reservados
+            &copy; Copyright <strong><span>{{ $configuration->company }}</span></strong>. Todos os Direitos Reservados
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
@@ -94,7 +96,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('site/assets/js/main.js') }}"></script>
-
+  @yield('scripts')
 </body>
 
 </html>
