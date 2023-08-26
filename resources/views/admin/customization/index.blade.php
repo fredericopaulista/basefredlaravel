@@ -191,9 +191,11 @@
                                     <thead>
                                         <tr>
 
-                                            <th>Local</th>
-                                            <th>Cor</th>
+                                            <th>Cor Fundo Header</th>
                                             <th></th>
+                                            <th>Cor Texto Menu</th>
+                                            <th></th>
+                                            <th>Cor Fundo Rodapé</th>
                                             <th></th>
                                             <th>Ações</th>
                                         </tr>
@@ -201,20 +203,21 @@
                                     <tbody>
                                         @foreach ($customizations as $customization)
                                             <tr>
-                                                <td>
-                                                    Cor Backgroung Header
+                                                <td style="background-color:{{ $customization->bg_header_color }}">
+
                                                 </td>
-                                                <td style="background-color:{{ $customization->back_headcolor }}"> </td>
+                                                <td></td>
+                                                <td style="background-color:{{ $customization->nav_text_color }}"> </td>
+<td></td>
+                                               <td style="background-color:{{ $customization->bg_footer_color }}"></td>
 
-                                               <td></td>
-
-
+<td></td>
                                                 <td><a class="btn btn-success"
                                                         href="{{ route('customiza.edit', $customization->id) }}"><i
                                                             class="material-icons mx-2"> edit</i>Editar</a>
 
                                                 </td>
-                                                <td>
+                                                {{-- <td>
                                                     <form method="post"
                                                         action="{{ route('customiza.destroy', $customization->id) }}">
                                                         @csrf
@@ -222,7 +225,7 @@
                                                         <button type="submit" class="btn btn-danger"><i
                                                                 class="material-icons mx-2">delete</i>Apagar</button>
                                                     </form>
-                                                </td>
+                                                </td> --}}
                                             </tr>
                                         @endforeach
 

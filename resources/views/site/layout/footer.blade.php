@@ -1,12 +1,15 @@
-<footer id="footer" class="footer">
+<footer id="footer" class="footer" >
 
-    <div class="footer-content">
+    <div class="footer-content" style="background:{{ $customization->bg_footer_color }}!important">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>HeroBiz</h3>
+                <a href="{{ env('APP_URL') }}" title="{{ $configuration->company }}" alt="{{ $configuration->company }}">
+                    <img src="{{ asset('storage/' . $configuration->logofooter) }}" height="60px">
+
+                </a>
               <p>
                 {{ $configuration->address }} <br>
                 {{ $configuration->city }}<br><br>
@@ -30,7 +33,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Nossos Serviços</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
@@ -53,7 +56,7 @@
       </div>
     </div>
 
-    <div class="footer-legal text-center">
+    <div class="footer-legal text-center" style="background:{{ $customization->bg_footer_color }}!important">
       <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
@@ -70,11 +73,11 @@
         </div>
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="{{ $configuration->twitter }}" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="{{ $configuration->facebook }}" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="{{ $configuration->instagram }}" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="{{ $configuration->youtube }}" class="linkedin"><i class="bi bi-youtube"></i></a>
+          <a href="{{ $configuration->linkedin }}" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
 
       </div>

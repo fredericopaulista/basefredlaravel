@@ -10,7 +10,8 @@ class Customization extends Model
     use HasFactory;
 
     protected $fillable = [
-        'back_headcolor',
-        'header_textcolor',
+        'bg_header_color',
+        'nav_text_color',
+        'bg_footer_color',
     ];
 }

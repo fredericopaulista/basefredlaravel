@@ -31,51 +31,47 @@ class SiteController extends Controller
     }
 
     public function home(){
-        $navlinks = Category::all();
+
         $services = Service::where('home', 1)->get();
         $faqs = Faq::all();
-        $configuration = Configuration::get()->first();
         $depoiments = Depoiments::all();
         $pages = Page::where('visible', 1)->get();
-        $customization = Customization::get()->first();
-        return view('site.home', compact('configuration', 'navlinks', 'services', 'faqs', 'depoiments', 'pages', 'customization'));
+
+        return view('site.home', compact('services', 'faqs', 'depoiments', 'pages'));
     }
 
     public function category($slug){
-        $navlinks = Category::all();
+
         $category = Category::where('slug', $slug )->first();
         $services = Service::all();;
-        $customization = Customization::get()->first();
-        $configuration = Configuration::get()->first();
 
-        $pages = Page::where('visible', 1)->get();
 
-        return view('site.category',compact('configuration','category', 'services', 'navlinks', 'customization', 'pages'));
+        return view('site.category',compact('category', 'services'));
     }
 
-    public function service($categorySlug, $serviceSlug){
-        $navlinks = Category::all();
-        $category = Category::where('slug', $categorySlug)->first();
-        $service = Service::where('slug', $serviceSlug)->first();
-        $customization = Customization::get()->first();
-        $configuration = Configuration::get()->first();
-        $pages = Page::where('visible', 1)->get();
+    public function services($category, $service){
 
-        return view('site.service', compact('configuration','pages','service', 'navlinks', 'category', 'customization'));
+        $categoryc = Category::where('slug', $category)->first();
+
+        $servicec = Service::where('slug', $service)->first();
+
+
+
+        return view('site.service', compact('servicec', 'categoryc'));
     }
-    public function tag($tagSlug, $tagId){
+    public function tags($tag, $tagi, $service)
+    {
 
-        $navlinks = Category::all();
+        $tag = Tag::findOrfail($tagi)->where('slug', $tag)->first();;
+        $servicePhoto = Service::where('id', $service)->first();;
 
-        $byTag = Tag::whereSlug($tagSlug)->where('id', $tagId)->first();
-        $customization = Customization::get()->first();
-        $pages = Page::where('visible', 1)->get();
+        return view('site.tags', compact('tag', 'servicePhoto'));
+    }
 
-        $configuration = Configuration::get()->first();
-dd($byTag);
+    public function routes(){
 
 
-        return view('site.tags', compact('configuration','service', 'pages','navlinks', 'category', 'customization'));
+        //
     }
 
 

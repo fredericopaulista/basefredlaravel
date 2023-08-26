@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\DepoimentsController;
 use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\SeoManualController;
 use App\Http\Controllers\Site\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,6 +46,7 @@ Route::middleware([
     Route::resource('admin/configuracoes', ConfigurationController::class);
     Route::resource('admin/paginas', PageController::class);
     Route::resource('admin/customiza', CustomizationController::class);
+    Route::resource('admin/seomanual', SeoManualController::class);
 });
 
 // Rotas do Site
@@ -52,10 +54,10 @@ Route::middleware([
 Route::get('/', [SiteController::class, 'home'])->name('site.home');
 Route::get('/contato',[ContactController::class, 'index'])->name('site.contato');
 Route::post('/contatoenvia',[ContactController::class, 'store'])->name('site.contatoEnviar');
-Route::get('/{categorySlug}', [SiteController::class, 'category'])->name('site.categoria');
-Route::get('/{categorySlug}/{serviceSlug}', [SiteController::class, 'service'])->name('site.servico');
-Route::get('/{tagSlug}/{tagId}', [SiteController::class, 'tag'])->name('site.tags');
 
+Route::get('/{category:slug}', [SiteController::class, 'category'])->name('site.categoria');
+Route::get('/{category:slug}/{service:slug}', [SiteController::class, 'services'])->name('site.servico');
+Route::get('/{tag:slug}/{tagid}/{service:id}', [SiteController::class, 'tags'])->name('site.tags');
 
 
 

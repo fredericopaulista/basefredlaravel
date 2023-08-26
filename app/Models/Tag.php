@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Sluggable\HasSlug;
@@ -11,10 +12,12 @@ class Tag extends Model
 {
     use HasFactory , HasSlug;
 
-    
+
     protected $fillable = [
         'name',
-        'slug'
+        'slug',
+        'briefDescription',
+        'body'
     ];
 
     public function getSlugOptions() : SlugOptions
@@ -26,6 +29,25 @@ class Tag extends Model
 
     public function services(){
 
-        return $this->belongsToMany(Service::class);
+        return $this->hasOne(Service::class);
+    }
+
+    public function media(){
+
+        return $this->hasOne(Service::class);
+    }
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => ucwords($value),
+            set: fn (string $value) => ucwords($value),
+        );
+    }
+    protected function briefDescription(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => ucfirst($value),
+            set: fn (string $value) => ucfirst($value),
+        );
     }
 }

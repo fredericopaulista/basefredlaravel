@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
@@ -55,7 +56,7 @@ class Service extends Model implements HasMedia
     }
     public function categories(){
 
-        return $this->hasOne(Category::class);
+        return $this->belongsToMany(Category::class);
     }
 
     public function tags(){
@@ -66,5 +67,30 @@ class Service extends Model implements HasMedia
 
         return $this->hasMany(ServiceFaq::class);
     }
+
+
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => ucwords($value),
+            set: fn (string $value) => ucwords($value),
+        );
+    }
+    protected function briefDescription(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => ucfirst($value),
+            set: fn (string $value) => ucfirst($value),
+        );
+    }
+    protected function videoTitle(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => ucwords($value),
+            set: fn (string $value) => ucwords($value),
+        );
+    }
+
+
 
 }

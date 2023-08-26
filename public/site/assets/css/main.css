@@ -198,7 +198,20 @@ section {
   visibility: visible;
   opacity: 1;
 }
+details {
 
+    margin-bottom: 5px;
+  }
+
+  summary {
+  /*   outline: none; */
+    /* Hides marker on Chrome */
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    /* Hides marker on Safari */
+    display: none;
+  }
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -261,6 +274,7 @@ section {
   .header .btn-getstarted,
   .header .btn-getstarted:focus {
     margin-right: 50px;
+
   }
 }
 
@@ -2546,7 +2560,7 @@ padding: 0;
   font-size: 28px;
   font-weight: 700;
   padding: 0;
-  margin: 20px 0 0 0;
+  /* margin: 20px 0 0 0; */
   color: var(--color-secondary);
 }
 

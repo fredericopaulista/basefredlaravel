@@ -21,56 +21,66 @@
                             <x-validation-errors class="mb-4" />
                             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-                                <form method="POST" action="{{ route('customiza.store') }}" >
+                                <form method="POST" action="{{ route('customiza.store') }}">
                                     @csrf
                                     <div class="card">
                                         <div class="lg:flex">
-                                            <div class="lg:w-2/6 p-8">
-                                                <p><strong class="headings-color">Customizar Site</strong></p>
+              
 
-                                            </div>
-                                            <div class="lg:w-4/6 card-dark p-8">
-                                                <div class="mt-3">
-                                                    <span class="form-label"></span>
-                                                    <div class="mt-2">
-                                                        <label for="exampleColorInput" class="form-label">Cor do Background do Header</label>
-                                                        <input type="text" class="form-control form-control-color" name="back_headcolor"
-                                                            id="exampleColorInput" 
-                                                            title="Cor do Background do Header">
+                                            <div class="mt-8">
+                                                <span class="form-label"></span>
+                                                <div class="mt-2">
+                                                    <label for="exampleColorInput" class="form-label">Cor Fundo Header
+                                                    </label>
+                                                    <input type="color" class="form-control form-control-color"
+                                                        name="bg_header_color" id="exampleColorInput"
+                                                        title="Cor Fundo Header" value="{{ old('bg_header_color') }}">
 
-                                                    </div>
                                                 </div>
-                                                <div class="mt-8">
-                                                    <span class="form-label"></span>
-                                                    <div class="mt-2">
-                                                        <label for="exampleColorInput" class="form-label">Cor do Texto do Header</label>
-                                                        <input type="color" class="form-control form-control-color" name="header_textcolor"
-                                                            id="exampleColorInput" value="#563d7c"
-                                                            title="Cor do Background do Header">
-
-                                                    </div>
-                                                </div>
-
-
-                                                <button class="btn btn-success mb-6 mt-6 ml-8" type="submit">
-                                                    {{ __('Cadastrar') }}
-                                                </button>
                                             </div>
+                                            <div class="mt-8">
+                                                <span class="form-label"></span>
+                                                <div class="mt-2">
+                                                    <label for="exampleColorInput" class="form-label">Cor Texto Menu
+                                                    </label>
+                                                    <input type="color" class="form-control form-control-color"
+                                                        name="nav_text_color" id="exampleColorInput" title="Cor Texto Menu"
+                                                        value="{{ old('nav_text_color') }}">
+
+                                                </div>
+                                            </div>
+                                            <div class="mt-8">
+                                                <span class="form-label"></span>
+                                                <div class="mt-2">
+                                                    <label for="exampleColorInput" class="form-label">Cor Fundo Rodapé
+                                                    </label>
+                                                    <input type="color" class="form-control form-control-color"
+                                                        name="bg_footer_color" id="exampleColorInput"
+                                                        title="Cor Fundo Rodapé" value="{{ old('bg_footer_color') }}">
+
+                                                </div>
+                                            </div>
+
+
+                                            <button class="btn btn-success mb-6 mt-6 ml-8" type="submit">
+                                                {{ __('Cadastrar') }}
+                                            </button>
                                         </div>
                                     </div>
-
-
-
-
-                                </form>
                             </div>
+
+
+
+
+                            </form>
                         </div>
                     </div>
-                </section>
-
-
             </div>
+            </section>
+
+
         </div>
+    </div>
     </div>
 @section('scriptsfooter')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/js/bootstrap-colorpicker.min.js">

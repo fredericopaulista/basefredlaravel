@@ -117,6 +117,17 @@
                                </div>
                             <x-input id="logofooter" class="block mt-1 w-full" type="file" name="logofooter" />
                         </div>
+                        <div class="mt-4 px-4">
+                            <x-label for="banner_gif" value="{{ __('Gif Serviços') }}" />
+                            <div class="mt-2 mb-4">
+                                <img width="30%" src="{{ asset('storage/' . $configuration->banner_gif)}}" >
+                                <br>
+                               </div>
+                            <x-input id="banner_gif" class="block mt-1 w-full" type="file" name="banner_gif" />
+                        </div>
+            
+
+
 
 
                     <div class="mt-4 px-4">

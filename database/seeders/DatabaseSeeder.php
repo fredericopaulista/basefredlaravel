@@ -24,5 +24,12 @@ class DatabaseSeeder extends Seeder
         $this->call(ConfigurationsTableSeeder::class);
 
         $this->call(PagesTableSeeder::class);
+        $this->call(CustomizationsTableSeeder::class);
+        $this->call(TagsTableSeeder::class);
+        $this->call(CategoriesTableSeeder::class);
+        $this->call(ServicesTableSeeder::class);
+        $this->call(CategoryServiceTableSeeder::class);
+        $this->call(MediaTableSeeder::class);
+        $this->call(ServiceTagTableSeeder::class);
     }
 }

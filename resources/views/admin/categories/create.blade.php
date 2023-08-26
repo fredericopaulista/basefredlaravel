@@ -1,4 +1,7 @@
 @extends('admin.layouts.app')
+@section('css')
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+@endsection
 @section('content')
     <div class="mdk-header-layout__content">
 
@@ -28,7 +31,9 @@
                                                     <span class="form-label"></span>
                                                     <div class="mt-2">
                                                         <label class="inline-flex items-center">
-                                                            <input type="checkbox" class="form-radio" name="print" type="checkbox" value="1" {{  old('print') == 1 ? 'checked' : '0' }}>
+                                                            <input type="checkbox" class="form-radio" name="print"
+                                                                type="checkbox" value="1"
+                                                                {{ old('print') == 1 ? 'checked' : '0' }}>
                                                             <span class="ml-2">Ativar Categoria</span>
                                                         </label>
 
@@ -38,7 +43,9 @@
                                                     <span class="form-label"></span>
                                                     <div class="mt-2">
                                                         <label class="inline-flex items-center">
-                                                            <input type="checkbox" class="form-radio" name="main"  type="checkbox" value="1" {{  old('print') == 1 ? 'checked' : '0' }}>
+                                                            <input type="checkbox" class="form-radio" name="main"
+                                                                type="checkbox" value="1"
+                                                                {{ old('print') == 1 ? 'checked' : '0' }}>
                                                             <span class="ml-2">Mostrar na Home</span>
                                                         </label>
 
@@ -46,30 +53,33 @@
                                                 </div>
                                                 <label class="block">
                                                     <span class="form-label">Nome</span>
-                                                    <input class="form-input mt-1 block w-full placeholder-muted" name="name"
-                                                        placeholder="Nome" value="{{ old('name') }}">
+                                                    <input class="form-input mt-1 block w-full placeholder-muted"
+                                                        name="name" placeholder="Nome" value="{{ old('name') }}">
                                                 </label>
                                                 <label class="block">
                                                     <span class="form-label">Título</span>
-                                                    <input class="form-input mt-1 block w-full placeholder-muted" name="title"
-                                                        placeholder="Título" value="{{ old('title') }}">
+                                                    <input class="form-input mt-1 block w-full placeholder-muted"
+                                                        name="title" placeholder="Título" value="{{ old('title') }}">
                                                 </label>
                                                 <label class="block">
                                                     <span class="form-label">Descrição SEO</span>
-                                                    <input class="form-input mt-1 block w-full placeholder-muted" name="seoDescription"
-                                                    placeholder="Descrição SEO"
-                                                    value="{{ old('seoDescription') }}">
+                                                    <input class="form-input mt-1 block w-full placeholder-muted"
+                                                        name="seoDescription" placeholder="Descrição SEO"
+                                                        value="{{ old('seoDescription') }}">
                                                 </label>
                                                 <label class="block">
-                                                <div class="col-md-9">
-                                                    <span class="form-label">Conteúdo SEO</span>
-                                                    <textarea wire:model="message" class=" required" name="description" id="message">{{ old('description') }}</textarea>
+                                                    <div class="col-md-9">
+                                                        <span class="form-label">Texto</span>
 
-                                                </div>
+                                                        <textarea class="form-control" id="description" placeholder="Insira o texto" name="description">{{ old('description') }}</textarea>
+
+
+                                                    </div>
                                                 </label>
                                                 <div class="mt-4 px-4">
                                                     <x-label for="image" value="{{ __('OG Imagem') }}" />
-                                                    <x-input id="image" class="block mt-1 w-full" type="file" name="image" />
+                                                    <x-input id="image" class="block mt-1 w-full" type="file"
+                                                        name="image" />
                                                 </div>
 
                                                 {{-- <label class="block mt-8">
@@ -93,19 +103,21 @@
 
 
                                 </form>
-                            </div></div></div>
-                </section>
-
-                                @push('scripts')
-                                    <script>
-                                        const editor = CKEDITOR.replace('message');
-                                        editor.on('change', function(event) {
-                                            console.log(event.editor.getData())
-                                            this.set('message', event.editor.getData());
-                                        })
-                                    </script>
-                                @endpush
                             </div>
                         </div>
                     </div>
-                @endsection
+                </section>
+
+            @section('scriptsfooter')
+                <script>
+                    ClassicEditor
+                        .create(document.querySelector('#description'))
+                        .catch(error => {
+                            console.error(error);
+                        });
+                </script>
+            @endsection
+        </div>
+    </div>
+</div>
+@endsection

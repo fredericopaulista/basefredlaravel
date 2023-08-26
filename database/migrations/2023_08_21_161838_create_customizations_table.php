@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('customizations', function (Blueprint $table) {
             $table->id();
-            $table->string('back_headcolor');
-            $table->string('header_textcolor');
+            $table->string('bg_header_color');
+            $table->string('nav_text_color');
+            $table->string('bg_footer_color');
             $table->timestamps();
         });
     }

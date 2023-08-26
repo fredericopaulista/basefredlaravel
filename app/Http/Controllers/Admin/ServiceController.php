@@ -46,11 +46,12 @@ class ServiceController extends Controller
         $alltags = explode(',' , $request->tags);
 
         $newtags = collect([]);
+
         foreach($alltags as $newtag){
 
             $tag = Tag::firstOrCreate(
                 ['name' => $newtag],
-                ['name' => $newtag]
+                ['body' => $newtag]
             );
             $newtags->push([
                 'tag_id' => $tag->id
@@ -60,10 +61,10 @@ class ServiceController extends Controller
 
         $service->tags()->sync($newtags);
         $service->categories()->attach($request->categories);
-        $extensionImage = $request->file('image')->extension();
-        $newFileName = $request->title .'.'.$extensionImage;
-        if($request->hasFile('image')){
 
+        if($request->hasFile('image')){
+            $extensionImage = $request->file('image')->extension();
+            $newFileName = $request->title .'.'.$extensionImage;
             $service->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('services');
         }
 
@@ -103,6 +104,7 @@ class ServiceController extends Controller
         $data->fill($request->validated());
         $alltags = explode(',' , $request->tags);
         $newtags = collect([]);
+
         foreach($alltags as $newtag){
 
             $tag = Tag::firstOrCreate(

@@ -59,6 +59,14 @@ class ConfigurationController extends Controller
 			$filePath = Storage::disk('public')->put('site/img', request()->file('logoheader'));
             $data['logoheader'] = $filePath;
 		}
+        if ($request->hasFile('banner_gif')) {
+			if (!empty($data->banner_gif)) {
+				Storage::disk('public')->delete($data->banner_gif);
+			}
+
+			$filePath = Storage::disk('public')->put('site/img', request()->file('banner_gif'));
+            $data['banner_gif'] = $filePath;
+		}
 
 		if ($request->hasFile('logofooter')) {
 			if (!empty($data->logofooter)) {

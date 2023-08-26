@@ -36,6 +36,7 @@ class Configuration extends Model implements HasMedia
 'twitter',
 'linkedin',
 'youtube',
+'banner_gif'
     ];
 
     public function getSlugOptions() : SlugOptions

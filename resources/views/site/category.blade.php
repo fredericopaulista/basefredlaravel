@@ -5,10 +5,10 @@
     <main id="main">
 
         <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs">
+        <div class="breadcrumbs" >
             <div class="container">
 
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center" style="padding: 10px">
 
                     <ol>
                         <li><a href="{{ route('site.home') }}">Início</a></li>
@@ -28,20 +28,14 @@
 
 
                         <label for="check" class="togButton">
-                            <h2>
-                                {{ $category->name }}
-                            </h2>
+                            <details>
+                                <summary>
+                                    <h2>{{ $category->name }} </h2>
+                                </summary>
+
+                                <p>{!! $category->description !!}</p>
+                            </details>
                         </label>
-
-
-                        <input type="checkbox" class="togCheck" id="check">
-                        <div class="togContent">
-
-                            {{ $category->description }}
-
-
-                        </div>
-
                     </div>
 
                 </div>
@@ -61,15 +55,16 @@
                                         <div class="post-img">
                                             <a href="{{ route('site.servico', [$category->slug, $service->slug]) }}"
                                                 title="{{ $service->title }}">
-                                            <img src="{{ $service->getFirstMediaUrl('services') }}"
-                                                alt="{{ $service->title }}" title="{{ $service->title }}" class="img-fluid"></a>
+                                                <img src="{{ $service->getFirstMediaUrl('services') }}"
+                                                    alt="{{ $service->title }}" title="{{ $service->title }}"
+                                                    class="img-fluid"></a>
 
                                         </div>
 
-                                        <h2 class="title">
+                                        <h3 class="title">
                                             <a href="{{ route('site.servico', [$category->slug, $service->slug]) }}"
                                                 title="{{ $service->title }}">{{ $service->title }}</a>
-                                        </h2>
+                                        </h3>
 
 
 
@@ -80,7 +75,8 @@
                                         </div>
 
                                         <div class="read-more mt-auto align-self-end">
-                                            <a href="{{ route('site.servico', ['categorySlug' => $category->slug, 'serviceSlug' => $service->slug]) }}"
+
+                                            <a href="{{ route('site.servico', ['category' => $category->slug, 'service' => $service->slug]) }}"
                                                 title="{{ $service->title }}">Leia Mais</a>
                                         </div>
 

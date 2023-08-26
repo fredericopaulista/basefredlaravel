@@ -23,6 +23,22 @@ class CustomizationController extends Controller
 
         $data = Customization::create($request->all());
 
-        return view('admin.customiza.index');
+        return redirect()->route('customiza.index')->banner('Dados cadastrados com sucesso.');;
+    }
+
+    public function edit($id){
+
+        $customiza = Customization::findOrfail($id);
+        return view('admin.customization.edit', compact('customiza'));
+    }
+
+    public function update(Request $request, $id){
+
+        $customiza = Customization::where('id', $id)->first();
+
+        $customiza->fill($request->all());
+        $customiza->save();
+
+        return redirect()->route('customiza.index')->banner('Dados atualizados com sucesso.');;
     }
 }
