@@ -87,11 +87,11 @@
                             required :value="old('video')" placeholder="Url do Video" />
                     </div>
                     <div class="mt-4 px-4">
-                        <x-label for="categories" value="{{ __('Categorias') }}" />
+                        <x-label for="category_id" value="{{ __('Categorias') }}" />
                         @foreach ($categories as $category )
 
 
-                        <input id="categories"  type="checkbox" name="categories[]"
+                        <input id="category_id"  type="checkbox" name="category_id"
                         value="{{ $category->id }}"
 
                          /> {{ $category->name }}

@@ -15,14 +15,17 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('title');
+            $table->string('slug')->unique();
+            $table->string('category_id');
             $table->string('subtitle');
             $table->string('briefDescription');
             $table->text('description');
             $table->string('videoTitle');
             $table->string('video');
-            $table->string('slug');
+
             $table->boolean('print');
             $table->boolean('home');
+
             $table->timestamps();
         });
     }

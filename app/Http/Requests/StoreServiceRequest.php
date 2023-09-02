@@ -25,6 +25,7 @@ class StoreServiceRequest extends FormRequest
             'name' => 'required|min:10|max:70',
             'subtitle' => 'required|min:10|max:70',
             'title' => 'required|min:10|max:70',
+            'category_id' => 'required',
             'description' => 'required|min:10',
             'briefDescription' => 'required|min:1|max:260',
             'seoDescription' => 'required|min:1|max:260',

@@ -81,10 +81,12 @@
                             :value="$service->video" placeholder="Url do Video" />
                     </div>
                     <div class="mt-4 px-4">
+
+
                         <x-label for="categories" value="{{ __('Categorias') }}" />
                         @foreach ($categories as $category)
-                            <input id="categories" type="checkbox" name="categories[]" value="{{ $category->id }}"
-                                @if (in_array($category->id, $service->categories->pluck('id')->toArray())) checked @endif />
+                            <input id="categories" type="checkbox" name="category_id" value="{{ $category->id}}"
+                            {{ in_array($category->id, $category) ? 'checked' : '' }} />
 
                             {{ $category->name }}
                             <br>

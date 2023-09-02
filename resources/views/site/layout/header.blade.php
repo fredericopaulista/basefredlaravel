@@ -83,8 +83,8 @@
 
                     </li>
                     @foreach ($navlinks as $category)
-                        <li><a class="nav-link " href="{{ route('site.categoria', $category->slug) }}"
-                                style="color:{{ $customization->nav_text_color }}!important">{{ $category->name }}</a>
+                        <li><a class="nav-link " href="{{ route('site.categoria', ['category' => $category->slug . config('APP_CIDADE_SLUG')]) }}"
+                                style="color:{{ $customization->nav_text_color }}!important" title="{{ $category->name . ' ' . config('APP_CIDADE')  }}">{{ $category->name }}</a>
                         </li>
                     @endforeach
 

@@ -9,7 +9,7 @@ use App\Models\Service;
 use App\Models\ServiceFaq;
 use App\Models\Tag;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\Controller;
 
 
 class ServiceController extends Controller
@@ -51,8 +51,11 @@ class ServiceController extends Controller
 
             $tag = Tag::firstOrCreate(
                 ['name' => $newtag],
-                ['body' => $newtag]
+                ['body' => $newtag],
+                ['briefDescription' => $newtag]
+
             );
+
             $newtags->push([
                 'tag_id' => $tag->id
             ]);
@@ -60,7 +63,6 @@ class ServiceController extends Controller
         }
 
         $service->tags()->sync($newtags);
-        $service->categories()->attach($request->categories);
 
         if($request->hasFile('image')){
             $extensionImage = $request->file('image')->extension();
@@ -117,7 +119,6 @@ class ServiceController extends Controller
 
         }
         $data->tags()->sync($newtags);
-        $data->categories()->sync($request->categories);
 
         if($request->hasFile('image')){
             $extensionImage = $request->file('image')->extension();

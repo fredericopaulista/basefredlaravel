@@ -60,5 +60,14 @@ class Category extends Model implements HasMedia
             set: fn (string $value) => ucwords($value),
         );
     }
+    public function categoryservices(){
+
+        return $this->hasMany(CategoryService::class, 'service_id');
+    }
+    public function services(){
+
+        return $this->belongsToMany(Service::class);
+    }
+
 
 }

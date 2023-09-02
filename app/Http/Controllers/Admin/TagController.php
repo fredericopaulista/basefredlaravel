@@ -6,7 +6,7 @@ use App\Http\Requests\StoreTagRequest;
 use App\Http\Requests\UpdateTagRequest;
 use App\Models\Service;
 use App\Models\Tag;
-
+use App\Http\Controllers\Controller;
 class TagController extends Controller
 {
     /**
@@ -42,7 +42,7 @@ class TagController extends Controller
     /**
      * Display the specified resource.
      */
-   
+
 
     /**
      * Show the form for editing the specified resource.

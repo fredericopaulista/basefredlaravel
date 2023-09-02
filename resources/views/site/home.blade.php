@@ -96,11 +96,14 @@
 
                 <div class="row gy-5">
                     @foreach ($services as $service)
+
                         <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                             <div class="service-item">
                                 <div class="img">
+
+                                    <a href="{{ route('site.servico',['category' => $service->category->slug . $cityslug, 'service' => $service->slug . $cityslug]) }}">
                                     <img src="{{ $service->getFirstMediaUrl('services') }}" class="img-fluid"
-                                        alt="{{ $service->title }}">
+                                        alt="{{ $service->title }}"></a>
                                 </div>
                                 <div class="details position-relative">
                                     <div class="icon">

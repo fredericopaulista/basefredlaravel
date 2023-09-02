@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Category;
+use App\Models\City;
 use App\Models\Configuration;
 use App\Models\Customization;
 use App\Models\Page;

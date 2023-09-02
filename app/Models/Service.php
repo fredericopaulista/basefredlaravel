@@ -26,6 +26,7 @@ class Service extends Model implements HasMedia
         'description',
         'video',
         'videoTitle',
+        'category_id',
         'slug'
     ];
     public function getSlugOptions() : SlugOptions
@@ -54,14 +55,14 @@ class Service extends Model implements HasMedia
               ->height(200)
               ->sharpen(10);
     }
-    public function categories(){
+    public function category(){
 
-        return $this->belongsToMany(Category::class);
+        return $this->belongsTo(Category::class);
     }
 
     public function tags(){
 
-    return $this->belongsToMany(Tag::class);
+    return $this->belongsToMany(Tag::class, 'service_tag');
     }
     public function servicefaqs(){
 

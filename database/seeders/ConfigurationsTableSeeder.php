@@ -26,6 +26,7 @@ class ConfigurationsTableSeeder extends Seeder
                 'segment' => 'Segmento A',
                 'slug' => 'segmento-a',
                 'city' => 'Belo Horizonte',
+                'city_slug' => 'belo-horizonte',
                 'address' => 'Endereço Completo',
                 'neighborhood' => 'Bairro',
                 'cep' => '33333-333',

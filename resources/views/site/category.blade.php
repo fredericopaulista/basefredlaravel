@@ -12,7 +12,7 @@
 
                     <ol>
                         <li><a href="{{ route('site.home') }}">Início</a></li>
-                        <li>{{ $category->name }}</li>
+                        <li>{{ $category->name }} {{ $citydata->name }}</li>
                     </ol>
                 </div>
 
@@ -30,7 +30,7 @@
                         <label for="check" class="togButton">
                             <details>
                                 <summary>
-                                    <h2>{{ $category->name }} </h2>
+                                    <h2>{{ $category->name }} {{ $citydata->name }}</h2>
                                 </summary>
 
                                 <p>{!! $category->description !!}</p>
@@ -49,39 +49,43 @@
 
 
                             @foreach ($services as $service)
-                                <div class="col-lg-4">
-                                    <article class="d-flex flex-column">
-
-                                        <div class="post-img">
-                                            <a href="{{ route('site.servico', [$category->slug, $service->slug]) }}"
-                                                title="{{ $service->title }}">
-                                                <img src="{{ $service->getFirstMediaUrl('services') }}"
-                                                    alt="{{ $service->title }}" title="{{ $service->title }}"
-                                                    class="img-fluid"></a>
-
-                                        </div>
-
-                                        <h3 class="title">
-                                            <a href="{{ route('site.servico', [$category->slug, $service->slug]) }}"
-                                                title="{{ $service->title }}">{{ $service->title }}</a>
-                                        </h3>
 
 
+                                    <div class="col-lg-4">
+                                        <article class="d-flex flex-column">
 
-                                        <div class="content">
-                                            <p>
-                                                {{ $service->briefDescription }}
-                                            </p>
-                                        </div>
+                                            <div class="post-img">
+                                                <a href="{{ route('site.servico', ['category' => $service->category->slug . $cityslug, 'service' => $service->slug . $cityslug]) }}"
+                                                    title="{{ $service->title }} ">
+                                                    <img src="{{ $service->getFirstMediaUrl('services') }}"
+                                                        alt="{{ $service->title }}" title="{{ $service->title }}"
+                                                        class="img-fluid"></a>
 
-                                        <div class="read-more mt-auto align-self-end">
+                                            </div>
 
-                                            <a href="{{ route('site.servico', ['category' => $category->slug, 'service' => $service->slug]) }}"
-                                                title="{{ $service->title }}">Leia Mais</a>
-                                        </div>
+                                            <h3 class="title">
+                                                <a href="{{ route('site.servico', ['category' => $service->category->slug . $cityslug, 'service' => $service->slug . $cityslug]) }}"
+                                                    title="{{ $service->title }}">{{ $service->title }}</a>
+                                            </h3>
 
-                                    </article>
-                                </div><!-- End post list item -->
+
+
+                                            <div class="content">
+                                                <p>
+                                                    {{ $service->briefDescription }}
+                                                </p>
+                                            </div>
+
+                                            <div class="read-more mt-auto align-self-end">
+
+                                                <a href="{{ route('site.servico', ['category' => $service->category->slug . $cityslug, 'service' => $service->slug . $cityslug]) }}"
+                                                    title="{{ $service->title }}">Leia Mais</a>
+                                            </div>
+
+                                        </article>
+                                    </div><!-- End post list item -->
+
+
                             @endforeach
 
 

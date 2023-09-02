@@ -6,7 +6,7 @@ use App\Models\Configuration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
-
+use App\Http\Controllers\Controller;
 
 class ConfigurationController extends Controller
 {

@@ -25,7 +25,11 @@
                         <x-input id="segment" class="block mt-1 w-full" type="text" name="segment"
                             :value="$configuration->segment" required placeholder="Segmento da Empresa" />
                     </div>
-
+                    <div class="mt-4 px-4">
+                        <x-label for="city_slug" value="{{ __('Slug Base City') }}" />
+                        <x-input id="city_slug" class="block mt-1 w-3/4" type="text" name="city_slug" required
+                            :value="$configuration->city_slug" placeholder="belo-horizonte" />
+                    </div>
                         <div class="mt-4 px-4">
                             <x-label for="city" value="{{ __('Cidade') }}" />
                             <x-input id="city" class="block mt-1 w-3/4" type="text" name="city" required
@@ -125,7 +129,7 @@
                                </div>
                             <x-input id="banner_gif" class="block mt-1 w-full" type="file" name="banner_gif" />
                         </div>
-            
+
 
 
 

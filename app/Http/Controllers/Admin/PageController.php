@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\StorePageRequest;
 use App\Models\Page;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
@@ -40,7 +41,7 @@ class PageController extends Controller
         $media = $page->getMedia('pages');
         return view('admin.pages.edit', compact('page', 'media'));
     }
-   
+
     public function update(StorePageRequest $request, $id)
     {
 

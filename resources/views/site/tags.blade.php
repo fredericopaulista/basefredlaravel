@@ -32,6 +32,7 @@
             <article class="blog-details">
                 <h2 class="title">{{ $tag->name }}</h2><br>
                 <p>{{ $tag->briefDescription }}</p>
+               
               <div class="post-img" style="margin-top: 10px">
                 <img src="{{ $servicePhoto->getFirstMediaUrl('services') }}" alt="{{ $tag->name }}" class="img-fluid">
 
@@ -45,13 +46,29 @@
                 {{ $tag->body }}
 
                 <p>
-                 {{ $servicePhoto->description }}
+                 {!! $servicePhoto->description !!}
                 </p>
 
 
 
               </div><!-- End post content -->
+              <div class="meta-bottom">
+                <i class="bi bi-folder"></i>
 
+
+                <i class="bi bi-tags"></i>
+                <ul class="tags">
+
+                    @foreach ($servicePhoto->tags as $tag)
+                    <li><a
+                            href="{{ route('site.tags', ['tag' => $tag->slug . config('APP_CIDADE_SLUG'), 'tagid' => $tag->id, 'service' => $servicePhoto->id]) }}" title="{{ $tag->name }} {{ $citydata->name }}">{{ $tag->name }}</a>
+                    </li>
+                @endforeach
+
+
+
+                </ul>
+            </div><!-- End meta bottom -->
 
               <div class="content">
                 {!! $servicePhoto->videoTitle !!} <br><br>

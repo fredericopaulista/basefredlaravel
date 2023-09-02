@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('company');
             $table->string('segment');
             $table->string('slug');
+            $table->string('city_slug');
             $table->string('city')->nullable();
             $table->string('address')->nullable();
             $table->string('neighborhood')->nullable();

@@ -43,11 +43,5 @@ class Tag extends Model
             set: fn (string $value) => ucwords($value),
         );
     }
-    protected function briefDescription(): Attribute
-    {
-        return Attribute::make(
-            get: fn (string $value) => ucfirst($value),
-            set: fn (string $value) => ucfirst($value),
-        );
-    }
+   
 }

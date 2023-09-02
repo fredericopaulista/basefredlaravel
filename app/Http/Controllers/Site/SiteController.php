@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Http\Controllers\Admin\Controller;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\SendContactRequest;
 use App\Http\Requests\StoreContactRequest;
 use App\Models\Category;
+use App\Models\City;
 use App\Models\Configuration;
 use App\Models\Contact;
 use App\Models\Customization;
@@ -15,6 +16,8 @@ use App\Models\Page;
 use App\Models\Service;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str;
 
 class SiteController extends Controller
 {
@@ -32,47 +35,121 @@ class SiteController extends Controller
 
     public function home(){
 
-        $services = Service::where('home', 1)->get();
+        $configuration = Configuration::get()->first();
+        $cities = City::where('slug', $configuration->city_slug)->get();
+
+        if ($cities->count() == 1) {
+          $city = $cities[0]->name;
+
+          $cityslug = '-' . $cities[0]->slug;
+
+          config(['APP_CIDADE' => $city]);
+            Session::put('city', $city);
+            config(['APP_CIDADE_SLUG' => $cityslug]);
+            Session::put('cityslug', $cityslug);
+
+
+
+         $services = Service::where('home', 1)->with('category')->get();
+
         $faqs = Faq::all();
         $depoiments = Depoiments::all();
         $pages = Page::where('visible', 1)->get();
-
-        return view('site.home', compact('services', 'faqs', 'depoiments', 'pages'));
+        }
+        return view('site.home', compact('faqs', 'depoiments', 'pages', 'cityslug', 'city', 'services'));
     }
 
     public function category($slug){
 
-        $category = Category::where('slug', $slug )->first();
-        $services = Service::all();;
 
 
-        return view('site.category',compact('category', 'services'));
+    $city = $this->checaCidades();
+
+    $itemsemcidade = $slug;
+    $cityslug = $city;
+    $len = Str::length($city);
+
+    if ($len != 0){
+        $itemsemcidade2 = substr($slug, 0, -$len);
+
+        $servicetags = null;
+        $cityfind = substr($cityslug, 1, $len);
+
+        $citydata = City::where('slug', $cityfind)->first();;
+
+
+        $category = Category::whereSlug($itemsemcidade2)->first();
+
+        $services = Service::where('category_id',$category->id)->get();
+
+
+
     }
+
+        return view('site.category',compact('category', 'services', 'cityslug', 'citydata'));
+    }
+
 
     public function services($category, $service){
 
-        $categoryc = Category::where('slug', $category)->first();
+    $city = $this->checaCidades();
 
-        $servicec = Service::where('slug', $service)->first();
+    $cityslug = $city;
 
 
+    $len = Str::length($city);
+    if ($len != 0){
 
-        return view('site.service', compact('servicec', 'categoryc'));
+        $cityfind = substr($cityslug, 1, $len);
+
+        $citydata = City::where('slug', $cityfind)->first();;
+
+
+    $itemsemcidade = substr($category, 0, -$len);
+    $servsemcidade = substr($service, 0, -$len);
+    $servicetags = null;
+
+        $categoryc = Category::where('slug', $itemsemcidade)->first();
+
+        $servicec = Service::where('slug', $servsemcidade   )->first();
+        $related= Service::where('category_id', '=', $servicec->category->id)
+        ->where('id', '!=', $servicec->id)
+        ->get();
+
+
     }
-    public function tags($tag, $tagi, $service)
+        return view('site.service', compact('servicec', 'categoryc', 'cityslug', 'citydata', 'related'));
+
+}
+
+
+    public function tags($tagSlug, $tagi, $service)
     {
 
-        $tag = Tag::findOrfail($tagi)->where('slug', $tag)->first();;
+        $tag = Tag::where('id', $tagi)->first();
+
+        $cityslug = str_replace($tag->slug . '-' , "", $tagSlug);
+
+        $city = $this->checaCidades($cityslug);
+
+        $len = Str::length($city);
+        if ($len != 0){
+
+            $cityfind = substr($city, 1, $len);
+
+            $citydata = City::where('slug', $cityfind)->first();;
+
+
+        $servsemcidade = substr($service, 0, -$len);
+        $servicetags = null;
         $servicePhoto = Service::where('id', $service)->first();;
 
-        return view('site.tags', compact('tag', 'servicePhoto'));
+        // $category = Category::find($servicePhoto)->category()->first();
+        }
+        return view('site.tags', compact('tag', 'servicePhoto', 'citydata'));
     }
 
-    public function routes(){
 
-
-        //
-    }
 
 
 

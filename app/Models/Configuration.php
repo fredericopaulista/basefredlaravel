@@ -22,6 +22,7 @@ class Configuration extends Model implements HasMedia
 'city',
 'address',
 'state',
+'city_slug',
 'country',
 'neighborhood',
 'cep',

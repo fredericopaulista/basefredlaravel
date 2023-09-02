@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\SeoManual;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class SeoManualController extends Controller
 {
