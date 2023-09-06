@@ -28,7 +28,6 @@ class StoreServiceRequest extends FormRequest
             'category_id' => 'required',
             'description' => 'required|min:10',
             'briefDescription' => 'required|min:1|max:260',
-            'seoDescription' => 'required|min:1|max:260',
             'image' => 'mimes:png,jpg,webp,jpeg',
 'video' => 'required',
 'videoTitle' => 'required|min:10|max:70',

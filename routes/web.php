@@ -54,8 +54,10 @@ Route::middleware([
 Route::get('/', [SiteController::class, 'home'])->name('site.home');
 Route::get('/contato',[ContactController::class, 'index'])->name('site.contato');
 Route::post('/contatoenvia',[ContactController::class, 'store'])->name('site.contatoEnviar');
+Route::get('/politicas-de-privacidade', [SiteController::class, 'policy'])->name('site.policy');
+Route::get('/termos-de-uso', [SiteController::class, 'terms'])->name('site.terms');
+Route::get('/{single}', [SiteController::class, 'single'])->name('site.single');
 
-Route::get('/{category:slug}', [SiteController::class, 'category'])->name('site.categoria');
 Route::get('/{category:slug}/{service:slug}', [SiteController::class, 'services'])->name('site.servico');
 Route::get('/{tag:slug}/{tagid}/{service:id}', [SiteController::class, 'tags'])->name('site.tags');
 

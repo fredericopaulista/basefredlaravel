@@ -42,26 +42,28 @@ class ConfigurationController extends Controller
 
     public function update(Request $request, $id){
 
-        $data = Configuration::where('id', $id)->first();
+        $data = $request->all();
+		$config = Configuration::find($id)->first();
+
         if ($request->hasFile('image')) {
-			if (Storage::disk('public')->exists($data->image)) {
-				Storage::disk('public')->delete($data->image);
+			if (Storage::disk('public')->exists($config->image)) {
+				Storage::disk('public')->delete($config->image);
 			}
 
             $filePath = Storage::disk('public')->put('site/img', request()->file('image'));
             $data['image'] = $filePath;
 		}
         if ($request->hasFile('logoheader')) {
-			if (!empty($data->logoheader)) {
-				Storage::disk('public')->delete($data->logoheader);
+			if (!empty($config->logoheader)) {
+				Storage::disk('public')->delete($config->logoheader);
 			}
 
 			$filePath = Storage::disk('public')->put('site/img', request()->file('logoheader'));
             $data['logoheader'] = $filePath;
 		}
         if ($request->hasFile('banner_gif')) {
-			if (!empty($data->banner_gif)) {
-				Storage::disk('public')->delete($data->banner_gif);
+			if (!empty($config->banner_gif)) {
+				Storage::disk('public')->delete($config->banner_gif);
 			}
 
 			$filePath = Storage::disk('public')->put('site/img', request()->file('banner_gif'));
@@ -69,15 +71,15 @@ class ConfigurationController extends Controller
 		}
 
 		if ($request->hasFile('logofooter')) {
-			if (!empty($data->logofooter)) {
-				Storage::disk('public')->delete($data->logofooter);
+			if (!empty($config->logofooter)) {
+				Storage::disk('public')->delete($config->logofooter);
 			}
 
 			$filePath = Storage::disk('public')->put('site/img', request()->file('logofooter'));
             $data['logofooter'] = $filePath;
 		}
 
-        $data->save();
+        $config->update($data);
 
         return redirect()->back()->banner('Configurações atualizadas com sucesso.');;
 

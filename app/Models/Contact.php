@@ -12,12 +12,12 @@ class Contact extends Model
 {
     use HasFactory;
 
-    public $fillable = ['name', 'email', 'whatsapp', 'subject', 'message'];
+    public $fillable = ['name', 'email', 'whatsapp', 'subject', 'message', 'url'];
 
     public static function boot() {
 
         parent::boot();
-        
+
         static::created(function ($item) {
 
             $adminEmail = env('APP_EMAIL');

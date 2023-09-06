@@ -2,65 +2,9 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    @component('components.seo.headgeral')
+    @endcomponent
 
-    <title>@yield('title')</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="{{ asset('site/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('site/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('site/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('site/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('site/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-
-    <!-- Variables CSS Files. Uncomment your preferred color scheme -->
-    <link href="{{ asset('site/assets/css/variables.css') }}" rel="stylesheet">
-    <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
-
-    <!-- Template Main CSS File -->
-    <link href="{{ asset('site/assets/css/main.css') }}" rel="stylesheet">
-    @yield('topscripts')
-    <style>
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.1);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        .pulse-button {
-            animation-name: pulse;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-    </style>
 
 </head>
 
@@ -83,7 +27,7 @@
 
                     </li>
                     @foreach ($navlinks as $category)
-                        <li><a class="nav-link " href="{{ route('site.categoria', ['category' => $category->slug . config('APP_CIDADE_SLUG')]) }}"
+                        <li><a class="nav-link " href="{{ route('site.single', $category->slug . config('APP_CIDADE_SLUG')) }}"
                                 style="color:{{ $customization->nav_text_color }}!important" title="{{ $category->name . ' ' . config('APP_CIDADE')  }}">{{ $category->name }}</a>
                         </li>
                     @endforeach

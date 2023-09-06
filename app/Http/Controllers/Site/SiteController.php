@@ -61,8 +61,6 @@ class SiteController extends Controller
 
     public function category($slug){
 
-
-
     $city = $this->checaCidades();
 
     $itemsemcidade = $slug;
@@ -92,7 +90,8 @@ class SiteController extends Controller
 
     public function services($category, $service){
 
-    $city = $this->checaCidades();
+    
+        $city = $this->checaCidades();
 
     $cityslug = $city;
 
@@ -139,6 +138,10 @@ class SiteController extends Controller
 
             $citydata = City::where('slug', $cityfind)->first();;
 
+            $servicec = Service::where('id', $service   )->first();
+            $related= Service::where('category_id', '=', $servicec->category->id)
+            ->where('id', '!=', $servicec->id)
+            ->get();
 
         $servsemcidade = substr($service, 0, -$len);
         $servicetags = null;
@@ -146,7 +149,81 @@ class SiteController extends Controller
 
         // $category = Category::find($servicePhoto)->category()->first();
         }
-        return view('site.tags', compact('tag', 'servicePhoto', 'citydata'));
+        return view('site.tags', compact('tag', 'servicePhoto', 'citydata', 'related', 'cityslug'));
+    }
+
+    public function service(Request $request){
+        dd($request->all());
+        $configuration = Configuration::get()->first();
+        $cities = City::where('slug', $configuration->city_slug)->get();
+
+        if ($cities->count() == 1) {
+          $city = $cities[0]->name;
+
+          $cityslug = '-' . $cities[0]->slug;
+
+          config(['APP_CIDADE' => $city]);
+            Session::put('city', $city);
+            config(['APP_CIDADE_SLUG' => $cityslug]);
+            Session::put('cityslug', $cityslug);
+
+
+
+         $services = Service::where('home', 1)->with('category')->get();
+
+        $faqs = Faq::all();
+        $depoiments = Depoiments::all();
+        $pages = Page::where('visible', 1)->get();
+        }
+        return view('site.sevicesingle', compact('faqs', 'depoiments', 'pages', 'cityslug', 'city', 'services'));
+
+
+    }
+
+    public function single($slug)
+{
+    $city = $this->checaCidades();
+    $cityslug = $city;
+    // dataslug é o que sobra na slug sem a geo
+    $dataslug = str_replace($city . '' , "", $slug);
+
+    $citydataslug = str_replace($dataslug . '-' , "", $slug);
+    $citydata = City::where('slug', $citydataslug)->first();
+    $category = Category::where('slug', $dataslug)->first();
+
+    if(!$category){
+        $city = $this->checaCidades();
+
+
+        $dataslug = str_replace($city . '' , "", $slug);
+        $citydataslug = str_replace($dataslug . '-' , "", $slug);
+        $servicec = Service::where('slug', $dataslug   )->first();
+        $categoryc = Category::where('id', $servicec->category_id)->first();
+        $related= Service::where('category_id', '=', $servicec->category->id)
+        ->where('id', '!=', $servicec->id)
+        ->get();
+        $citydata = City::where('slug', $citydataslug)->first();
+        $cityslug = '-' .$city;
+
+        return view('site.servicesingle', compact('servicec', 'categoryc', 'cityslug', 'citydata', 'related'));
+    }
+
+
+            $services = Service::where('category_id',$category->id)->get();
+
+
+            return view('site.category',compact('category', 'services', 'cityslug', 'citydata'));
+
+
+}
+
+    public function policy(){
+
+        return view ('site.policy');
+    }
+    public function terms(){
+
+        return view ('site.terms');
     }
 
 

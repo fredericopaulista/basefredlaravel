@@ -64,9 +64,7 @@
 
                 <div class="section-header">
                     <h2>Contate-nos</h2>
-                    <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad
-                        dolores
-                        adipisci aliquam.</p>
+                    <p>Entre em contato conosco para um orçamento, reclamação ou sugestão.</p>
                 </div>
 
             </div>
@@ -85,9 +83,8 @@
                     <div class="col-lg-4">
 
                         <div class="info">
-                            <h3>Get in touch</h3>
-                            <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi
-                                minus.</p>
+                            <h3>Entre em contato</h3>
+                            <p></p>
 
                             <div class="info-item d-flex">
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>

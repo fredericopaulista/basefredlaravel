@@ -23,10 +23,10 @@
     <!-- Flatpickr -->
     <link type="text/css" href="{{ asset('admin/assets/css/vendor-flatpickr.css') }}" rel="stylesheet">
     <link type="text/css" href="{{ asset('admin/assets/css/vendor-flatpickr-airbnb.css') }}" rel="stylesheet">
-{{-- CKEditor CDN --}}
+    {{-- CKEditor CDN --}}
 
 
-@yield('css')
+    @yield('css')
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
@@ -63,6 +63,7 @@
 
                     <!-- <section class="max-w-6xl  mx-auto px-8 my-8"> -->
                     <section class="px-8 my-8">
+                        @include('sweetalert::alert')
 
                         @yield('content')
 
@@ -117,6 +118,7 @@
     <script src="{{ asset('admin/assets/js/pages/dashboard.js') }}"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     @yield('scriptsfooter')
+
 </body>
 
 </html>

@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\StoreServiceRequest;
-use App\Http\Requests\UpdateServiceRequest;
-use App\Models\Category;
-use App\Models\Service;
-use App\Models\ServiceFaq;
 use App\Models\Tag;
+use App\Models\Service;
+use App\Models\Category;
+use App\Models\ServiceFaq;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreServiceRequest;
+use App\Http\Requests\UpdateServiceRequest;
+use RealRashid\SweetAlert\Facades\Alert;
 
 
 class ServiceController extends Controller
@@ -61,16 +62,19 @@ class ServiceController extends Controller
             ]);
 
         }
-
         $service->tags()->sync($newtags);
+
 
         if($request->hasFile('image')){
             $extensionImage = $request->file('image')->extension();
             $newFileName = $request->title .'.'.$extensionImage;
             $service->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('services');
         }
+        Alert::success('Parabéns','Serviço Cadastrado com Sucesso!');
 
-        return redirect()->route('servicos.index')->banner('Serviço criado com sucesso.');;
+        return redirect()->route('servicos.index');
+
+
     }
 
     /**
@@ -89,6 +93,7 @@ class ServiceController extends Controller
     public function edit($id)
     {
         $categories = Category::all();
+
         $tags = Tag::all();
         $service = Service::where('id', $id)->first();
         $media = $service->getMedia('services');
@@ -122,17 +127,18 @@ class ServiceController extends Controller
 
         if($request->hasFile('image')){
             $extensionImage = $request->file('image')->extension();
-        $newFileName = $request->title .'.'.$extensionImage;
+            $newFileName = $request->title .'.'.$extensionImage;
             $data->media()->delete();
             $data->addMediaFromRequest('image')->usingFileName($newFileName)->toMediaCollection('services');
         }
         if (!$data->save()){
-            return redirect()->route('servicos.edit', $data->id)->banner('Ocorreu um erro ao atualizar o serviço');;
+            Alert::error('Ops', 'Ocorreu um erro ao atualizar o serviço');
+            return redirect()->route('servicos.edit', $data->id);
         }
 
+        Alert::success('Parabéns', 'Serviço atualizado com sucesso.');
 
-
-        return redirect()->route('servicos.index')->banner('Serviço atualizada com sucesso.');;
+        return redirect()->route('servicos.index');
     }
 
     /**
@@ -146,10 +152,11 @@ class ServiceController extends Controller
         if($photo){
             $photo->delete();
         }
+        $servicePhoto->tags()->detach();
         $service = Service::where('id', $id)->delete();
+        Alert::success('Parabéns', 'Serviço apagada com sucesso.');
 
-
-        return redirect()->route('servicos.index')->banner('Serviço apagada com sucesso.');
+        return redirect()->route('servicos.index');
     }
 
     public function createFaq($serviceId)

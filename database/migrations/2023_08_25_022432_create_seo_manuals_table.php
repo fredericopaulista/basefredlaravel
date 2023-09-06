@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('seo_manuals', function (Blueprint $table) {
             $table->id();
+            $table->string('seo_title');
+            $table->string('seo_url');
+            $table->string('seo_description');
+            $table->string('seo_og_title');
+            $table->string('seo_og_image');
+            $table->string('seo_og_description');
             $table->timestamps();
         });
     }

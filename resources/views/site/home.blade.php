@@ -1,4 +1,7 @@
 @extends('site.layout.master')
+@component('site.seo.home')
+@endcomponent
+
 
 @section('topscripts')
 @endsection
@@ -50,7 +53,7 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-activity icon"></i></div>
-                            <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                            <h4><a href="" class="stretched-link">Competência Jurídica</a></h4>
                             <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -58,7 +61,7 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                            <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
+                            <h4><a href="" class="stretched-link">Ética Profissional</a></h4>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -66,7 +69,7 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                            <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
+                            <h4><a href="" class="stretched-link">Excelência no Atendimento ao Cliente</a></h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -74,7 +77,7 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                            <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+                            <h4><a href="" class="stretched-link">Eficiência Operacional</a></h4>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -101,7 +104,7 @@
                             <div class="service-item">
                                 <div class="img">
 
-                                    <a href="{{ route('site.servico',['category' => $service->category->slug . $cityslug, 'service' => $service->slug . $cityslug]) }}">
+                                    <a href="{{ route('site.single', $service->slug . $cityslug) }}">
                                     <img src="{{ $service->getFirstMediaUrl('services') }}" class="img-fluid"
                                         alt="{{ $service->title }}"></a>
                                 </div>

@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('configurations', function (Blueprint $table) {
             $table->id();
             $table->string('company');
+            $table->string('title');
+            $table->string('description');
+            $table->string('keywords');
             $table->string('segment');
             $table->string('slug');
             $table->string('city_slug');
@@ -35,6 +38,7 @@ return new class extends Migration
             $table->string('twitter')->nullable();
             $table->string('linkedin')->nullable();
             $table->string('youtube')->nullable();
+            $table->string('openaikey')->nullable();
 
 
             $table->timestamps();

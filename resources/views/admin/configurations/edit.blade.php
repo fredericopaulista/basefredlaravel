@@ -21,6 +21,16 @@
                             :value="$configuration->company" required placeholder="Nome da Empresa" />
                     </div>
                     <div class="mt-4 px-4">
+                        <x-label for="title" value="{{ __('Título SEO') }}" />
+                        <x-input id="title" class="block mt-1 w-full" type="text" name="title"
+                            :value="$configuration->title" required placeholder="Título SEO" />
+                    </div>
+                    <div class="mt-4 px-4">
+                        <x-label for="keywords" value="{{ __('Palavras Chaves') }}" />
+                        <x-input id="keywords" class="block mt-1 w-full" type="text" name="keywords"
+                            :value="$configuration->keywords" required placeholder="Palavras Chaves" />
+                    </div>
+                    <div class="mt-4 px-4">
                         <x-label for="segment" value="{{ __('Segmento da Empresa') }}" />
                         <x-input id="segment" class="block mt-1 w-full" type="text" name="segment"
                             :value="$configuration->segment" required placeholder="Segmento da Empresa" />
@@ -101,6 +111,11 @@
                             <x-label for="youtube" value="{{ __('Link do youtube') }}" />
                             <x-input id="youtube" class="block mt-1 w-3/4" type="text" name="youtube"
                                 :value="$configuration->youtube" placeholder="https://www.youtube.com/xxxxxx" />
+                        </div>
+                        <div class="mt-4 px-4">
+                            <x-label for="openaikey" value="{{ __('Chave API OpenAI') }}" />
+                            <x-input id="openaikey" class="block mt-1 w-3/4" type="password" name="openaikey"
+                                :value="$configuration->openaikey" placeholder="Chave API OpenAI" />
                         </div>
 
                         <div class="mt-4 px-4">

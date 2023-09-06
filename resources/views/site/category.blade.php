@@ -1,5 +1,9 @@
 @extends('site.layout.master')
 
+@component('site.seo.category')
+@endcomponent
+
+
 
 @section('content')
     <main id="main">
@@ -11,7 +15,7 @@
                 <div class="d-flex justify-content-between align-items-center" style="padding: 10px">
 
                     <ol>
-                        <li><a href="{{ route('site.home') }}">Início</a></li>
+                        <li><a href="{{ route('site.home') }}" title="{{ $category->name }}">Início</a></li>
                         <li>{{ $category->name }} {{ $citydata->name }}</li>
                     </ol>
                 </div>
