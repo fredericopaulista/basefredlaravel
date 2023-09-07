@@ -1,6 +1,6 @@
 @extends('site.layout.master')
 
-@component('site.seo.category')
+@component('site.seo.category', ['category' => $category, 'services' => $services, 'citydata' => $citydata])
 @endcomponent
 
 

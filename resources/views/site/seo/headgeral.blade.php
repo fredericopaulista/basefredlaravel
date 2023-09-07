@@ -1,13 +1,15 @@
 
-{{-- @php
+@php
 
 $titulo = View::getSection('titulo', config('site')->name . ' ' . config('APP_CIDADE')) ;
 $titulonet = View::getSection('titulonet', config('site')->name . ' ' . config('APP_CIDADE')) ;
 $descricao =  View::getSection('description', config('site')->description);
 $descricaonet =  View::getSection('descriptionnet', config('site')->description_net);
 $ogdescription = View::getSection('seoogdescription');
+$geoposition = View::getSection('geo');
+
 $keywords = View::getSection('keywords', config('site')->keywords);
-$imagem = View::getSection('imagem', asset(config('site')->poster));
+$imagem = View::getSection('imagem', asset($config('site')->poster));
 $imagemcat = html_entity_decode((View::getSection('imagemcat', '')));
 $imagempre = html_entity_decode((View::getSection('imagempre', '')));
 $sitename = View::getSection('sitename', config('site')->name . ' ' . config('APP_CIDADE'));
@@ -15,14 +17,14 @@ $Checa = substr(substr(url()->full(), strrpos(url()->full(), '?page')),1,4);
 if ($Checa == 'page') $canonical = env('APP_URL'); else $canonical = Request::url();
 
 
-@endphp --}}
+@endphp
 
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="website" />
-<title>@yield('title')</title>
+<title>{{ $titulo }}</title>
 <meta name="title" content="{{ $titulo }}" />
 <meta name="twitter:title" content="{{ $titulonet }}" />
 <meta property="og:title" content="{{ $titulonet }}" />
@@ -63,17 +65,15 @@ echo(html_entity_decode($imagemcat))
 
 @php
 
-if (config('APP_GEO')){
-    echo(config('APP_GEO'));
-}else{
-    if(config('APP_CIDADE')){
-        echo (Session::get('geo', ''));
+
+    if($citydata == null){
+        {!! $citydata->geoposition !!}
     }else{
         echo '<meta name="geo.region" content="BR" />
             <meta name="geo.position" content="-10.333333;-53.2" />
              <meta name="ICBM" content="-10.333333, -53.2" />';
     }
-}
+
 @endphp
 
 
@@ -114,12 +114,6 @@ if (isset($imagempre)) echo(html_entity_decode($imagempre));
 
  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
  <link href="{{ asset('site/assets/css/variables.css') }}" rel="stylesheet">
- <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
- <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
- <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
- <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
- <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
- <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
 
  <!-- Template Main CSS File -->
  <link href="{{ asset('site/assets/css/main.css') }}" rel="stylesheet">

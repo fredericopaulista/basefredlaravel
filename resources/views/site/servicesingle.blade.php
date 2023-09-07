@@ -1,5 +1,6 @@
 @extends('site.layout.master')
-
+@component('site.seo.service', ['servicec' => $servicec, 'categoryc' => $categoryc, 'cityslug' => $cityslug, 'citydata' => $citydata, 'related' => $related, 'tags' => $byTag])
+@endcomponent
 
 @section('content')
 <main id="main">

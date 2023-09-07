@@ -29,7 +29,7 @@ class Tag extends Model
 
     public function services(){
 
-        return $this->hasOne(Service::class);
+        return $this->hasOne(Service::class, 'service_tag');
     }
 
     public function media(){
@@ -43,5 +43,5 @@ class Tag extends Model
             set: fn (string $value) => ucwords($value),
         );
     }
-   
+
 }

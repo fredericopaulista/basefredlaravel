@@ -90,7 +90,7 @@ class SiteController extends Controller
 
     public function services($category, $service){
 
-    
+
         $city = $this->checaCidades();
 
     $cityslug = $city;
@@ -203,9 +203,11 @@ class SiteController extends Controller
         ->where('id', '!=', $servicec->id)
         ->get();
         $citydata = City::where('slug', $citydataslug)->first();
+        $tags = Service::where('service_id', $servicec->tag_id)->get();
+        dd($tags);
         $cityslug = '-' .$city;
 
-        return view('site.servicesingle', compact('servicec', 'categoryc', 'cityslug', 'citydata', 'related'));
+        return view('site.servicesingle', compact('servicec', 'categoryc', 'cityslug', 'citydata', 'related', 'tags'));
     }
 
 

@@ -15,10 +15,10 @@
     if ($seoM) {
         //SEO MANUAL HOME
         if ($seoM->seo_og_image) {
-            $imagem = asset('storage/' . $seoM->seo_og_image);
+            $imagem = asset('storage/' . $seoM->seo_og_description);
         } else {
-            if (isset($page->image)) {
-                $imagem = asset('storage/' . $page->image);
+            if (isset($configuration->image)) {
+                $imagem = asset('storage/' . $configuration->image);
             } else {
                 $imagem = asset('storage/' . $configuration->image);
             }
@@ -29,7 +29,7 @@
         $description = $seoM->seo_description;
         $iniciotags = $description;
 
-        $ogdescription = $seoM->seo_og_description;
+        $ogdescription = $seoM->seo_description;
 
         $sitename = $seoM->seo_title;
         $tituloDescription = $seoM->seo_description;
