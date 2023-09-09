@@ -110,7 +110,7 @@ class SiteController extends Controller
 
         $categoryc = Category::where('slug', $itemsemcidade)->first();
 
-        $servicec = Service::where('slug', $servsemcidade   )->first();
+        $servicec = Service::where('slug', $servsemcidade )->first();
         $related= Service::where('category_id', '=', $servicec->category->id)
         ->where('id', '!=', $servicec->id)
         ->get();
@@ -197,23 +197,24 @@ class SiteController extends Controller
 
         $dataslug = str_replace($city . '' , "", $slug);
         $citydataslug = str_replace($dataslug . '-' , "", $slug);
+
         $servicec = Service::where('slug', $dataslug   )->first();
         $categoryc = Category::where('id', $servicec->category_id)->first();
         $related= Service::where('category_id', '=', $servicec->category->id)
         ->where('id', '!=', $servicec->id)
         ->get();
         $citydata = City::where('slug', $citydataslug)->first();
-        $tags = Service::where('service_id', $servicec->tag_id)->get();
-        dd($tags);
+        // $tags = Service::where('service_id', $servicec->tag_id)->get();
+
         $cityslug = '-' .$city;
 
-        return view('site.servicesingle', compact('servicec', 'categoryc', 'cityslug', 'citydata', 'related', 'tags'));
+        return view('site.servicesingle', compact('servicec', 'categoryc', 'cityslug', 'citydata', 'related'));
     }
 
 
             $services = Service::where('category_id',$category->id)->get();
 
-
+           
             return view('site.category',compact('category', 'services', 'cityslug', 'citydata'));
 
 
@@ -227,8 +228,25 @@ class SiteController extends Controller
 
         return view ('site.terms');
     }
+    public function mapadosite(){
+        $rowperpage = 20;
+        $pages = Page::where('visible', '1')->orderBy('title')->get();
+ 		$page = Page::where('slug', 'mapa-do-site')->first();
+        $services = Service::all();
+        $categories = Category::all();
+	    $totalrecords = City::where('print', '1')->select('*')->count();
+        $cities = City::select('*')->orderBy('name')
+                   ->skip(0)
+                   ->take($rowperpage)
+                   ->get();
 
+        return view('site.mapadosite', compact('cities', 'categories', 'services', 'page', 'pages', 'rowperpage', 'totalrecords' ));
+    }
 
+    public function sitemap(){
+
+        return view('site.sitemap');
+    }
 
 
 

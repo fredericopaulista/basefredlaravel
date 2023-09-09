@@ -5,7 +5,42 @@
     @component('components.seo.headgeral')
     @endcomponent
 
+<style>
 
+.cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    color: #ecf0f1;
+    background: #212327 url({{  asset('site/assets/img/image.webp') }});
+}
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+</style>
+@yield('schema')
 </head>
 
 <body>
@@ -15,7 +50,7 @@
         style="background:{{ $customization->bg_header_color }}!important">
         <div class="container-fluid d-flex align-items-center justify-content-between" id="header-div">
             <a href="{{ env('APP_URL') }}" title="{{ $configuration->company }}" alt="{{ $configuration->company }}">
-                <img src="{{ asset('storage/' . $configuration->logoheader) }}" height="60px">
+                <img id="logoId" src="{{ asset('storage/' . $configuration->logoheader) }}" height="60px">
 
             </a>
 
@@ -23,7 +58,7 @@
                 <ul>
 
                     <li class="nav-link"><a href="{{ env('APP_URL') }}"
-                            style="color:{{ $customization->nav_text_color }}!important"> Início </a>
+                            style="color:{{ $customization->nav_text_color }}!important" title="Início"> Início </a>
 
                     </li>
                     @foreach ($navlinks as $category)

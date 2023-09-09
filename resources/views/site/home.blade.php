@@ -5,7 +5,52 @@
 
 @section('topscripts')
 @endsection
-
+@section('schema')
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "{{ $configuration->company }} {{ $configuration->city }}",
+      "url": "{{ env('APP_URL') }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ env('APP_URL') }}?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": " {{ $configuration->company }}",
+      "url": "{{ env('APP_URL') }}",
+      "logo": "{{ asset($configuration->logoheader) }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ $configuration->phone }}",
+        "contactType": "Atendimento ao Cliente",
+        "contactOption": "Grátis",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      },
+      "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ $configuration->address }}",
+      "addressLocality": "{{ $configuration->city }}",
+      "addressRegion": "{{ $configuration->state }}",
+      "postalCode": "{{ $configuration->cep }}",
+      "addressCountry": "BR"
+    },
+      "sameAs": [
+        "{{ $configuration->facebook }}",
+        "{{ $configuration->instagram }}",
+        "{{ $configuration->youtube }}",
+        "{{ $configuration->linkedin }}"
+      ]
+    }
+    </script>
+@endsection
 @section('content')
     <section id="hero-animated" class="hero-animated d-flex align-items-center">
         <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"

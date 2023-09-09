@@ -1,5 +1,5 @@
 @extends('site.layout.master')
-@component('site.seo.service', ['servicec' => $servicec, 'categoryc' => $categoryc, 'cityslug' => $cityslug, 'citydata' => $citydata, 'related' => $related, 'tags' => $byTag])
+@component('site.seo.servicesingle', ['servicec' => $servicec, 'categoryc' => $categoryc, 'cityslug' => $cityslug, 'citydata' => $citydata, 'related' => $related])
 @endcomponent
 
 @section('content')

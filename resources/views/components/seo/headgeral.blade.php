@@ -1,4 +1,5 @@
 <?php
+$cityinfo = View::getSection('cityinfo');
 
 $titulo = View::getSection('titulo', $configuration->segment . ' ' . config('APP_CIDADE'));
 $titulonet = View::getSection('titulonet', $configuration->segment . ' ' . config('APP_CIDADE'));
@@ -73,13 +74,20 @@ if ($Checa == 'page') {
 <link href="{{ $configuration->email }}?rel=author" rel="publisher" />
 <meta name="email" content="{{ $configuration->email }}" />
 
-{{-- @php
-    if (config('APP_GEO')) {
-        echo config('APP_GEO');
-    } else {
-        echo Session::get('geo', '');
+@php
+
+if (config('APP_GEO')){
+    echo(config('APP_GEO'));
+}else{
+    if(config('APP_CIDADE')){
+        echo (Session::get('geo', ''));
+    }else{
+        echo '<meta name="geo.region" content="BR" />
+            <meta name="geo.position" content="-10.333333;-53.2" />
+             <meta name="ICBM" content="-10.333333, -53.2" />';
     }
-@endphp --}}
+}
+@endphp
 
 
 <link rel="canonical" href="{{ $canonical }}">

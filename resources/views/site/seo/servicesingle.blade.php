@@ -10,11 +10,11 @@ $tituloservico = '';
 
 if (isset($byTag)) {
     $t1 = $byTag->name . ' ' . config('APP_CIDADE');
-    $t2 = $servicePhoto->name . ' ' . config('APP_CIDADE');
+    $t2 = $servicec->name . ' ' . config('APP_CIDADE');
     $tituloservico = Str::limit($t1, $limit = 120, $end = '') . ' | ' . Str::limit($t2, $limit = 120, $end = '');
 } else {
-    $t1 = $servicePhoto->name . ' ' . config('APP_CIDADE');
-    $t2 = $servicePhoto->name . $cidade;
+    $t1 = $servicec->name . ' ' . config('APP_CIDADE');
+    $t2 = $servicec->name . $cidade;
 
 
     if (isset($area)) {
@@ -50,18 +50,18 @@ if (isset($servicetags)) {
 
 } else {
     if(config('APP_CIDADE') != ''){
-    $tags = $servicePhoto->name . ', ' . $servicePhoto->name . '' .$cidade . config('APP_CIDADE');
+    $tags = $servicec->name . ', ' . $servicec->name . '' .$cidade . config('APP_CIDADE');
     }else{
-    $tags = $servicePhoto->name  . ', ';
+    $tags = $servicec->name  . ', ';
     }
 }
-if ($servicePhoto->image)
-$imagem = asset('storage/' . $servicePhoto->image);
+if ($servicec->image)
+$imagem = asset('storage/' . $servicec->image);
 else
 $imagem = asset(env('APP_IMG_POSTER'));
 
-if (strlen($servicePhoto->name) <= 30){
-//$sitename = trim($servicePhoto->name . ' ' . config('site')->segment . ' ' . config('APP_CIDADE'));
+if (strlen($servicec->name) <= 30){
+//$sitename = trim($servicec->name . ' ' . config('site')->segment . ' ' . config('APP_CIDADE'));
 
      $sitename = trim($tituloservico);
 
@@ -70,7 +70,7 @@ if (strlen($servicePhoto->name) <= 30){
 
 }
 
-//if (!$servicePhoto->description) $description = str_replace(",", "✔", $tags); else $description = $servicePhoto->description;
+//if (!$servicec->description) $description = str_replace(",", "✔", $tags); else $description = $servicec->description;
 $description = str_replace(",", " ✔", $tags);
 //$description = str_replace([',','.'], "✔", $tags);
 

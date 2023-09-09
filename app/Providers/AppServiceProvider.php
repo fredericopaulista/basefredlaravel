@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
         $customization = Customization::first();
         $pages = Page::where('visible', 1)->get();
 
-
+        
         view()->share('configuration', $configuration);
         view()->share('navlinks', $navlinks);
         view()->share('pages', $pages);

@@ -225,7 +225,7 @@ details {
 # Header
 --------------------------------------------------------------*/
 .header {
-  padding: 15px 0;
+  padding: 15px 45px;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -2728,7 +2728,9 @@ padding: 0;
 /*--------------------------------------------------------------
 # Blog Sidebar
 --------------------------------------------------------------*/
+
 .blog .sidebar {
+
   padding: 30px;
   box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
 }
@@ -3254,3 +3256,4 @@ padding: 0;
   background: var(--color-primary);
   text-decoration: none;
 }
+

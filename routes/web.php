@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\DepoimentsController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\SeoManualController;
+use App\Http\Controllers\Admin\SitemapController;
 use App\Http\Controllers\Site\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,7 @@ Route::middleware([
     Route::resource('admin/paginas', PageController::class);
     Route::resource('admin/customiza', CustomizationController::class);
     Route::resource('admin/seomanual', SeoManualController::class);
+    Route::resource('admin/sitemap', SitemapController::class);
 });
 
 // Rotas do Site
@@ -56,6 +58,7 @@ Route::get('/contato',[ContactController::class, 'index'])->name('site.contato')
 Route::post('/contatoenvia',[ContactController::class, 'store'])->name('site.contatoEnviar');
 Route::get('/politicas-de-privacidade', [SiteController::class, 'policy'])->name('site.policy');
 Route::get('/termos-de-uso', [SiteController::class, 'terms'])->name('site.terms');
+Route::get('/mapa-do-site', [SiteController::class, 'mapadosite'])->name('site.mapadosite');
 Route::get('/{single}', [SiteController::class, 'single'])->name('site.single');
 
 Route::get('/{category:slug}/{service:slug}', [SiteController::class, 'services'])->name('site.servico');

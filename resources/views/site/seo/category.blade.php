@@ -1,5 +1,5 @@
 @php
-$citydata = $citydata->geoposition;
+
 
     use App\Models\SeoManual;
     if (isset($category->image)) {
@@ -35,18 +35,16 @@ $citydata = $citydata->geoposition;
         $sitename = $seoM->seo_title;
         $tituloDescription = $seoM->seo_description;
         $tags = $seoM->seo_description;
+        $citydata = $citydata->geoposition;
     } else {
-        //SEO DINÂMICO CATEGORIA
-        // foreach ($items as $item) {
-        //   $imagemcat = $imagemcat . '<meta name="twitter:image" content="'. asset('storage/' . $item->image) .'" /><meta property="og:image" content="'. asset('storage/' . $item->image) .'" />';
-        //   $imagempre = $imagempre . '<link rel="preload" as="image" href="'. asset('storage/' . $item->image) .'">';
-        // }
+
         if ($category->title) {
             $title = $category->title;
 
         } else {
             $title = $category->title;
         }
+        $titulo2 = $title . ' ' . config('APP_CIDADE');
 
         if ($category->seoDescription) {
             $description = $category->seoDescription;
@@ -54,10 +52,11 @@ $citydata = $citydata->geoposition;
             $description = $title;
         }
 
-        config('APP_CIDADE') ? ($emcidade = ' em ' . config('APP_CIDADE')) : ($emcidade = '');
+         config('APP_CIDADE') ? ($emcidade = ' em ' . config('APP_CIDADE')) : ($emcidade = '');
 
         if (config('APP_CIDADE')) {
             $titulo = $title . ' ' . config('APP_CIDADE') . ' | ' . $title . $emcidade;
+
         } else {
             $titulo = $title . ' | ' . trim(config('site')->title);
         }
@@ -75,14 +74,15 @@ $citydata = $citydata->geoposition;
         }
 
         if (config('APP_CIDADE')) {
-            $tags = $titulo . ', ' . $title . $emcidade . ', ' . $description;
+            $tags = $titulo2 . ', ' . $title . $emcidade . ', ' . $description;
 
             if ($category->description_seo) {
                 $description = $category->description_seo;
 
                 $description = $description;
             } else {
-                $description = $titulo . ' ✔ ' . implode(', ', $listaservicos);
+                $description = $titulo2 . ' ✔ ' . implode(', ', $listaservicos);
+
             }
         } else {
             $tags = $description . ' ✔ ' . implode(', ', $listaservicos);
@@ -90,18 +90,24 @@ $citydata = $citydata->geoposition;
 
             $description = str_replace(',', '✔', $description);
         }
+        $ogdescription = $tags . ' , ' . implode(', ', $listaservicos);
+        $cityinfo = str_replace("\n"," ", $citydata->geoposition);
+
+
     }
 
 @endphp
 
 @section('titulo', $titulo)
-@section('citydata', $citydata)
+
 @section('sitename', $sitename)
 @section('titulonet', $titulo)
 
 @section('description', $description)
 @section('descriptionnet', $description)
 @section('seoogdescription', $ogdescription ?? '')
+@section('cityinfo', $cityinfo)
+
 @section('keywords', $tags)
 @section('imagem', $imagem)
 @section('imagemcat', $imagemcat)

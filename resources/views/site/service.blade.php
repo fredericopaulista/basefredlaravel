@@ -1,6 +1,222 @@
 @extends('site.layout.master')
-@component('site.seo.service', ['servicec' => $service])
+@component('site.seo.service', [
+    'servicec' => $servicec,
+    'categoryc' => $categoryc,
+    'cityslug' => $cityslug,
+    'citydata' => $citydata,
+    'related' => $related,
+])
 @endcomponent
+@section('schema')
+    @php
+        $canonical = Request::url();
+    @endphp
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "{{ $configuration->company }} {{ $configuration->city }}",
+    "url": "{{ env('APP_URL') }}",
+    "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ env('APP_URL') }}?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+    }
+}
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "{{ $servicec->name }} {{ $citydata->name }}",
+    "description": "{{ $servicec->briefDescription }}",
+    "thumbnailUrl": "{{ $servicec->getFirstMediaUrl('services') }}",
+    "uploadDate": "2021-04-19",
+    "duration": "PT03M14S",
+    "publisher": {
+    "@type": "Organization",
+    "name": "{{ $configuration->company }}",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "{{ asset($configuration->logoheader) }}",
+        "width": 600,
+        "height": 60
+    }
+    },
+    "contentUrl": "{{ $canonical }}",
+    "embedUrl": "https://www.youtube.com/watch?v=NJuF950RqLo"
+}
+</script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Service",
+      "serviceType": "Desentupimento de Esgoto Curitiba",
+       "description": "desentupimento de esgoto com medidas básicas A questão é que muitas vezes o barato sai caro  Juntamente com o prejuízo decorrente da",
+       "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "93",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "name": "Desentupimento de Esgoto",
+          "image": "https://www.desentupidoraabagi.com.br/wp-content/uploads/2021/04/Desentupimento-de-Esgoto-Curitiba.webp",
+          "hasMap":"",
+          "address": "R FRANCISCO PORTES, 463",
+          "telephone": "554130352148",
+          "priceRange": "À COMBINAR"
+            }
+        },
+        "name": "LocalBusiness",
+        "url": "https://www.desentupidoraabagi.com.br/desentupimento-de-esgoto-curitiba/",
+
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ $configuration->company }} {{ $configuration->city }}",
+          "logo":"{{ asset($configuration->logoheader) }}",
+          "url":"{{ env('APP_URL') }}",
+          "image": "{{ $servicec->getFirstMediaUrl('services') }}",
+          "hasMap":"",
+          "address": "{{ $configuration->address }}",
+          "telephone": "55{{ $configuration->phone }}",
+          "email": "{{ $configuration->email }}",
+          "priceRange": "À COMBINAR"
+         },
+       "areaServed": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                   "latitude": "-19.922732",
+               "longitude": "-43.945095"
+                },
+               "geoRadius": "1500000"
+            },
+       "review": [
+
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "name": "{{ $servicec->name }}",
+          "image": "{{ $servicec->getFirstMediaUrl('services') }}",
+          "address" : "{{ $configuration->address }}",
+          "telephone": "55{{ $configuration->phone }}",
+          "priceRange": "À COMBINAR"
+        },
+        "name": "Contratei a Abagi por recomendação de um amigo para fazer um serviço de desentupimento de esgoto na minha casa da praia, por conta das chuvas os canos de saida acabaram entupindo com areia. Resolveram rapidamente o problema, recomendo.",
+        "author": {
+          "@type": "Person",
+          "name": "Rodrigo Nunes"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ $configuration->company }}"
+          },
+        "datePublished": "2023-07-05",
+        "reviewRating": {
+          "@type": "Rating",
+          "description": "Já contratei o serviço de Desentupimento de Esgoto Curitiba | Desentupidora Curitiba Curitiba  aqui mesmo! e Por último  Contratei a Abagi por recomendação de um amigo para fazer um serviço de desentupimento de esgoto na minha casa da praia, por conta das chuvas os canos de saida acabaram entupindo com areia. Resolveram rapidamente o problema, recomendo.",
+          "ratingValue": "5",
+          "id": "https://www.desentupidoraabagi.com.br/review/rodrigo-nunes/",
+          "url": "https://www.desentupidoraabagi.com.br/review/rodrigo-nunes/"
+        }
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "name": "{{ $servicec->name }}",
+          "image": "{{ $servicec->getFirstMediaUrl('services') }}",
+          "address" : "{{ $configuration->city }}",
+          "telephone": "55{{ $configuration->phone }}",
+          "priceRange": "À COMBINAR"
+        },
+        "name": "Contratei um serviço de {{ $servicec->name }} e fiquei muito satisfeito. A equipe técnica foi profissional e utilizou equipamentos de qualidade, eliminando completamente meus problemas. Recomendo o serviço!",
+        "author": {
+          "@type": "Person",
+          "name": "Fernando Pires"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ $configuration->company }}"
+          },
+        "datePublished": "2023-06-02",
+        "reviewRating": {
+          "@type": "Rating",
+          "description": "Já contratei o serviço de Desentupimento de Esgoto Curitiba | Desentupidora Curitiba Curitiba  aqui mesmo! e Por último  Contratei um serviço de Desentupimento de Esgoto e fiquei muito satisfeito. A equipe técnica foi profissional e utilizou equipamentos de qualidade, eliminando completamente as obstruções. Recomendo o serviço!",
+          "ratingValue": "5",
+          "id": "https://www.desentupidoraabagi.com.br/review/fernando-pires/",
+          "url": "https://www.desentupidoraabagi.com.br/review/fernando-pires/"
+        }
+      }
+    ]
+    }
+    </script>
+    @foreach ($related as $related_service)
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "{{ $configuration->name }}",
+          "description": "Somos a melhor desentupidora Curitiba e região, limpa fossa e hidrojateamento ligue: (041) 3035-2148
+        Desentupidora 24 horas em Curitiba e Região Metropolita
+        ",
+          "image": "{{ asset('storage/' . $configuration->logoheader) }}",
+          "@id": "{{ env('APP_URL') }}/#logoId",
+          "url": "{{ env('APP_URL') }}",
+          "telephone": "55{{ $configuration->phone }}",
+          "priceRange": "à Combinar",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ $configuration->address }}",
+            "addressLocality": "{{ $configuration->city }}",
+            "addressRegion": "{{ $configuration->state }}",
+            "postalCode": "{{ $configuration->cep }}",
+            "addressCountry": "BR"
+          },
+
+          "areaServed": {
+                    "@type": "GeoCircle",
+                    "geoMidpoint": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "-19.922732",
+                        "longitude": "-43.945095"
+                    },
+                    "geoRadius": "1500000"
+                },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviço de Desentupidora",
+            "itemListElement": [
+              {
+                "@type": "OfferCatalog",
+                "name": "{{ $categoryc->name }} {{ $citydata->name }}",
+                "itemListElement": [
+
+          {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "{{ $related_service->name }}",
+                      "url": "{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}",
+                      "image": "{{ $related_service->getFirstMediaUrl('services') }}"
+                    }
+                  },
+{
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Serviço de {{ $configuration->segment }} em {{ $configuration->city }}"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+        </script>
+        @endforeach
+@endsection
 
 @section('content')
     <main id="main">
@@ -13,7 +229,8 @@
 
                     <ol>
                         <li><a href="{{ env('APP_URL') }}" title="{{ $categoryc->name }}">Início</a></li>
-                        <li><a href="{{ route('site.single', $categoryc->slug . $cityslug) }}" title="{{ $categoryc->name }} {{ $citydata->name }}">{{ $categoryc->name }}
+                        <li><a href="{{ route('site.single', $categoryc->slug . $cityslug) }}"
+                                title="{{ $categoryc->name }} {{ $citydata->name }}">{{ $categoryc->name }}
                                 {{ $citydata->name }}</a></li>
                         <li>{{ $servicec->name }} {{ $citydata->name }}</li>
                     </ol>
@@ -34,7 +251,8 @@
                             <h2 class="title">{{ $servicec->name }} {{ $citydata->name }}</h2><br>
                             <p>{{ $servicec->briefDescription }}</p>
                             <div class="post-img" style="margin-top: 10px">
-                                <img src="{{ $servicec->getFirstMediaUrl('services') }}" alt="" class="img-fluid">
+                                <img src="{{ $servicec->getFirstMediaUrl('services') }}"
+                                    alt="{{ $servicec->name }} {{ $citydata->name }}" class="img-fluid">
                             </div>
 
 
@@ -96,11 +314,15 @@
                                                 substr($useragent, 0, 4)))
                                         <a id="whats-menu"
                                             href="https://api.whatsapp.com/send?phone={{ $configuration->whatsapp }}&amp;text=Entrei em contato através do site {{ Request::url() }}"
-                                             title="Orçamento" target="_blank"><img src="{{ asset('storage/' . $configuration->banner_gif)}}" alt="{{ $servicec->name }}" width="99%"></a>
+                                            title="Orçamento" target="_blank"><img
+                                                src="{{ asset('storage/' . $configuration->banner_gif) }}"
+                                                alt="{{ $servicec->name }}" width="99%"></a>
                                     @else
                                         <a id="whats-menu"
                                             href="https://web.whatsapp.com/send?phone={{ $configuration->whatsapp }}&amp;text=Entrei em contato através do site {{ Request::url() }}"
-                                             title="Orçamento" target="_blank"><img src="{{ asset('storage/' . $configuration->banner_gif)}}" alt="{{ $servicec->name }}" width="99%"></a>
+                                            title="Orçamento" target="_blank"><img
+                                                src="{{ asset('storage/' . $configuration->banner_gif) }}"
+                                                alt="{{ $servicec->name }}" width="99%"></a>
                                     @endif
 
                                 </div>
@@ -195,7 +417,8 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <h4 class="title" style="margin-top:20px;text-align:center;">Serviços Relacionados {{ $servicec->name }} {{ $citydata->name }}</h4><br>
+                    <h4 class="title" style="margin-top:20px;text-align:center;">Serviços Relacionados
+                        {{ $servicec->name }} {{ $citydata->name }}</h4><br>
                     <div class="row gy-5">
                         @foreach ($related as $related_service)
                             <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
@@ -211,7 +434,8 @@
                                         <div class="icon">
                                             {{-- <i class="bi bi-chat-square-text"></i> --}}
                                         </div>
-                                        <a href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}" class="stretched-link">
+                                        <a href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}"
+                                            class="stretched-link">
                                             <h3>{{ $related_service->title }}</h3>
                                         </a>
                                         <p>{{ $related_service->briefDescription }}</p>
