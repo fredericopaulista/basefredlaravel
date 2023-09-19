@@ -8,6 +8,8 @@ use App\Models\Category;
 use App\Models\Service;
 use App\Models\Sitemap;
 use App\Models\City;
+use App\Models\Page;
+use App\Models\Tag;
 use Carbon\Carbon;
 use Artisan;
 use View;
@@ -16,6 +18,10 @@ use DB;
 use Session;
 use File;
 use Illuminate\Support\Facades\Storage;
+use RealRashid\SweetAlert\Facades\Alert;
+use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\SitemapIndex;
+
 
 use Illuminate\Http\Response;
 
@@ -38,12 +44,12 @@ class SitemapController extends Controller
     {
         $services = Service::all();
         $categories = Category::all();
-        return view('admin.sitemaps.create', compact('services','categories'));
+        $tags = Tag::all();
+        return view('admin.sitemaps.create', compact('services','categories', 'tags'));
     }
 
-    public function store(Request $request)
+    public function storeold(Request $request)
     {
-
         $data = $request->all();
 
         $name = '';
@@ -109,7 +115,7 @@ class SitemapController extends Controller
 
         if ($arraycategories == null && $arrayservices == null) {
 
-        $pages = Page::where('visible', '1')->inRandomOrder()->get();
+        $pages = Page::where('print', '1')->inRandomOrder()->get();
         $totalgeral = $totalgeral + $pages->count();
         $result = View::make('sitemap.sitemap-pages', ['pages' => $pages]);
         Storage::put('public/sitemaps/basic/'. $name .'-pages-' . $pages->count() . '.xml', $result);
@@ -133,7 +139,7 @@ class SitemapController extends Controller
         Storage::put('public/sitemaps/basic/'. $name .'-services-' . $services->count() . '.xml', $result);
         array_push($sitemaps, 'sitemaps/basic/'. $name .'-services-' . $services->count() . '.xml');
 
-        $tags = ServiceTags::where('visible', '1')->inRandomOrder()->get();
+        $tags = Tag::where('visible', '1')->inRandomOrder()->get();
         $totalgeral = $totalgeral + $tags->count();
         $result = View::make('sitemap.sitemap-tags', ['tags' => $tags]);
         Storage::put('public/sitemaps/basic/'. $name .'-tags-' . $tags->count() . '.xml', $result);
@@ -291,7 +297,7 @@ class SitemapController extends Controller
 
                       $k = 0;
                       while ($k < $num_tags && $j < $urls) {
-                        array_push($temp, ['slug' => env('APP_URL') . $tags[$k]->slug . '-' . $cities[$i]->slug . '/' . $tags[$k]->id, 'updated_at' => $tags[$k]->updated_at->format(DateTime::ATOM)]);
+                        array_push($temp, ['slug' => env('APP_URL') . $tags[$k]->slug . '-' . $cities[$i]->slug . '/' . $tags[$k]->id . '/' . $services[$k]->id, 'updated_at' => $tags[$k]->updated_at->format(DateTime::ATOM)]);
                       $k++;
                       $j++;
                       }
@@ -324,7 +330,7 @@ class SitemapController extends Controller
         $url = env('APP_URL') . 'sitemaps/'. $uf .'/' . $name . '.xml';
         $totalgeral = 0;
 
-          $categories = Category::where('visible', '1')->inRandomOrder()->get();
+          $categories = Category::where('print', '1')->inRandomOrder()->get();
           $temp = [];
           $count = 0;
           $page = 1;
@@ -379,7 +385,7 @@ class SitemapController extends Controller
 
 
           $totalgeral = 0;
-          $services = Service::where('visible', '1')->inRandomOrder()->get();
+          $services = Service::where('print', '1')->inRandomOrder()->get();
           $temp = [];
           $count = 0;
           $page = 1;
@@ -434,7 +440,7 @@ class SitemapController extends Controller
 
 
           $totalgeral = 0;
-          $tags = ServiceTags::where('visible', '1')->inRandomOrder()->get();
+          $tags = Tag::where('visible', '1')->inRandomOrder()->get();
           $temp = [];
           $count = 0;
           $page = 1;
@@ -496,8 +502,17 @@ class SitemapController extends Controller
         $data['url'] = $url;
 
         $sitemaps = $this->sitemap->create($data);
+        Alert::success('Parabéns','Sitemap Criado com Sucesso!');
+        return redirect()->route('sitemap.index');
+    }
 
-        flash('Sitemaps Criados com Sucesso!')->success();
-        return redirect()->route('admin.sitemaps.index');
+    public function gerasitemap(){
+
+        SitemapGenerator::create(env('APP_URL'))
+        ->maxTagsPerSitemap(20000)
+        ->writeToFile(public_path('sitemap.xml'));
+
+        Alert::success('Parabéns','Sitemap Criado com Sucesso!');
+        return redirect()->route('sitemap.index');
     }
 }

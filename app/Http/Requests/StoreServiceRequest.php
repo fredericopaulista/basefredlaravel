@@ -23,11 +23,11 @@ class StoreServiceRequest extends FormRequest
     {
         return [
             'name' => 'required|min:10|max:70',
-            'subtitle' => 'required|min:10|max:70',
-            'title' => 'required|min:10|max:70',
+            'subtitle' => 'required|min:10',
+            'title' => 'required|min:10',
             'category_id' => 'required',
             'description' => 'required|min:10',
-            'briefDescription' => 'required|min:1|max:260',
+            'briefDescription' => 'required|min:50',
             'image' => 'mimes:png,jpg,webp,jpeg',
 'video' => 'required',
 'videoTitle' => 'required|min:10|max:70',

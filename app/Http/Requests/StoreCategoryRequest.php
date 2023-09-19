@@ -25,9 +25,9 @@ class StoreCategoryRequest extends FormRequest
             'name' => 'required|min:10|max:70',
             'title' => 'required|min:10|max:70',
             'description' => 'required|min:10',
-            'seoDescription' => 'required|min:1|max:260',
+            'seoDescription' => 'required|min:56',
             'image' => 'mimes:png,jpg,webp,jpeg',
-            
+
             'main' => 'boolean',
             'print' => 'boolean'
 

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('title');
-            $table->string('seoDescription');
+            $table->text('seoDescription');
             $table->text('description');
             $table->boolean('print')->default(false);
             $table->boolean('main')->default(false);

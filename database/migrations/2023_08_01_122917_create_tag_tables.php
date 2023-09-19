@@ -14,6 +14,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('briefDescription')->nullable();
             $table->text('body');
+            $table->integer('visible')->default('1');
             $table->timestamps();
         });
 

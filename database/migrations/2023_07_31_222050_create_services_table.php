@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('category_id');
             $table->string('subtitle');
-            $table->string('briefDescription');
+            $table->text('briefDescription');
             $table->text('description');
             $table->string('videoTitle');
             $table->string('video');

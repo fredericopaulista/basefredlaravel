@@ -18,7 +18,8 @@ class Configuration extends Model implements HasMedia
 
     protected $fillable = [
         'company',
-         'title',
+        'title',
+        'favicon',
         'segment',
         'city',
         'address',

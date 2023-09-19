@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('description');
             $table->string('name');
-            $table->string('body');
+            $table->text('body');
             $table->string('qtd');
             $table->string('uf');
             $table->string('url');

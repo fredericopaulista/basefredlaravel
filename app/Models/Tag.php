@@ -17,7 +17,8 @@ class Tag extends Model
         'name',
         'slug',
         'briefDescription',
-        'body'
+        'body',
+        'visible'
     ];
 
     public function getSlugOptions() : SlugOptions

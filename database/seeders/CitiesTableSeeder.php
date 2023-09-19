@@ -14,19 +14,18 @@ class CitiesTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('cities')->delete();
-        
+
         \DB::table('cities')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'name' => 'Belo Horizonte',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Belo Horizonte, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.922732;-43.945095\' />
-<meta name=\'geo.region\' content=\'BR-Belo Horizonte\' />
-<meta name=\'',
+<meta name=\'geo.region\' content=\'BR-Belo Horizonte\' />',
                 'slug' => 'belo-horizonte',
                 'print' => 1,
                 'state_id' => '0',
@@ -34,7 +33,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'name' => 'Belo Horizonte Aarão Reis MG',
@@ -48,7 +47,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'name' => 'Belo Horizonte Acaba Mundo MG',
@@ -62,7 +61,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'name' => 'Belo Horizonte Acaiaca MG',
@@ -77,7 +76,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'name' => 'Belo Horizonte Adelaide MG',
@@ -91,7 +90,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'name' => 'Belo Horizonte Aeroporto MG',
@@ -105,7 +104,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
             'name' => 'Belo Horizonte Águas Claras (Barreiro) MG',
@@ -119,7 +118,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'name' => 'Belo Horizonte Alípio de Melo MG',
@@ -133,7 +132,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'name' => 'Belo Horizonte Alpes MG',
@@ -148,7 +147,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'name' => 'Belo Horizonte Alta Tensão 1 MG',
@@ -162,7 +161,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'name' => 'Belo Horizonte Alto Barroca MG',
@@ -176,7 +175,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'name' => 'Belo Horizonte Alto Caiçaras MG',
@@ -190,7 +189,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 13,
                 'name' => 'Belo Horizonte Alto dos Pinheiros MG',
@@ -204,7 +203,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 14,
                 'name' => 'Belo Horizonte Alto Vera Cruz MG',
@@ -218,7 +217,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 15,
                 'name' => 'Belo Horizonte Álvaro Camargos MG',
@@ -232,7 +231,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 16,
                 'name' => 'Belo Horizonte Anchieta MG',
@@ -246,7 +245,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 17,
                 'name' => 'Belo Horizonte Aparecida MG',
@@ -260,7 +259,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 18,
                 'name' => 'Belo Horizonte Aparecida Sétima Seção MG',
@@ -274,7 +273,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 19,
                 'name' => 'Belo Horizonte Ápia MG',
@@ -289,7 +288,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 20,
                 'name' => 'Belo Horizonte Apolônia MG',
@@ -303,7 +302,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 21,
                 'name' => 'Belo Horizonte Araguaia MG',
@@ -317,7 +316,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 22,
                 'name' => 'Belo Horizonte Área Rural de Belo Horizonte MG',
@@ -331,7 +330,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 23,
             'name' => 'Belo Horizonte Átila de Paiva (Barreiro) MG',
@@ -345,7 +344,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 24,
                 'name' => 'Belo Horizonte Baleia MG',
@@ -360,7 +359,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 25,
             'name' => 'Belo Horizonte Bandeirantes (Pampulha) MG',
@@ -374,7 +373,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 26,
                 'name' => 'Belo Horizonte Barão Homem de Melo 1 MG',
@@ -388,7 +387,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 27,
                 'name' => 'Belo Horizonte Barreiro MG',
@@ -402,7 +401,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 28,
                 'name' => 'Belo Horizonte Barro Preto MG',
@@ -416,7 +415,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 29,
                 'name' => 'Belo Horizonte Barroca MG',
@@ -431,7 +430,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 30,
                 'name' => 'Belo Horizonte Beija Flor MG',
@@ -445,7 +444,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 31,
                 'name' => 'Belo Horizonte Beira-Linha MG',
@@ -459,7 +458,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 32,
                 'name' => 'Belo Horizonte Belmonte MG',
@@ -473,7 +472,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 33,
                 'name' => 'Belo Horizonte Belvedere MG',
@@ -487,7 +486,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 34,
             'name' => 'Belo Horizonte Bernadete (Barreiro) MG',
@@ -501,7 +500,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 35,
                 'name' => 'Belo Horizonte Betânia MG',
@@ -516,7 +515,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 36,
                 'name' => 'Belo Horizonte Biquinhas MG',
@@ -530,7 +529,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 37,
                 'name' => 'Belo Horizonte Bispo de Maura MG',
@@ -544,7 +543,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 38,
                 'name' => 'Belo Horizonte Boa Esperança MG',
@@ -558,7 +557,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 39,
                 'name' => 'Belo Horizonte Boa Viagem MG',
@@ -572,7 +571,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 40,
                 'name' => 'Belo Horizonte Boa Vista MG',
@@ -586,7 +585,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 41,
                 'name' => 'Belo Horizonte Bom Jesus MG',
@@ -600,7 +599,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 42,
                 'name' => 'Belo Horizonte Bonfim MG',
@@ -615,7 +614,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 43,
             'name' => 'Belo Horizonte Bonsucesso (Barreiro) MG',
@@ -629,7 +628,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 44,
             'name' => 'Belo Horizonte Brasil Industrial (Barreiro) MG',
@@ -643,7 +642,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 45,
                 'name' => 'Belo Horizonte Braúnas MG',
@@ -658,7 +657,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 46,
                 'name' => 'Belo Horizonte Buritis MG',
@@ -673,7 +672,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 47,
                 'name' => 'Belo Horizonte Cabana do Pai Tomás MG',
@@ -687,7 +686,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 48,
                 'name' => 'Belo Horizonte Cachoeirinha MG',
@@ -701,7 +700,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 49,
                 'name' => 'Belo Horizonte Caetano Furquim MG',
@@ -715,7 +714,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            49 => 
+            49 =>
             array (
                 'id' => 50,
                 'name' => 'Belo Horizonte Caiçara-Adelaide MG',
@@ -729,7 +728,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            50 => 
+            50 =>
             array (
                 'id' => 51,
                 'name' => 'Belo Horizonte Caiçaras MG',
@@ -743,7 +742,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            51 => 
+            51 =>
             array (
                 'id' => 52,
                 'name' => 'Belo Horizonte Calafate MG',
@@ -757,7 +756,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            52 => 
+            52 =>
             array (
                 'id' => 53,
                 'name' => 'Belo Horizonte Califórnia MG',
@@ -771,7 +770,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            53 => 
+            53 =>
             array (
                 'id' => 54,
                 'name' => 'Belo Horizonte Camargos MG',
@@ -785,7 +784,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            54 => 
+            54 =>
             array (
                 'id' => 55,
                 'name' => 'Belo Horizonte Campo Alegre MG',
@@ -799,7 +798,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            55 => 
+            55 =>
             array (
                 'id' => 56,
                 'name' => 'Belo Horizonte Campus UFMG MG',
@@ -813,7 +812,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            56 => 
+            56 =>
             array (
                 'id' => 57,
                 'name' => 'Belo Horizonte Canaã MG',
@@ -828,7 +827,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            57 => 
+            57 =>
             array (
                 'id' => 58,
                 'name' => 'Belo Horizonte Canadá MG',
@@ -843,7 +842,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            58 => 
+            58 =>
             array (
                 'id' => 59,
                 'name' => 'Belo Horizonte Candelária MG',
@@ -857,7 +856,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            59 => 
+            59 =>
             array (
                 'id' => 60,
                 'name' => 'Belo Horizonte Capitão Eduardo MG',
@@ -871,7 +870,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            60 => 
+            60 =>
             array (
                 'id' => 61,
             'name' => 'Belo Horizonte Capitão Eduardo (Bairro Montes Claros) MG',
@@ -885,7 +884,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            61 => 
+            61 =>
             array (
                 'id' => 62,
             'name' => 'Belo Horizonte Cardoso (Barreiro) MG',
@@ -899,7 +898,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            62 => 
+            62 =>
             array (
                 'id' => 63,
                 'name' => 'Belo Horizonte Carlos Prates MG',
@@ -913,7 +912,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            63 => 
+            63 =>
             array (
                 'id' => 64,
                 'name' => 'Belo Horizonte Carmo MG',
@@ -928,7 +927,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            64 => 
+            64 =>
             array (
                 'id' => 65,
                 'name' => 'Belo Horizonte Casa Branca MG',
@@ -942,7 +941,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            65 => 
+            65 =>
             array (
                 'id' => 66,
             'name' => 'Belo Horizonte Castanheira (Barreiro) MG',
@@ -956,7 +955,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            66 => 
+            66 =>
             array (
                 'id' => 67,
                 'name' => 'Belo Horizonte Castelo MG',
@@ -971,7 +970,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            67 => 
+            67 =>
             array (
                 'id' => 68,
             'name' => 'Belo Horizonte CDI Jatobá (Barreiro) MG',
@@ -985,7 +984,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            68 => 
+            68 =>
             array (
                 'id' => 69,
                 'name' => 'Belo Horizonte Cenáculo MG',
@@ -999,7 +998,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            69 => 
+            69 =>
             array (
                 'id' => 70,
                 'name' => 'Belo Horizonte Centro MG',
@@ -1014,7 +1013,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            70 => 
+            70 =>
             array (
                 'id' => 71,
                 'name' => 'Belo Horizonte Céu Azul MG',
@@ -1028,7 +1027,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            71 => 
+            71 =>
             array (
                 'id' => 72,
                 'name' => 'Belo Horizonte Cidade Jardim MG',
@@ -1042,7 +1041,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            72 => 
+            72 =>
             array (
                 'id' => 73,
                 'name' => 'Belo Horizonte Cidade Jardim Taquaril MG',
@@ -1056,7 +1055,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            73 => 
+            73 =>
             array (
                 'id' => 74,
                 'name' => 'Belo Horizonte Cidade Nova MG',
@@ -1070,7 +1069,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            74 => 
+            74 =>
             array (
                 'id' => 75,
                 'name' => 'Belo Horizonte Cinquentenário MG',
@@ -1084,7 +1083,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            75 => 
+            75 =>
             array (
                 'id' => 76,
                 'name' => 'Belo Horizonte Colégio Batista MG',
@@ -1098,7 +1097,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            76 => 
+            76 =>
             array (
                 'id' => 77,
                 'name' => 'Belo Horizonte Comiteco MG',
@@ -1112,7 +1111,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            77 => 
+            77 =>
             array (
                 'id' => 78,
                 'name' => 'Belo Horizonte Concórdia MG',
@@ -1126,7 +1125,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            78 => 
+            78 =>
             array (
                 'id' => 79,
                 'name' => 'Belo Horizonte Cônego Pinheiro MG',
@@ -1140,7 +1139,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            79 => 
+            79 =>
             array (
                 'id' => 80,
                 'name' => 'Belo Horizonte Confisco MG',
@@ -1154,7 +1153,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            80 => 
+            80 =>
             array (
                 'id' => 81,
             'name' => 'Belo Horizonte Conjunto Ademar Maldonado (Barreiro) MG',
@@ -1168,7 +1167,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            81 => 
+            81 =>
             array (
                 'id' => 82,
             'name' => 'Belo Horizonte Conjunto Bonsucesso (Barreiro) MG',
@@ -1182,7 +1181,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            82 => 
+            82 =>
             array (
                 'id' => 83,
                 'name' => 'Belo Horizonte Conjunto Califórnia MG',
@@ -1196,7 +1195,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            83 => 
+            83 =>
             array (
                 'id' => 84,
                 'name' => 'Belo Horizonte Conjunto Celso Machado MG',
@@ -1210,7 +1209,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            84 => 
+            84 =>
             array (
                 'id' => 85,
             'name' => 'Belo Horizonte Conjunto Habitacional Vale do Jatobá (Barreiro) MG',
@@ -1224,7 +1223,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            85 => 
+            85 =>
             array (
                 'id' => 86,
                 'name' => 'Belo Horizonte Conjunto Jardim Filadélfia MG',
@@ -1238,7 +1237,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            86 => 
+            86 =>
             array (
                 'id' => 87,
             'name' => 'Belo Horizonte Conjunto Jatobá (Barreiro) MG',
@@ -1252,7 +1251,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            87 => 
+            87 =>
             array (
                 'id' => 88,
                 'name' => 'Belo Horizonte Conjunto Lagoa MG',
@@ -1266,7 +1265,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            88 => 
+            88 =>
             array (
                 'id' => 89,
                 'name' => 'Belo Horizonte Conjunto Minascaixa MG',
@@ -1280,7 +1279,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            89 => 
+            89 =>
             array (
                 'id' => 90,
                 'name' => 'Belo Horizonte Conjunto Novo Dom Bosco MG',
@@ -1294,7 +1293,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            90 => 
+            90 =>
             array (
                 'id' => 91,
                 'name' => 'Belo Horizonte Conjunto Paulo 6 MG',
@@ -1308,7 +1307,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            91 => 
+            91 =>
             array (
                 'id' => 92,
                 'name' => 'Belo Horizonte Conjunto Santa Maria MG',
@@ -1322,7 +1321,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            92 => 
+            92 =>
             array (
                 'id' => 93,
                 'name' => 'Belo Horizonte Conjunto Taquaril MG',
@@ -1336,7 +1335,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            93 => 
+            93 =>
             array (
                 'id' => 94,
             'name' => 'Belo Horizonte Conjunto Túnel Ibirité (Barreiro) MG',
@@ -1350,7 +1349,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            94 => 
+            94 =>
             array (
                 'id' => 95,
                 'name' => 'Belo Horizonte Copacabana MG',
@@ -1364,7 +1363,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            95 => 
+            95 =>
             array (
                 'id' => 96,
                 'name' => 'Belo Horizonte Coqueiros MG',
@@ -1378,7 +1377,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            96 => 
+            96 =>
             array (
                 'id' => 97,
                 'name' => 'Belo Horizonte Coração de Jesus MG',
@@ -1392,7 +1391,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            97 => 
+            97 =>
             array (
                 'id' => 98,
                 'name' => 'Belo Horizonte Coração Eucarístico MG',
@@ -1406,7 +1405,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            98 => 
+            98 =>
             array (
                 'id' => 99,
             'name' => 'Belo Horizonte Corumbiara (Barreiro) MG',
@@ -1420,7 +1419,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            99 => 
+            99 =>
             array (
                 'id' => 100,
                 'name' => 'Belo Horizonte Cruzeiro MG',
@@ -1434,7 +1433,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            100 => 
+            100 =>
             array (
                 'id' => 101,
                 'name' => 'Belo Horizonte Delta MG',
@@ -1449,7 +1448,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            101 => 
+            101 =>
             array (
                 'id' => 102,
             'name' => 'Belo Horizonte Diamante (Barreiro) MG',
@@ -1463,7 +1462,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            102 => 
+            102 =>
             array (
                 'id' => 103,
             'name' => 'Belo Horizonte Distrito Industrial do Jatobá (Barreiro) MG',
@@ -1477,7 +1476,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            103 => 
+            103 =>
             array (
                 'id' => 104,
             'name' => 'Belo Horizonte Distrito Industrial do Jatobá (Camilo Torres) MG',
@@ -1491,7 +1490,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            104 => 
+            104 =>
             array (
                 'id' => 105,
             'name' => 'Belo Horizonte Distrito Industrial do Jatobá (Eliana Silva) MG',
@@ -1505,7 +1504,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            105 => 
+            105 =>
             array (
                 'id' => 106,
             'name' => 'Belo Horizonte Distrito Industrial do Jatobá (Irmã Doroty) MG',
@@ -1519,7 +1518,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            106 => 
+            106 =>
             array (
                 'id' => 107,
                 'name' => 'Belo Horizonte Dom Bosco MG',
@@ -1533,7 +1532,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            107 => 
+            107 =>
             array (
                 'id' => 108,
                 'name' => 'Belo Horizonte Dom Cabral MG',
@@ -1547,7 +1546,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            108 => 
+            108 =>
             array (
                 'id' => 109,
                 'name' => 'Belo Horizonte Dom Joaquim MG',
@@ -1561,7 +1560,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            109 => 
+            109 =>
             array (
                 'id' => 110,
                 'name' => 'Belo Horizonte Dom Silvério MG',
@@ -1575,7 +1574,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            110 => 
+            110 =>
             array (
                 'id' => 111,
                 'name' => 'Belo Horizonte Dona Clara MG',
@@ -1589,7 +1588,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            111 => 
+            111 =>
             array (
                 'id' => 112,
                 'name' => 'Belo Horizonte Engenho Nogueira MG',
@@ -1603,7 +1602,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            112 => 
+            112 =>
             array (
                 'id' => 113,
                 'name' => 'Belo Horizonte Ermelinda MG',
@@ -1617,7 +1616,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            113 => 
+            113 =>
             array (
                 'id' => 114,
             'name' => 'Belo Horizonte Ernesto do Nascimento(Barreiro) MG',
@@ -1631,7 +1630,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            114 => 
+            114 =>
             array (
                 'id' => 115,
             'name' => 'Belo Horizonte Esperança (Barreiro) MG',
@@ -1645,7 +1644,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            115 => 
+            115 =>
             array (
                 'id' => 116,
                 'name' => 'Belo Horizonte Esplanada MG',
@@ -1659,7 +1658,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            116 => 
+            116 =>
             array (
                 'id' => 117,
                 'name' => 'Belo Horizonte Estoril MG',
@@ -1674,7 +1673,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            117 => 
+            117 =>
             array (
                 'id' => 118,
                 'name' => 'Belo Horizonte Estrela MG',
@@ -1689,7 +1688,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            118 => 
+            118 =>
             array (
                 'id' => 119,
                 'name' => 'Belo Horizonte Estrela do Oriente MG',
@@ -1703,7 +1702,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            119 => 
+            119 =>
             array (
                 'id' => 120,
                 'name' => 'Belo Horizonte Etelvina Carneiro MG',
@@ -1717,7 +1716,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            120 => 
+            120 =>
             array (
                 'id' => 121,
                 'name' => 'Belo Horizonte Europa MG',
@@ -1732,7 +1731,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            121 => 
+            121 =>
             array (
                 'id' => 122,
                 'name' => 'Belo Horizonte Eymard MG',
@@ -1747,7 +1746,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            122 => 
+            122 =>
             array (
                 'id' => 123,
                 'name' => 'Belo Horizonte Fazendinha MG',
@@ -1761,7 +1760,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            123 => 
+            123 =>
             array (
                 'id' => 124,
                 'name' => 'Belo Horizonte Fernão Dias MG',
@@ -1775,7 +1774,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            124 => 
+            124 =>
             array (
                 'id' => 125,
             'name' => 'Belo Horizonte Flávio de Oliveira (Barreiro) MG',
@@ -1789,7 +1788,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            125 => 
+            125 =>
             array (
                 'id' => 126,
             'name' => 'Belo Horizonte Flávio Marques Lisboa (Barreiro) MG',
@@ -1803,7 +1802,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            126 => 
+            126 =>
             array (
                 'id' => 127,
                 'name' => 'Belo Horizonte Floramar MG',
@@ -1817,7 +1816,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            127 => 
+            127 =>
             array (
                 'id' => 128,
                 'name' => 'Belo Horizonte Floresta MG',
@@ -1831,7 +1830,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            128 => 
+            128 =>
             array (
                 'id' => 129,
                 'name' => 'Belo Horizonte Frei Leopoldo MG',
@@ -1845,7 +1844,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            129 => 
+            129 =>
             array (
                 'id' => 130,
                 'name' => 'Belo Horizonte Funcionários MG',
@@ -1859,7 +1858,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            130 => 
+            130 =>
             array (
                 'id' => 131,
                 'name' => 'Belo Horizonte Gameleira MG',
@@ -1873,7 +1872,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            131 => 
+            131 =>
             array (
                 'id' => 132,
                 'name' => 'Belo Horizonte Garças MG',
@@ -1888,7 +1887,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            132 => 
+            132 =>
             array (
                 'id' => 133,
                 'name' => 'Belo Horizonte Glória MG',
@@ -1903,7 +1902,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            133 => 
+            133 =>
             array (
                 'id' => 134,
                 'name' => 'Belo Horizonte Goiânia MG',
@@ -1918,7 +1917,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            134 => 
+            134 =>
             array (
                 'id' => 135,
                 'name' => 'Belo Horizonte Graça MG',
@@ -1933,7 +1932,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            135 => 
+            135 =>
             array (
                 'id' => 136,
                 'name' => 'Belo Horizonte Grajaú MG',
@@ -1948,7 +1947,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            136 => 
+            136 =>
             array (
                 'id' => 137,
                 'name' => 'Belo Horizonte Granja de Freitas MG',
@@ -1962,7 +1961,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            137 => 
+            137 =>
             array (
                 'id' => 138,
                 'name' => 'Belo Horizonte Granja Werneck MG',
@@ -1976,7 +1975,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            138 => 
+            138 =>
             array (
                 'id' => 139,
                 'name' => 'Belo Horizonte Grotinha MG',
@@ -1990,7 +1989,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            139 => 
+            139 =>
             array (
                 'id' => 140,
                 'name' => 'Belo Horizonte Guarani MG',
@@ -2005,7 +2004,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            140 => 
+            140 =>
             array (
                 'id' => 141,
                 'name' => 'Belo Horizonte Gutierrez MG',
@@ -2019,7 +2018,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            141 => 
+            141 =>
             array (
                 'id' => 142,
                 'name' => 'Belo Horizonte Havaí MG',
@@ -2034,7 +2033,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            142 => 
+            142 =>
             array (
                 'id' => 143,
                 'name' => 'Belo Horizonte Heliópolis MG',
@@ -2048,7 +2047,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            143 => 
+            143 =>
             array (
                 'id' => 144,
                 'name' => 'Belo Horizonte Horto MG',
@@ -2063,7 +2062,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            144 => 
+            144 =>
             array (
                 'id' => 145,
                 'name' => 'Belo Horizonte Horto Florestal MG',
@@ -2077,7 +2076,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            145 => 
+            145 =>
             array (
                 'id' => 146,
                 'name' => 'Belo Horizonte Imbaúbas MG',
@@ -2091,7 +2090,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            146 => 
+            146 =>
             array (
                 'id' => 147,
                 'name' => 'Belo Horizonte Inconfidência MG',
@@ -2105,7 +2104,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            147 => 
+            147 =>
             array (
                 'id' => 148,
                 'name' => 'Belo Horizonte Indaiá MG',
@@ -2120,7 +2119,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            148 => 
+            148 =>
             array (
                 'id' => 149,
             'name' => 'Belo Horizonte Independência (Barreiro) MG',
@@ -2134,7 +2133,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            149 => 
+            149 =>
             array (
                 'id' => 150,
             'name' => 'Belo Horizonte Indústrias I (Barreiro) MG',
@@ -2148,7 +2147,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            150 => 
+            150 =>
             array (
                 'id' => 151,
                 'name' => 'Belo Horizonte Indústrias 2 MG',
@@ -2162,7 +2161,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            151 => 
+            151 =>
             array (
                 'id' => 152,
                 'name' => 'Belo Horizonte Ipê MG',
@@ -2177,7 +2176,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            152 => 
+            152 =>
             array (
                 'id' => 153,
                 'name' => 'Belo Horizonte Ipiranga MG',
@@ -2191,7 +2190,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            153 => 
+            153 =>
             array (
                 'id' => 154,
             'name' => 'Belo Horizonte Itaipu (Barreiro) MG',
@@ -2205,7 +2204,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            154 => 
+            154 =>
             array (
                 'id' => 155,
                 'name' => 'Belo Horizonte Itapoã MG',
@@ -2220,7 +2219,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            155 => 
+            155 =>
             array (
                 'id' => 156,
                 'name' => 'Belo Horizonte Itatiaia MG',
@@ -2234,7 +2233,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            156 => 
+            156 =>
             array (
                 'id' => 157,
                 'name' => 'Belo Horizonte Jaqueline MG',
@@ -2248,7 +2247,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            157 => 
+            157 =>
             array (
                 'id' => 158,
                 'name' => 'Belo Horizonte Jaraguá MG',
@@ -2263,7 +2262,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            158 => 
+            158 =>
             array (
                 'id' => 159,
                 'name' => 'Belo Horizonte Jardim Alvorada MG',
@@ -2277,7 +2276,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            159 => 
+            159 =>
             array (
                 'id' => 160,
                 'name' => 'Belo Horizonte Jardim América MG',
@@ -2291,7 +2290,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            160 => 
+            160 =>
             array (
                 'id' => 161,
                 'name' => 'Belo Horizonte Jardim Atlântico MG',
@@ -2305,7 +2304,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            161 => 
+            161 =>
             array (
                 'id' => 162,
             'name' => 'Belo Horizonte Jardim dos Comerciários (Venda Nova) MG',
@@ -2319,7 +2318,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            162 => 
+            162 =>
             array (
                 'id' => 163,
                 'name' => 'Belo Horizonte Jardim Felicidade MG',
@@ -2333,7 +2332,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            163 => 
+            163 =>
             array (
                 'id' => 164,
                 'name' => 'Belo Horizonte Jardim Filadélfia MG',
@@ -2347,7 +2346,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            164 => 
+            164 =>
             array (
                 'id' => 165,
                 'name' => 'Belo Horizonte Jardim Guanabara MG',
@@ -2361,7 +2360,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            165 => 
+            165 =>
             array (
                 'id' => 166,
                 'name' => 'Belo Horizonte Jardim Leblon MG',
@@ -2375,7 +2374,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            166 => 
+            166 =>
             array (
                 'id' => 167,
                 'name' => 'Belo Horizonte Jardim Montanhês MG',
@@ -2389,7 +2388,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            167 => 
+            167 =>
             array (
                 'id' => 168,
                 'name' => 'Belo Horizonte Jardim Pirineus MG',
@@ -2403,7 +2402,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            168 => 
+            168 =>
             array (
                 'id' => 169,
                 'name' => 'Belo Horizonte Jardim São José MG',
@@ -2417,7 +2416,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            169 => 
+            169 =>
             array (
                 'id' => 170,
                 'name' => 'Belo Horizonte Jardim Vitória MG',
@@ -2431,7 +2430,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            170 => 
+            170 =>
             array (
                 'id' => 171,
                 'name' => 'Belo Horizonte Jardinópolis MG',
@@ -2445,7 +2444,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            171 => 
+            171 =>
             array (
                 'id' => 172,
             'name' => 'Belo Horizonte Jatobá (Barreiro) MG',
@@ -2459,7 +2458,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            172 => 
+            172 =>
             array (
                 'id' => 173,
             'name' => 'Belo Horizonte João Paulo II (Barreiro) MG',
@@ -2473,7 +2472,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            173 => 
+            173 =>
             array (
                 'id' => 174,
                 'name' => 'Belo Horizonte João Pinheiro MG',
@@ -2487,7 +2486,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            174 => 
+            174 =>
             array (
                 'id' => 175,
                 'name' => 'Belo Horizonte Jonas Veiga MG',
@@ -2501,7 +2500,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            175 => 
+            175 =>
             array (
                 'id' => 176,
                 'name' => 'Belo Horizonte Juliana MG',
@@ -2516,7 +2515,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            176 => 
+            176 =>
             array (
                 'id' => 177,
                 'name' => 'Belo Horizonte Lagoa MG',
@@ -2531,7 +2530,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            177 => 
+            177 =>
             array (
                 'id' => 178,
                 'name' => 'Belo Horizonte Lagoinha MG',
@@ -2545,7 +2544,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            178 => 
+            178 =>
             array (
                 'id' => 179,
             'name' => 'Belo Horizonte Lagoinha Leblon (Venda Nova) MG',
@@ -2559,7 +2558,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            179 => 
+            179 =>
             array (
                 'id' => 180,
                 'name' => 'Belo Horizonte Lajedo MG',
@@ -2574,7 +2573,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            180 => 
+            180 =>
             array (
                 'id' => 181,
                 'name' => 'Belo Horizonte Leonina MG',
@@ -2589,7 +2588,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            181 => 
+            181 =>
             array (
                 'id' => 182,
                 'name' => 'Belo Horizonte Letícia MG',
@@ -2604,7 +2603,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            182 => 
+            182 =>
             array (
                 'id' => 183,
                 'name' => 'Belo Horizonte Liberdade MG',
@@ -2618,7 +2617,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            183 => 
+            183 =>
             array (
                 'id' => 184,
             'name' => 'Belo Horizonte Lindéia (Barreiro) MG',
@@ -2632,7 +2631,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            184 => 
+            184 =>
             array (
                 'id' => 185,
                 'name' => 'Belo Horizonte Lourdes MG',
@@ -2647,7 +2646,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            185 => 
+            185 =>
             array (
                 'id' => 186,
                 'name' => 'Belo Horizonte Luxemburgo MG',
@@ -2661,7 +2660,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            186 => 
+            186 =>
             array (
                 'id' => 187,
                 'name' => 'Belo Horizonte Madre Gertrudes MG',
@@ -2675,7 +2674,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            187 => 
+            187 =>
             array (
                 'id' => 188,
                 'name' => 'Belo Horizonte Madre Gertrudes 3 MG',
@@ -2689,7 +2688,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            188 => 
+            188 =>
             array (
                 'id' => 189,
                 'name' => 'Belo Horizonte Madre Gertrudes 5 MG',
@@ -2703,7 +2702,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            189 => 
+            189 =>
             array (
                 'id' => 190,
                 'name' => 'Belo Horizonte Madri MG',
@@ -2718,7 +2717,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            190 => 
+            190 =>
             array (
                 'id' => 191,
             'name' => 'Belo Horizonte Mala e Cuia (Sion) MG',
@@ -2732,7 +2731,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            191 => 
+            191 =>
             array (
                 'id' => 192,
                 'name' => 'Belo Horizonte Manacás MG',
@@ -2747,7 +2746,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            192 => 
+            192 =>
             array (
                 'id' => 193,
                 'name' => 'Belo Horizonte Mangabeiras MG',
@@ -2761,7 +2760,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            193 => 
+            193 =>
             array (
                 'id' => 194,
             'name' => 'Belo Horizonte Mangueiras (Barreiro) MG',
@@ -2775,7 +2774,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            194 => 
+            194 =>
             array (
                 'id' => 195,
                 'name' => 'Belo Horizonte Mantiqueira MG',
@@ -2789,7 +2788,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            195 => 
+            195 =>
             array (
                 'id' => 196,
                 'name' => 'Belo Horizonte Marajó MG',
@@ -2804,7 +2803,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            196 => 
+            196 =>
             array (
                 'id' => 197,
                 'name' => 'Belo Horizonte Marçola MG',
@@ -2819,7 +2818,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            197 => 
+            197 =>
             array (
                 'id' => 198,
                 'name' => 'Belo Horizonte Maria Goretti MG',
@@ -2833,7 +2832,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            198 => 
+            198 =>
             array (
                 'id' => 199,
                 'name' => 'Belo Horizonte Maria Helena MG',
@@ -2847,7 +2846,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            199 => 
+            199 =>
             array (
                 'id' => 200,
                 'name' => 'Belo Horizonte Maria Tereza MG',
@@ -2861,7 +2860,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            200 => 
+            200 =>
             array (
                 'id' => 201,
                 'name' => 'Belo Horizonte Maria Virgínia MG',
@@ -2875,7 +2874,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            201 => 
+            201 =>
             array (
                 'id' => 202,
                 'name' => 'Belo Horizonte Mariano de Abreu MG',
@@ -2889,7 +2888,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            202 => 
+            202 =>
             array (
                 'id' => 203,
                 'name' => 'Belo Horizonte Marieta 1 MG',
@@ -2903,7 +2902,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            203 => 
+            203 =>
             array (
                 'id' => 204,
                 'name' => 'Belo Horizonte Marilândia MG',
@@ -2917,7 +2916,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            204 => 
+            204 =>
             array (
                 'id' => 205,
                 'name' => 'Belo Horizonte Mariquinhas MG',
@@ -2931,7 +2930,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            205 => 
+            205 =>
             array (
                 'id' => 206,
                 'name' => 'Belo Horizonte Marmiteiros MG',
@@ -2945,7 +2944,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            206 => 
+            206 =>
             array (
                 'id' => 207,
             'name' => 'Belo Horizonte Milionários (Barreiro) MG',
@@ -2959,7 +2958,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            207 => 
+            207 =>
             array (
                 'id' => 208,
                 'name' => 'Belo Horizonte Minas Brasil MG',
@@ -2973,7 +2972,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            208 => 
+            208 =>
             array (
                 'id' => 209,
                 'name' => 'Belo Horizonte Minascaixa MG',
@@ -2987,7 +2986,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            209 => 
+            209 =>
             array (
                 'id' => 210,
             'name' => 'Belo Horizonte Minaslândia (P Maio) MG',
@@ -3001,7 +3000,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            210 => 
+            210 =>
             array (
                 'id' => 211,
                 'name' => 'Belo Horizonte Mineirão MG',
@@ -3015,7 +3014,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            211 => 
+            211 =>
             array (
                 'id' => 212,
             'name' => 'Belo Horizonte Miramar (Barreiro) MG',
@@ -3029,7 +3028,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            212 => 
+            212 =>
             array (
                 'id' => 213,
                 'name' => 'Belo Horizonte Mirante MG',
@@ -3044,7 +3043,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            213 => 
+            213 =>
             array (
                 'id' => 214,
                 'name' => 'Belo Horizonte Monsenhor Messias MG',
@@ -3058,7 +3057,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            214 => 
+            214 =>
             array (
                 'id' => 215,
                 'name' => 'Belo Horizonte Monte Azul MG',
@@ -3072,7 +3071,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            215 => 
+            215 =>
             array (
                 'id' => 216,
                 'name' => 'Belo Horizonte Morro das Pedras MG',
@@ -3086,7 +3085,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            216 => 
+            216 =>
             array (
                 'id' => 217,
                 'name' => 'Belo Horizonte Nazaré MG',
@@ -3101,7 +3100,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            217 => 
+            217 =>
             array (
                 'id' => 218,
             'name' => 'Belo Horizonte Nossa Senhora Aparecida (Aglomerado da Serra) MG',
@@ -3115,7 +3114,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            218 => 
+            218 =>
             array (
                 'id' => 219,
                 'name' => 'Belo Horizonte Nossa Senhora da Conceição MG',
@@ -3129,7 +3128,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            219 => 
+            219 =>
             array (
                 'id' => 220,
                 'name' => 'Belo Horizonte Nossa Senhora da Saúde MG',
@@ -3143,7 +3142,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            220 => 
+            220 =>
             array (
                 'id' => 221,
                 'name' => 'Belo Horizonte Nossa Senhora de Fátima MG',
@@ -3157,7 +3156,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            221 => 
+            221 =>
             array (
                 'id' => 222,
                 'name' => 'Belo Horizonte Nossa Senhora do Rosário MG',
@@ -3171,7 +3170,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            222 => 
+            222 =>
             array (
                 'id' => 223,
                 'name' => 'Belo Horizonte Nova Cachoeirinha MG',
@@ -3185,7 +3184,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            223 => 
+            223 =>
             array (
                 'id' => 224,
                 'name' => 'Belo Horizonte Nova Cintra MG',
@@ -3199,7 +3198,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            224 => 
+            224 =>
             array (
                 'id' => 225,
                 'name' => 'Belo Horizonte Nova Esperança MG',
@@ -3213,7 +3212,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            225 => 
+            225 =>
             array (
                 'id' => 226,
                 'name' => 'Belo Horizonte Nova Floresta MG',
@@ -3227,7 +3226,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            226 => 
+            226 =>
             array (
                 'id' => 227,
                 'name' => 'Belo Horizonte Nova Gameleira MG',
@@ -3241,7 +3240,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            227 => 
+            227 =>
             array (
                 'id' => 228,
                 'name' => 'Belo Horizonte Nova Granada MG',
@@ -3255,7 +3254,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            228 => 
+            228 =>
             array (
                 'id' => 229,
                 'name' => 'Belo Horizonte Nova Pampulha MG',
@@ -3269,7 +3268,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            229 => 
+            229 =>
             array (
                 'id' => 230,
                 'name' => 'Belo Horizonte Nova Suíssa MG',
@@ -3283,7 +3282,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            230 => 
+            230 =>
             array (
                 'id' => 231,
                 'name' => 'Belo Horizonte Nova Vista MG',
@@ -3297,7 +3296,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            231 => 
+            231 =>
             array (
                 'id' => 232,
                 'name' => 'Belo Horizonte Novo Aarão Reis MG',
@@ -3311,7 +3310,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            232 => 
+            232 =>
             array (
                 'id' => 233,
             'name' => 'Belo Horizonte Novo das Indústrias (Barreiro) MG',
@@ -3325,7 +3324,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            233 => 
+            233 =>
             array (
                 'id' => 234,
                 'name' => 'Belo Horizonte Novo Glória MG',
@@ -3339,7 +3338,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            234 => 
+            234 =>
             array (
                 'id' => 235,
                 'name' => 'Belo Horizonte Novo Itamarati MG',
@@ -3353,7 +3352,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            235 => 
+            235 =>
             array (
                 'id' => 236,
             'name' => 'Belo Horizonte Novo Santa Cecília (Barreiro) MG',
@@ -3367,7 +3366,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            236 => 
+            236 =>
             array (
                 'id' => 237,
                 'name' => 'Belo Horizonte Novo Tupi MG',
@@ -3381,7 +3380,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            237 => 
+            237 =>
             array (
                 'id' => 238,
                 'name' => 'Belo Horizonte Oeste MG',
@@ -3396,7 +3395,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            238 => 
+            238 =>
             array (
                 'id' => 239,
             'name' => 'Belo Horizonte Olaria (Barreiro) MG',
@@ -3410,7 +3409,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            239 => 
+            239 =>
             array (
                 'id' => 240,
                 'name' => 'Belo Horizonte Olhos D\'Água MG',
@@ -3424,7 +3423,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            240 => 
+            240 =>
             array (
                 'id' => 241,
                 'name' => 'Belo Horizonte Ouro Minas MG',
@@ -3438,7 +3437,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            241 => 
+            241 =>
             array (
                 'id' => 242,
                 'name' => 'Belo Horizonte Ouro Preto MG',
@@ -3452,7 +3451,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            242 => 
+            242 =>
             array (
                 'id' => 243,
                 'name' => 'Belo Horizonte Padre Eustáquio MG',
@@ -3466,7 +3465,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            243 => 
+            243 =>
             array (
                 'id' => 244,
                 'name' => 'Belo Horizonte Palmares MG',
@@ -3480,7 +3479,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            244 => 
+            244 =>
             array (
                 'id' => 245,
                 'name' => 'Belo Horizonte Palmeiras MG',
@@ -3494,7 +3493,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            245 => 
+            245 =>
             array (
                 'id' => 246,
                 'name' => 'Belo Horizonte Pampulha MG',
@@ -3508,7 +3507,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            246 => 
+            246 =>
             array (
                 'id' => 247,
                 'name' => 'Belo Horizonte Pantanal MG',
@@ -3522,7 +3521,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            247 => 
+            247 =>
             array (
                 'id' => 248,
                 'name' => 'Belo Horizonte Paquetá MG',
@@ -3537,7 +3536,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            248 => 
+            248 =>
             array (
                 'id' => 249,
                 'name' => 'Belo Horizonte Paraíso MG',
@@ -3552,7 +3551,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            249 => 
+            249 =>
             array (
                 'id' => 250,
                 'name' => 'Belo Horizonte Parque São José MG',
@@ -3566,7 +3565,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            250 => 
+            250 =>
             array (
                 'id' => 251,
             'name' => 'Belo Horizonte Parque São Pedro (Venda Nova) MG',
@@ -3580,7 +3579,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            251 => 
+            251 =>
             array (
                 'id' => 252,
                 'name' => 'Belo Horizonte Paulo 6 MG',
@@ -3595,7 +3594,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            252 => 
+            252 =>
             array (
                 'id' => 253,
                 'name' => 'Belo Horizonte Pedreira Prado Lopes MG',
@@ -3609,7 +3608,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            253 => 
+            253 =>
             array (
                 'id' => 254,
                 'name' => 'Belo Horizonte Pedro 2 MG',
@@ -3624,7 +3623,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            254 => 
+            254 =>
             array (
                 'id' => 255,
                 'name' => 'Belo Horizonte Penha MG',
@@ -3639,7 +3638,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            255 => 
+            255 =>
             array (
                 'id' => 256,
             'name' => 'Belo Horizonte Petrópolis (Barreiro) MG',
@@ -3653,7 +3652,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            256 => 
+            256 =>
             array (
                 'id' => 257,
                 'name' => 'Belo Horizonte Pilar MG',
@@ -3668,7 +3667,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            257 => 
+            257 =>
             array (
                 'id' => 258,
                 'name' => 'Belo Horizonte Pindorama MG',
@@ -3682,7 +3681,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            258 => 
+            258 =>
             array (
                 'id' => 259,
                 'name' => 'Belo Horizonte Pio 12 MG',
@@ -3697,7 +3696,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            259 => 
+            259 =>
             array (
                 'id' => 260,
                 'name' => 'Belo Horizonte Pirajá MG',
@@ -3712,7 +3711,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            260 => 
+            260 =>
             array (
                 'id' => 261,
             'name' => 'Belo Horizonte Piratininga (Venda Nova) MG',
@@ -3726,7 +3725,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            261 => 
+            261 =>
             array (
                 'id' => 262,
                 'name' => 'Belo Horizonte Planalto MG',
@@ -3740,7 +3739,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            262 => 
+            262 =>
             array (
                 'id' => 263,
                 'name' => 'Belo Horizonte Pompéia MG',
@@ -3755,7 +3754,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            263 => 
+            263 =>
             array (
                 'id' => 264,
             'name' => 'Belo Horizonte Pongelupe (Barreiro) MG',
@@ -3769,7 +3768,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            264 => 
+            264 =>
             array (
                 'id' => 265,
                 'name' => 'Belo Horizonte Pousada Santo Antônio MG',
@@ -3783,7 +3782,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            265 => 
+            265 =>
             array (
                 'id' => 266,
                 'name' => 'Belo Horizonte Prado MG',
@@ -3798,7 +3797,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            266 => 
+            266 =>
             array (
                 'id' => 267,
                 'name' => 'Belo Horizonte Primeiro de Maio MG',
@@ -3812,7 +3811,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            267 => 
+            267 =>
             array (
                 'id' => 268,
                 'name' => 'Belo Horizonte Providência MG',
@@ -3826,7 +3825,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            268 => 
+            268 =>
             array (
                 'id' => 269,
                 'name' => 'Belo Horizonte Renascença MG',
@@ -3840,7 +3839,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            269 => 
+            269 =>
             array (
                 'id' => 270,
                 'name' => 'Belo Horizonte Ribeiro de Abreu MG',
@@ -3854,7 +3853,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            270 => 
+            270 =>
             array (
                 'id' => 271,
                 'name' => 'Belo Horizonte Rio Branco MG',
@@ -3868,7 +3867,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            271 => 
+            271 =>
             array (
                 'id' => 272,
                 'name' => 'Belo Horizonte Sagrada Família MG',
@@ -3882,7 +3881,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            272 => 
+            272 =>
             array (
                 'id' => 273,
                 'name' => 'Belo Horizonte Salgado Filho MG',
@@ -3896,7 +3895,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            273 => 
+            273 =>
             array (
                 'id' => 274,
                 'name' => 'Belo Horizonte Santa Amélia MG',
@@ -3910,7 +3909,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            274 => 
+            274 =>
             array (
                 'id' => 275,
                 'name' => 'Belo Horizonte Santa Branca MG',
@@ -3924,7 +3923,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            275 => 
+            275 =>
             array (
                 'id' => 276,
             'name' => 'Belo Horizonte Santa Cecília Vale do Jatobá (Barreiro) MG',
@@ -3938,7 +3937,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            276 => 
+            276 =>
             array (
                 'id' => 277,
                 'name' => 'Belo Horizonte Santa Cruz MG',
@@ -3952,7 +3951,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            277 => 
+            277 =>
             array (
                 'id' => 278,
             'name' => 'Belo Horizonte Santa Cruz (Barreiro) MG',
@@ -3966,7 +3965,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            278 => 
+            278 =>
             array (
                 'id' => 279,
                 'name' => 'Belo Horizonte Santa Efigênia MG',
@@ -3980,7 +3979,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            279 => 
+            279 =>
             array (
                 'id' => 280,
             'name' => 'Belo Horizonte Santa Helena (Barreiro) MG',
@@ -3994,7 +3993,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            280 => 
+            280 =>
             array (
                 'id' => 281,
                 'name' => 'Belo Horizonte Santa Inês MG',
@@ -4008,7 +4007,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            281 => 
+            281 =>
             array (
                 'id' => 282,
                 'name' => 'Belo Horizonte Santa Isabel MG',
@@ -4022,7 +4021,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            282 => 
+            282 =>
             array (
                 'id' => 283,
                 'name' => 'Belo Horizonte Santa Lúcia MG',
@@ -4036,7 +4035,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            283 => 
+            283 =>
             array (
                 'id' => 284,
             'name' => 'Belo Horizonte Santa Margarida (Barreiro) MG',
@@ -4050,7 +4049,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            284 => 
+            284 =>
             array (
                 'id' => 285,
                 'name' => 'Belo Horizonte Santa Maria MG',
@@ -4064,7 +4063,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            285 => 
+            285 =>
             array (
                 'id' => 286,
                 'name' => 'Belo Horizonte Santa Mônica MG',
@@ -4078,7 +4077,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            286 => 
+            286 =>
             array (
                 'id' => 287,
             'name' => 'Belo Horizonte Santa Rita (Barreiro) MG',
@@ -4092,7 +4091,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            287 => 
+            287 =>
             array (
                 'id' => 288,
                 'name' => 'Belo Horizonte Santa Rita de Cássia MG',
@@ -4106,7 +4105,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            288 => 
+            288 =>
             array (
                 'id' => 289,
                 'name' => 'Belo Horizonte Santa Rosa MG',
@@ -4120,7 +4119,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            289 => 
+            289 =>
             array (
                 'id' => 290,
                 'name' => 'Belo Horizonte Santa Sofia MG',
@@ -4134,7 +4133,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            290 => 
+            290 =>
             array (
                 'id' => 291,
                 'name' => 'Belo Horizonte Santa Tereza MG',
@@ -4148,7 +4147,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            291 => 
+            291 =>
             array (
                 'id' => 292,
                 'name' => 'Belo Horizonte Santa Terezinha MG',
@@ -4162,7 +4161,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            292 => 
+            292 =>
             array (
                 'id' => 293,
                 'name' => 'Belo Horizonte Santana do Cafezal MG',
@@ -4176,7 +4175,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            293 => 
+            293 =>
             array (
                 'id' => 294,
                 'name' => 'Belo Horizonte Santo Agostinho MG',
@@ -4190,7 +4189,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            294 => 
+            294 =>
             array (
                 'id' => 295,
                 'name' => 'Belo Horizonte Santo André MG',
@@ -4204,7 +4203,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            295 => 
+            295 =>
             array (
                 'id' => 296,
                 'name' => 'Belo Horizonte Santo Antônio MG',
@@ -4218,7 +4217,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            296 => 
+            296 =>
             array (
                 'id' => 297,
                 'name' => 'Belo Horizonte São Benedito MG',
@@ -4232,7 +4231,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            297 => 
+            297 =>
             array (
                 'id' => 298,
                 'name' => 'Belo Horizonte São Bento MG',
@@ -4246,7 +4245,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            298 => 
+            298 =>
             array (
                 'id' => 299,
                 'name' => 'Belo Horizonte São Bernardo MG',
@@ -4260,7 +4259,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            299 => 
+            299 =>
             array (
                 'id' => 300,
                 'name' => 'Belo Horizonte São Cristóvão MG',
@@ -4274,7 +4273,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            300 => 
+            300 =>
             array (
                 'id' => 301,
                 'name' => 'Belo Horizonte São Damião MG',
@@ -4288,7 +4287,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            301 => 
+            301 =>
             array (
                 'id' => 302,
                 'name' => 'Belo Horizonte São Francisco MG',
@@ -4302,7 +4301,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            302 => 
+            302 =>
             array (
                 'id' => 303,
                 'name' => 'Belo Horizonte São Francisco das Chagas MG',
@@ -4316,7 +4315,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            303 => 
+            303 =>
             array (
                 'id' => 304,
                 'name' => 'Belo Horizonte São Gabriel MG',
@@ -4330,7 +4329,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            304 => 
+            304 =>
             array (
                 'id' => 305,
                 'name' => 'Belo Horizonte São Geraldo MG',
@@ -4344,7 +4343,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            305 => 
+            305 =>
             array (
                 'id' => 306,
                 'name' => 'Belo Horizonte São Gonçalo MG',
@@ -4358,7 +4357,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            306 => 
+            306 =>
             array (
                 'id' => 307,
                 'name' => 'Belo Horizonte São João MG',
@@ -4372,7 +4371,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            307 => 
+            307 =>
             array (
                 'id' => 308,
             'name' => 'Belo Horizonte São João Batista (Venda Nova) MG',
@@ -4386,7 +4385,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            308 => 
+            308 =>
             array (
                 'id' => 309,
                 'name' => 'Belo Horizonte São Jorge MG',
@@ -4400,7 +4399,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            309 => 
+            309 =>
             array (
                 'id' => 310,
                 'name' => 'Belo Horizonte São Jorge 2 MG',
@@ -4414,7 +4413,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            310 => 
+            310 =>
             array (
                 'id' => 311,
                 'name' => 'Belo Horizonte São Jorge 3 MG',
@@ -4428,7 +4427,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            311 => 
+            311 =>
             array (
                 'id' => 312,
                 'name' => 'Belo Horizonte São José MG',
@@ -4442,7 +4441,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            312 => 
+            312 =>
             array (
                 'id' => 313,
                 'name' => 'Belo Horizonte São Lucas MG',
@@ -4456,7 +4455,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            313 => 
+            313 =>
             array (
                 'id' => 314,
                 'name' => 'Belo Horizonte São Luiz MG',
@@ -4470,7 +4469,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            314 => 
+            314 =>
             array (
                 'id' => 315,
                 'name' => 'Belo Horizonte São Marcos MG',
@@ -4484,7 +4483,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            315 => 
+            315 =>
             array (
                 'id' => 316,
                 'name' => 'Belo Horizonte São Paulo MG',
@@ -4498,7 +4497,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            316 => 
+            316 =>
             array (
                 'id' => 317,
                 'name' => 'Belo Horizonte São Pedro MG',
@@ -4512,7 +4511,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            317 => 
+            317 =>
             array (
                 'id' => 318,
                 'name' => 'Belo Horizonte São Salvador MG',
@@ -4526,7 +4525,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            318 => 
+            318 =>
             array (
                 'id' => 319,
                 'name' => 'Belo Horizonte São Sebastião MG',
@@ -4540,7 +4539,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            319 => 
+            319 =>
             array (
                 'id' => 320,
                 'name' => 'Belo Horizonte São Tomáz MG',
@@ -4554,7 +4553,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            320 => 
+            320 =>
             array (
                 'id' => 321,
                 'name' => 'Belo Horizonte Satélite MG',
@@ -4568,7 +4567,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            321 => 
+            321 =>
             array (
                 'id' => 322,
                 'name' => 'Belo Horizonte Saudade MG',
@@ -4583,7 +4582,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            322 => 
+            322 =>
             array (
                 'id' => 323,
                 'name' => 'Belo Horizonte Savassi MG',
@@ -4598,7 +4597,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            323 => 
+            323 =>
             array (
                 'id' => 324,
                 'name' => 'Belo Horizonte Senhor dos Passos MG',
@@ -4612,7 +4611,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            324 => 
+            324 =>
             array (
                 'id' => 325,
                 'name' => 'Belo Horizonte Serra MG',
@@ -4627,7 +4626,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            325 => 
+            325 =>
             array (
                 'id' => 326,
                 'name' => 'Belo Horizonte Serra do Curral MG',
@@ -4641,7 +4640,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            326 => 
+            326 =>
             array (
                 'id' => 327,
             'name' => 'Belo Horizonte Serra Verde (Venda Nova) MG',
@@ -4655,7 +4654,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            327 => 
+            327 =>
             array (
                 'id' => 328,
                 'name' => 'Belo Horizonte Serrano MG',
@@ -4670,7 +4669,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            328 => 
+            328 =>
             array (
                 'id' => 329,
                 'name' => 'Belo Horizonte Silveira MG',
@@ -4684,7 +4683,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            329 => 
+            329 =>
             array (
                 'id' => 330,
                 'name' => 'Belo Horizonte Sion MG',
@@ -4699,7 +4698,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            330 => 
+            330 =>
             array (
                 'id' => 331,
             'name' => 'Belo Horizonte Solar do Barreiro (Barreiro) MG',
@@ -4713,7 +4712,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            331 => 
+            331 =>
             array (
                 'id' => 332,
                 'name' => 'Belo Horizonte Solimões MG',
@@ -4727,7 +4726,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            332 => 
+            332 =>
             array (
                 'id' => 333,
                 'name' => 'Belo Horizonte Sport Club MG',
@@ -4741,7 +4740,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            333 => 
+            333 =>
             array (
                 'id' => 334,
                 'name' => 'Belo Horizonte Sumaré MG',
@@ -4756,7 +4755,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            334 => 
+            334 =>
             array (
                 'id' => 335,
                 'name' => 'Belo Horizonte Suzana MG',
@@ -4771,7 +4770,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            335 => 
+            335 =>
             array (
                 'id' => 336,
                 'name' => 'Belo Horizonte Taquaril MG',
@@ -4785,7 +4784,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            336 => 
+            336 =>
             array (
                 'id' => 337,
             'name' => 'Belo Horizonte Teixeira Dias (Barreiro) MG',
@@ -4799,7 +4798,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            337 => 
+            337 =>
             array (
                 'id' => 338,
                 'name' => 'Belo Horizonte Tiradentes MG',
@@ -4813,7 +4812,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            338 => 
+            338 =>
             array (
                 'id' => 339,
             'name' => 'Belo Horizonte Tirol (Barreiro) MG',
@@ -4827,7 +4826,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            339 => 
+            339 =>
             array (
                 'id' => 340,
                 'name' => 'Belo Horizonte Três Marias MG',
@@ -4841,7 +4840,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            340 => 
+            340 =>
             array (
                 'id' => 341,
                 'name' => 'Belo Horizonte Trevo MG',
@@ -4856,7 +4855,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            341 => 
+            341 =>
             array (
                 'id' => 342,
             'name' => 'Belo Horizonte Trevo (Dandara) MG',
@@ -4870,7 +4869,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                342 => 
+                342 =>
                 array (
                     'id' => 343,
                     'name' => 'Belo Horizonte Tupi A MG',
@@ -4885,7 +4884,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                343 => 
+                343 =>
                 array (
                     'id' => 344,
                     'name' => 'Belo Horizonte Tupi B MG',
@@ -4900,7 +4899,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                344 => 
+                344 =>
                 array (
                     'id' => 345,
                     'name' => 'Belo Horizonte União MG',
@@ -4915,7 +4914,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                345 => 
+                345 =>
                 array (
                     'id' => 346,
                     'name' => 'Belo Horizonte Universitário MG',
@@ -4929,7 +4928,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                346 => 
+                346 =>
                 array (
                     'id' => 347,
                     'name' => 'Belo Horizonte Universo MG',
@@ -4943,7 +4942,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                347 => 
+                347 =>
                 array (
                     'id' => 348,
                     'name' => 'Belo Horizonte Urca MG',
@@ -4958,7 +4957,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                348 => 
+                348 =>
                 array (
                     'id' => 349,
                 'name' => 'Belo Horizonte Vale do Jatobá (Barreiro) MG',
@@ -4972,7 +4971,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                349 => 
+                349 =>
                 array (
                     'id' => 350,
                     'name' => 'Belo Horizonte Venda Nova MG',
@@ -4986,7 +4985,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                350 => 
+                350 =>
                 array (
                     'id' => 351,
                     'name' => 'Belo Horizonte Ventosa MG',
@@ -5001,7 +5000,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                351 => 
+                351 =>
                 array (
                     'id' => 352,
                     'name' => 'Belo Horizonte Vera Cruz MG',
@@ -5015,7 +5014,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                352 => 
+                352 =>
                 array (
                     'id' => 353,
                     'name' => 'Belo Horizonte Vila Aeroporto MG',
@@ -5029,7 +5028,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                353 => 
+                353 =>
                 array (
                     'id' => 354,
                     'name' => 'Belo Horizonte Vila Antena MG',
@@ -5043,7 +5042,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                354 => 
+                354 =>
                 array (
                     'id' => 355,
                     'name' => 'Belo Horizonte Vila Antena Montanhês MG',
@@ -5057,7 +5056,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                355 => 
+                355 =>
                 array (
                     'id' => 356,
                     'name' => 'Belo Horizonte Vila Bandeirantes MG',
@@ -5071,7 +5070,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                356 => 
+                356 =>
                 array (
                     'id' => 357,
                     'name' => 'Belo Horizonte Vila Barragem Santa Lúcia MG',
@@ -5085,7 +5084,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                357 => 
+                357 =>
                 array (
                     'id' => 358,
                 'name' => 'Belo Horizonte Vila Bernadete (Barreiro) MG',
@@ -5099,7 +5098,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                358 => 
+                358 =>
                 array (
                     'id' => 359,
                     'name' => 'Belo Horizonte Vila Calafate MG',
@@ -5113,7 +5112,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                359 => 
+                359 =>
                 array (
                     'id' => 360,
                     'name' => 'Belo Horizonte Vila Cemig MG',
@@ -5127,7 +5126,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                360 => 
+                360 =>
                 array (
                     'id' => 361,
                     'name' => 'Belo Horizonte Vila Cloris MG',
@@ -5141,7 +5140,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                361 => 
+                361 =>
                 array (
                     'id' => 362,
                 'name' => 'Belo Horizonte Vila Coqueiral (Vila da Paz) MG',
@@ -5155,7 +5154,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                362 => 
+                362 =>
                 array (
                     'id' => 363,
                     'name' => 'Belo Horizonte Vila da Luz MG',
@@ -5169,7 +5168,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                363 => 
+                363 =>
                 array (
                     'id' => 364,
                     'name' => 'Belo Horizonte Vila dos Anjos MG',
@@ -5183,7 +5182,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                364 => 
+                364 =>
                 array (
                     'id' => 365,
                 'name' => 'Belo Horizonte Vila Ecológica (Barreiro) MG',
@@ -5197,7 +5196,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                365 => 
+                365 =>
                 array (
                     'id' => 366,
                 'name' => 'Belo Horizonte Vila Formosa Vale do Jatobá (Barreiro) MG',
@@ -5211,7 +5210,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                366 => 
+                366 =>
                 array (
                     'id' => 367,
                     'name' => 'Belo Horizonte Vila Independencia 1 MG',
@@ -5225,7 +5224,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                367 => 
+                367 =>
                 array (
                     'id' => 368,
                     'name' => 'Belo Horizonte Vila Independencia 2 MG',
@@ -5239,7 +5238,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                368 => 
+                368 =>
                 array (
                     'id' => 369,
                     'name' => 'Belo Horizonte Vila Inestan MG',
@@ -5253,7 +5252,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                369 => 
+                369 =>
                 array (
                     'id' => 370,
                 'name' => 'Belo Horizonte Vila Itaipu (Barreiro) MG',
@@ -5267,7 +5266,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                370 => 
+                370 =>
                 array (
                     'id' => 371,
                     'name' => 'Belo Horizonte Vila Jardim Alvorada MG',
@@ -5281,7 +5280,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                371 => 
+                371 =>
                 array (
                     'id' => 372,
                     'name' => 'Belo Horizonte Vila Jardim São José MG',
@@ -5295,7 +5294,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                372 => 
+                372 =>
                 array (
                     'id' => 373,
                     'name' => 'Belo Horizonte Vila Madre Gertrudes 1 MG',
@@ -5309,7 +5308,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                373 => 
+                373 =>
                 array (
                     'id' => 374,
                     'name' => 'Belo Horizonte Vila Maloca MG',
@@ -5323,7 +5322,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                374 => 
+                374 =>
                 array (
                     'id' => 375,
                     'name' => 'Belo Horizonte Vila Maria MG',
@@ -5337,7 +5336,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                375 => 
+                375 =>
                 array (
                     'id' => 376,
                     'name' => 'Belo Horizonte Vila Nossa Senhora Aparecida MG',
@@ -5351,7 +5350,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                376 => 
+                376 =>
                 array (
                     'id' => 377,
                     'name' => 'Belo Horizonte Vila Nova Gameleira 2 MG',
@@ -5365,7 +5364,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                377 => 
+                377 =>
                 array (
                     'id' => 378,
                     'name' => 'Belo Horizonte Vila Nova Paraíso MG',
@@ -5379,7 +5378,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                378 => 
+                378 =>
                 array (
                     'id' => 379,
                     'name' => 'Belo Horizonte Vila Novo São Lucas MG',
@@ -5393,7 +5392,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                379 => 
+                379 =>
                 array (
                     'id' => 380,
                     'name' => 'Belo Horizonte Vila Oeste MG',
@@ -5407,7 +5406,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                380 => 
+                380 =>
                 array (
                     'id' => 381,
                     'name' => 'Belo Horizonte Vila Ouro Minas MG',
@@ -5421,7 +5420,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                381 => 
+                381 =>
                 array (
                     'id' => 382,
                     'name' => 'Belo Horizonte Vila Paris MG',
@@ -5435,7 +5434,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                382 => 
+                382 =>
                 array (
                     'id' => 383,
                 'name' => 'Belo Horizonte Vila Petrópolis (Barreiro) MG',
@@ -5449,7 +5448,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                383 => 
+                383 =>
                 array (
                     'id' => 384,
                 'name' => 'Belo Horizonte Vila Pinho Vale do Jatobá (Barreiro) MG',
@@ -5463,7 +5462,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                384 => 
+                384 =>
                 array (
                     'id' => 385,
                     'name' => 'Belo Horizonte Vila Real 2 MG',
@@ -5477,7 +5476,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                385 => 
+                385 =>
                 array (
                     'id' => 386,
                     'name' => 'Belo Horizonte Vila Rica MG',
@@ -5491,7 +5490,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                386 => 
+                386 =>
                 array (
                     'id' => 387,
                 'name' => 'Belo Horizonte Vila Santa Branca (Venda Nova) MG',
@@ -5505,7 +5504,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                387 => 
+                387 =>
                 array (
                     'id' => 388,
                 'name' => 'Belo Horizonte Vila Santa Mônica (Venda Nova) MG',
@@ -5519,7 +5518,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                388 => 
+                388 =>
                 array (
                     'id' => 389,
                     'name' => 'Belo Horizonte Vila Santo Antônio Barroquinha MG',
@@ -5533,7 +5532,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                389 => 
+                389 =>
                 array (
                     'id' => 390,
                     'name' => 'Belo Horizonte Vila São José MG',
@@ -5547,7 +5546,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                390 => 
+                390 =>
                 array (
                     'id' => 391,
                     'name' => 'Belo Horizonte Vila São Paulo MG',
@@ -5561,7 +5560,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                391 => 
+                391 =>
                 array (
                     'id' => 392,
                     'name' => 'Belo Horizonte Vila São Rafael MG',
@@ -5575,7 +5574,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                392 => 
+                392 =>
                 array (
                     'id' => 393,
                     'name' => 'Belo Horizonte Vila Sumaré MG',
@@ -5589,7 +5588,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                393 => 
+                393 =>
                 array (
                     'id' => 394,
                 'name' => 'Belo Horizonte Vila Tirol (Barreiro) MG',
@@ -5603,7 +5602,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                394 => 
+                394 =>
                 array (
                     'id' => 395,
                     'name' => 'Belo Horizonte Vila Trinta e Um de Março MG',
@@ -5617,7 +5616,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                395 => 
+                395 =>
                 array (
                     'id' => 396,
                     'name' => 'Belo Horizonte Vila União MG',
@@ -5631,7 +5630,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                396 => 
+                396 =>
                 array (
                     'id' => 397,
                     'name' => 'Belo Horizonte Vila Vista Alegre MG',
@@ -5645,7 +5644,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                397 => 
+                397 =>
                 array (
                     'id' => 398,
                     'name' => 'Belo Horizonte Vila Zilah Spósito MG',
@@ -5659,7 +5658,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                398 => 
+                398 =>
                 array (
                     'id' => 399,
                     'name' => 'Belo Horizonte Virgínia MG',
@@ -5673,7 +5672,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                399 => 
+                399 =>
                 array (
                     'id' => 400,
                     'name' => 'Belo Horizonte Vista Alegre MG',
@@ -5687,7 +5686,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                400 => 
+                400 =>
                 array (
                     'id' => 401,
                     'name' => 'Belo Horizonte Vista do Sol MG',
@@ -5701,7 +5700,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                401 => 
+                401 =>
                 array (
                     'id' => 402,
                     'name' => 'Belo Horizonte Vitória MG',
@@ -5716,7 +5715,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                402 => 
+                402 =>
                 array (
                     'id' => 403,
                 'name' => 'Belo Horizonte Vitória da Conquista (Barreiro) MG',
@@ -5730,7 +5729,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                403 => 
+                403 =>
                 array (
                     'id' => 404,
                     'name' => 'Belo Horizonte Xodó Marize MG',
@@ -5744,7 +5743,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                404 => 
+                404 =>
                 array (
                     'id' => 406,
                     'name' => 'Contagem',
@@ -5759,7 +5758,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                405 => 
+                405 =>
                 array (
                     'id' => 407,
                     'name' => 'Contagem Água Branca MG',
@@ -5774,7 +5773,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                406 => 
+                406 =>
                 array (
                     'id' => 408,
                     'name' => 'Contagem Alvorada MG',
@@ -5789,7 +5788,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                407 => 
+                407 =>
                 array (
                     'id' => 409,
                     'name' => 'Contagem Amazonas MG',
@@ -5804,7 +5803,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                408 => 
+                408 =>
                 array (
                     'id' => 410,
                     'name' => 'Contagem Antônio Cambraia MG',
@@ -5818,7 +5817,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                409 => 
+                409 =>
                 array (
                     'id' => 411,
                     'name' => 'Contagem Arcádia MG',
@@ -5833,7 +5832,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                410 => 
+                410 =>
                 array (
                     'id' => 412,
                     'name' => 'Contagem Área Rural de Contagem MG',
@@ -5847,7 +5846,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                411 => 
+                411 =>
                 array (
                     'id' => 413,
                     'name' => 'Contagem Arpoador MG',
@@ -5862,7 +5861,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                412 => 
+                412 =>
                 array (
                     'id' => 414,
                     'name' => 'Contagem Arvoredo MG',
@@ -5877,7 +5876,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                413 => 
+                413 =>
                 array (
                     'id' => 415,
                     'name' => 'Contagem Arvoredo 2ª Seção MG',
@@ -5891,7 +5890,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                414 => 
+                414 =>
                 array (
                     'id' => 416,
                     'name' => 'Contagem Bairro Empresarial do Mandu MG',
@@ -5905,7 +5904,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                415 => 
+                415 =>
                 array (
                     'id' => 417,
                     'name' => 'Contagem Bandeirantes MG',
@@ -5920,7 +5919,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                416 => 
+                416 =>
                 array (
                     'id' => 418,
                     'name' => 'Contagem Beatriz MG',
@@ -5935,7 +5934,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                417 => 
+                417 =>
                 array (
                     'id' => 419,
                     'name' => 'Contagem Beija Flor MG',
@@ -5950,7 +5949,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                418 => 
+                418 =>
                 array (
                     'id' => 420,
                     'name' => 'Contagem Bela Vista MG',
@@ -5965,7 +5964,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                419 => 
+                419 =>
                 array (
                     'id' => 421,
                     'name' => 'Contagem Bernardo Monteiro MG',
@@ -5979,7 +5978,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                420 => 
+                420 =>
                 array (
                     'id' => 422,
                     'name' => 'Contagem Betânia MG',
@@ -5994,7 +5993,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                421 => 
+                421 =>
                 array (
                     'id' => 423,
                     'name' => 'Contagem Bitácula ou 40 Alqueires MG',
@@ -6008,7 +6007,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                422 => 
+                422 =>
                 array (
                     'id' => 424,
                     'name' => 'Contagem Boa Vista MG',
@@ -6023,7 +6022,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                423 => 
+                423 =>
                 array (
                     'id' => 425,
                     'name' => 'Contagem Bom Jesus MG',
@@ -6038,7 +6037,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                424 => 
+                424 =>
                 array (
                     'id' => 426,
                     'name' => 'Contagem Buganvile 1 MG',
@@ -6053,7 +6052,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                425 => 
+                425 =>
                 array (
                     'id' => 427,
                     'name' => 'Contagem Buganville 2 MG',
@@ -6068,7 +6067,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                426 => 
+                426 =>
                 array (
                     'id' => 428,
                     'name' => 'Contagem Cabral MG',
@@ -6083,7 +6082,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                427 => 
+                427 =>
                 array (
                     'id' => 429,
                     'name' => 'Contagem Caiapós MG',
@@ -6098,7 +6097,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                428 => 
+                428 =>
                 array (
                     'id' => 430,
                     'name' => 'Contagem Camilo Alves MG',
@@ -6113,7 +6112,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                429 => 
+                429 =>
                 array (
                     'id' => 431,
                     'name' => 'Contagem Campina Verde MG',
@@ -6128,7 +6127,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                430 => 
+                430 =>
                 array (
                     'id' => 432,
                     'name' => 'Contagem Campo Alto MG',
@@ -6143,7 +6142,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                431 => 
+                431 =>
                 array (
                     'id' => 433,
                     'name' => 'Contagem Canadá MG',
@@ -6158,7 +6157,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                432 => 
+                432 =>
                 array (
                     'id' => 434,
                     'name' => 'Contagem Cândida Ferreira MG',
@@ -6172,7 +6171,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                433 => 
+                433 =>
                 array (
                     'id' => 435,
                 'name' => 'Contagem Capim Rasteiro (Chácaras Campo Alegre) MG',
@@ -6186,7 +6185,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                434 => 
+                434 =>
                 array (
                     'id' => 436,
                     'name' => 'Contagem Carajás MG',
@@ -6201,7 +6200,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                435 => 
+                435 =>
                 array (
                     'id' => 437,
                     'name' => 'Contagem Central Parque MG',
@@ -6215,7 +6214,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                436 => 
+                436 =>
                 array (
                     'id' => 438,
                     'name' => 'Contagem Centro MG',
@@ -6230,7 +6229,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                437 => 
+                437 =>
                 array (
                     'id' => 439,
                     'name' => 'Contagem Chácara Contagem MG',
@@ -6244,7 +6243,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                438 => 
+                438 =>
                 array (
                     'id' => 440,
                     'name' => 'Contagem Chácara Del-Rey MG',
@@ -6258,7 +6257,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                439 => 
+                439 =>
                 array (
                     'id' => 441,
                     'name' => 'Contagem Chácara Novo Horizonte MG',
@@ -6272,7 +6271,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                440 => 
+                440 =>
                 array (
                     'id' => 442,
                     'name' => 'Contagem Chácara Planalto MG',
@@ -6286,7 +6285,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                441 => 
+                441 =>
                 array (
                     'id' => 443,
                     'name' => 'Contagem Chácara São Geraldo MG',
@@ -6300,7 +6299,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                442 => 
+                442 =>
                 array (
                     'id' => 444,
                     'name' => 'Contagem Chácaras Boa Vista MG',
@@ -6314,7 +6313,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                443 => 
+                443 =>
                 array (
                     'id' => 445,
                     'name' => 'Contagem Chácaras Bom Jesus MG',
@@ -6328,7 +6327,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                444 => 
+                444 =>
                 array (
                     'id' => 446,
                     'name' => 'Contagem Chácaras Califórnia MG',
@@ -6342,7 +6341,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                445 => 
+                445 =>
                 array (
                     'id' => 447,
                     'name' => 'Contagem Chácaras Campestre MG',
@@ -6356,7 +6355,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                446 => 
+                446 =>
                 array (
                     'id' => 448,
                     'name' => 'Contagem Chácaras Cotia MG',
@@ -6370,7 +6369,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                447 => 
+                447 =>
                 array (
                     'id' => 449,
                     'name' => 'Contagem Chácaras Reunidas Santa Terezinha MG',
@@ -6384,7 +6383,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                448 => 
+                448 =>
                 array (
                     'id' => 450,
                     'name' => 'Contagem Cidade Industrial MG',
@@ -6398,7 +6397,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                449 => 
+                449 =>
                 array (
                     'id' => 451,
                     'name' => 'Contagem Cidade Jardim Eldorado MG',
@@ -6412,7 +6411,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                450 => 
+                450 =>
                 array (
                     'id' => 452,
                     'name' => 'Contagem Cincão MG',
@@ -6427,7 +6426,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                451 => 
+                451 =>
                 array (
                     'id' => 453,
                     'name' => 'Contagem Cinco MG',
@@ -6442,7 +6441,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                452 => 
+                452 =>
                 array (
                     'id' => 454,
                     'name' => 'Contagem Colonial MG',
@@ -6457,7 +6456,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                453 => 
+                453 =>
                 array (
                     'id' => 455,
                     'name' => 'Contagem Colorado MG',
@@ -6472,7 +6471,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                454 => 
+                454 =>
                 array (
                     'id' => 456,
                     'name' => 'Contagem Condomínio Estância San Remo MG',
@@ -6486,7 +6485,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                455 => 
+                455 =>
                 array (
                     'id' => 457,
                     'name' => 'Contagem Conjunto Água Branca MG',
@@ -6500,7 +6499,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                456 => 
+                456 =>
                 array (
                     'id' => 458,
                     'name' => 'Contagem Conjunto Confisco MG',
@@ -6514,7 +6513,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                457 => 
+                457 =>
                 array (
                     'id' => 459,
                     'name' => 'Contagem Conjunto Habitacional Nova Pampulha MG',
@@ -6528,7 +6527,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                458 => 
+                458 =>
                 array (
                     'id' => 460,
                     'name' => 'Contagem Conquista Veredas MG',
@@ -6542,7 +6541,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                459 => 
+                459 =>
                 array (
                     'id' => 461,
                     'name' => 'Contagem Darcy Ribeiro MG',
@@ -6557,7 +6556,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                460 => 
+                460 =>
                 array (
                     'id' => 462,
                     'name' => 'Contagem Darcy Vargas MG',
@@ -6572,7 +6571,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                461 => 
+                461 =>
                 array (
                     'id' => 463,
                     'name' => 'Contagem Distrito Industrial Doutor Hélio Pentagna Guimarães MG',
@@ -6586,7 +6585,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                462 => 
+                462 =>
                 array (
                     'id' => 464,
                     'name' => 'Contagem Do Comércio MG',
@@ -6601,7 +6600,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                463 => 
+                463 =>
                 array (
                     'id' => 465,
                     'name' => 'Contagem Duque de Caxias MG',
@@ -6615,7 +6614,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                464 => 
+                464 =>
                 array (
                     'id' => 466,
                     'name' => 'Contagem Eldoradinho MG',
@@ -6630,7 +6629,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                465 => 
+                465 =>
                 array (
                     'id' => 467,
                     'name' => 'Contagem Eldorado MG',
@@ -6645,7 +6644,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                466 => 
+                466 =>
                 array (
                     'id' => 468,
                     'name' => 'Contagem Estaleiro MG',
@@ -6660,7 +6659,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                467 => 
+                467 =>
                 array (
                     'id' => 469,
                     'name' => 'Contagem Estância do Hibisco MG',
@@ -6674,7 +6673,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                468 => 
+                468 =>
                 array (
                     'id' => 470,
                     'name' => 'Contagem Estância Silveira MG',
@@ -6688,7 +6687,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                469 => 
+                469 =>
                 array (
                     'id' => 471,
                     'name' => 'Contagem Estâncias Imperiais MG',
@@ -6702,7 +6701,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                470 => 
+                470 =>
                 array (
                     'id' => 472,
                     'name' => 'Contagem Estrela Dalva MG',
@@ -6717,7 +6716,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                471 => 
+                471 =>
                 array (
                     'id' => 473,
                     'name' => 'Contagem Europa MG',
@@ -6732,7 +6731,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                472 => 
+                472 =>
                 array (
                     'id' => 474,
                     'name' => 'Contagem Fazenda do Mandu MG',
@@ -6746,7 +6745,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                473 => 
+                473 =>
                 array (
                     'id' => 475,
                     'name' => 'Contagem Feijão Miúdo MG',
@@ -6761,7 +6760,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                474 => 
+                474 =>
                 array (
                     'id' => 476,
                     'name' => 'Contagem Flamengo MG',
@@ -6776,7 +6775,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                475 => 
+                475 =>
                 array (
                     'id' => 477,
                     'name' => 'Contagem Fonte Grande MG',
@@ -6791,7 +6790,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                476 => 
+                476 =>
                 array (
                     'id' => 478,
                     'name' => 'Contagem Funcionários MG',
@@ -6806,7 +6805,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                477 => 
+                477 =>
                 array (
                     'id' => 479,
                     'name' => 'Contagem Glória MG',
@@ -6821,7 +6820,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                478 => 
+                478 =>
                 array (
                     'id' => 480,
                     'name' => 'Contagem Granja Ouro Branco MG',
@@ -6835,7 +6834,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                479 => 
+                479 =>
                 array (
                     'id' => 481,
                     'name' => 'Contagem Granja Vista Alegre MG',
@@ -6849,7 +6848,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                480 => 
+                480 =>
                 array (
                     'id' => 482,
                     'name' => 'Contagem Guanabara MG',
@@ -6864,7 +6863,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                481 => 
+                481 =>
                 array (
                     'id' => 483,
                     'name' => 'Contagem Icaivera MG',
@@ -6879,7 +6878,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                482 => 
+                482 =>
                 array (
                     'id' => 484,
                     'name' => 'Contagem Inconfidentes MG',
@@ -6894,7 +6893,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                483 => 
+                483 =>
                 array (
                     'id' => 485,
                     'name' => 'Contagem Industrial MG',
@@ -6909,7 +6908,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                484 => 
+                484 =>
                 array (
                     'id' => 486,
                     'name' => 'Contagem Industrial Itaú MG',
@@ -6923,7 +6922,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                485 => 
+                485 =>
                 array (
                     'id' => 487,
                     'name' => 'Contagem Industrial Santa Cruz MG',
@@ -6937,7 +6936,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                486 => 
+                486 =>
                 array (
                     'id' => 488,
                     'name' => 'Contagem Industrial Santa Rita MG',
@@ -6951,7 +6950,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                487 => 
+                487 =>
                 array (
                     'id' => 489,
                     'name' => 'Contagem Industrial São Luiz MG',
@@ -6965,7 +6964,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                488 => 
+                488 =>
                 array (
                     'id' => 490,
                     'name' => 'Contagem Janjão MG',
@@ -6980,7 +6979,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                489 => 
+                489 =>
                 array (
                     'id' => 491,
                     'name' => 'Contagem Jardim Alvorada MG',
@@ -6994,7 +6993,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                490 => 
+                490 =>
                 array (
                     'id' => 492,
                     'name' => 'Contagem Jardim Balneário MG',
@@ -7008,7 +7007,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                491 => 
+                491 =>
                 array (
                     'id' => 493,
                     'name' => 'Contagem Jardim Bandeirantes MG',
@@ -7022,7 +7021,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                492 => 
+                492 =>
                 array (
                     'id' => 494,
                     'name' => 'Contagem Jardim Califórnia MG',
@@ -7036,7 +7035,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                493 => 
+                493 =>
                 array (
                     'id' => 495,
                     'name' => 'Contagem Jardim das Oliveiras MG',
@@ -7050,7 +7049,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                494 => 
+                494 =>
                 array (
                     'id' => 496,
                     'name' => 'Contagem Jardim do Lago MG',
@@ -7064,7 +7063,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                495 => 
+                495 =>
                 array (
                     'id' => 497,
                     'name' => 'Contagem Jardim Industrial MG',
@@ -7078,7 +7077,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                496 => 
+                496 =>
                 array (
                     'id' => 498,
                     'name' => 'Contagem Jardim Laguna MG',
@@ -7093,7 +7092,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                497 => 
+                497 =>
                 array (
                     'id' => 499,
                     'name' => 'Contagem Jardim Marrocos MG',
@@ -7107,7 +7106,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                498 => 
+                498 =>
                 array (
                     'id' => 500,
                     'name' => 'Contagem Jardim Pérola MG',
@@ -7122,7 +7121,7 @@ class CitiesTableSeeder extends Seeder
                     'created_at' => NULL,
                     'updated_at' => NULL,
                 ),
-                499 => 
+                499 =>
                 array (
                     'id' => 501,
                     'name' => 'Contagem Jardim Riacho das Pedras MG',
@@ -7138,7 +7137,7 @@ class CitiesTableSeeder extends Seeder
                 ),
             ));
         \DB::table('cities')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 502,
                 'name' => 'Contagem Jardim Vera Cruz MG',
@@ -7152,7 +7151,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 503,
                 'name' => 'Contagem Jardim Vera Cruz 2 MG',
@@ -7166,7 +7165,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 504,
                 'name' => 'Contagem JK MG',
@@ -7181,7 +7180,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 505,
                 'name' => 'Contagem Kennedy MG',
@@ -7196,7 +7195,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 506,
             'name' => 'Contagem Kennedy (Ceasa) MG',
@@ -7210,7 +7209,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 507,
                 'name' => 'Contagem Liberdade 1 MG',
@@ -7225,7 +7224,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 508,
                 'name' => 'Contagem Liberdade 2 MG',
@@ -7240,7 +7239,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 509,
                 'name' => 'Contagem Linda Vista MG',
@@ -7255,7 +7254,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 510,
                 'name' => 'Contagem Lua Nova da Pampulha MG',
@@ -7269,7 +7268,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 511,
                 'name' => 'Contagem Lúcio de Abreu MG',
@@ -7283,7 +7282,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 512,
                 'name' => 'Contagem Maria da Conceição MG',
@@ -7297,7 +7296,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 513,
                 'name' => 'Contagem Milanez MG',
@@ -7312,7 +7311,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 514,
                 'name' => 'Contagem Monsenhor Horta MG',
@@ -7326,7 +7325,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 515,
                 'name' => 'Contagem Monte Castelo MG',
@@ -7341,7 +7340,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 516,
                 'name' => 'Contagem Morada Nova MG',
@@ -7356,7 +7355,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 517,
                 'name' => 'Contagem Nacional MG',
@@ -7371,7 +7370,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 518,
                 'name' => 'Contagem Nazaré MG',
@@ -7386,7 +7385,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 519,
                 'name' => 'Contagem Nossa Senhora da Conceição MG',
@@ -7400,7 +7399,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 520,
                 'name' => 'Contagem Nossa Senhora de Fátima MG',
@@ -7414,7 +7413,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 521,
                 'name' => 'Contagem Nossa Senhora do Carmo MG',
@@ -7428,7 +7427,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 522,
                 'name' => 'Contagem Nova Contagem MG',
@@ -7443,7 +7442,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 523,
                 'name' => 'Contagem Novo Boa Vista MG',
@@ -7457,7 +7456,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 524,
                 'name' => 'Contagem Novo Eldorado MG',
@@ -7472,7 +7471,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 525,
                 'name' => 'Contagem Novo Progresso MG',
@@ -7486,7 +7485,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 526,
                 'name' => 'Contagem Novo Recanto MG',
@@ -7501,7 +7500,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 527,
                 'name' => 'Contagem Oitis MG',
@@ -7516,7 +7515,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 528,
                 'name' => 'Contagem Olinda MG',
@@ -7531,7 +7530,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 529,
                 'name' => 'Contagem Parque Ayrton Senna MG',
@@ -7545,7 +7544,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 530,
                 'name' => 'Contagem Parque Belo Horizonte Industrial MG',
@@ -7559,7 +7558,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 531,
                 'name' => 'Contagem Parque Duval de Barros MG',
@@ -7573,7 +7572,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 532,
                 'name' => 'Contagem Parque Maracanã MG',
@@ -7587,7 +7586,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 533,
                 'name' => 'Contagem Parque Recreio MG',
@@ -7601,7 +7600,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 534,
                 'name' => 'Contagem Parque Riacho das Pedras MG',
@@ -7615,7 +7614,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 535,
                 'name' => 'Contagem Parque Riacho das Pedras 2ª Seção MG',
@@ -7629,7 +7628,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 536,
                 'name' => 'Contagem Parque São João MG',
@@ -7643,7 +7642,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 537,
                 'name' => 'Contagem Parque Turistas MG',
@@ -7657,7 +7656,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 538,
                 'name' => 'Contagem Parque Xangri-Lá MG',
@@ -7671,7 +7670,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 539,
                 'name' => 'Contagem Pedra Azul MG',
@@ -7686,7 +7685,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 540,
                 'name' => 'Contagem Pedra Azul 3ª Seção MG',
@@ -7700,7 +7699,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 541,
                 'name' => 'Contagem Perobas MG',
@@ -7715,7 +7714,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 542,
                 'name' => 'Contagem Perobas 2 MG',
@@ -7730,7 +7729,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 543,
                 'name' => 'Contagem Petrolândia MG',
@@ -7745,7 +7744,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 544,
                 'name' => 'Contagem Portal do Sol MG',
@@ -7760,7 +7759,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 545,
                 'name' => 'Contagem Praia MG',
@@ -7775,7 +7774,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 546,
                 'name' => 'Contagem Quintas Coloniais MG',
@@ -7789,7 +7788,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 547,
                 'name' => 'Contagem Quintas do Jacuba MG',
@@ -7803,7 +7802,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 548,
                 'name' => 'Contagem Recanto da Pampulha MG',
@@ -7817,7 +7816,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 549,
                 'name' => 'Contagem Ressaca MG',
@@ -7832,7 +7831,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 550,
                 'name' => 'Contagem Retiro MG',
@@ -7847,7 +7846,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            49 => 
+            49 =>
             array (
                 'id' => 551,
                 'name' => 'Contagem Retiro dos Sonhos MG',
@@ -7861,7 +7860,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            50 => 
+            50 =>
             array (
                 'id' => 552,
                 'name' => 'Contagem Riacho das Pedras MG',
@@ -7875,7 +7874,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            51 => 
+            51 =>
             array (
                 'id' => 553,
                 'name' => 'Contagem Santa Cruz Industrial MG',
@@ -7889,7 +7888,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            52 => 
+            52 =>
             array (
                 'id' => 554,
                 'name' => 'Contagem Santa Edwiges MG',
@@ -7904,7 +7903,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            53 => 
+            53 =>
             array (
                 'id' => 555,
                 'name' => 'Contagem Santa Helena MG',
@@ -7919,7 +7918,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            54 => 
+            54 =>
             array (
                 'id' => 556,
                 'name' => 'Contagem Santa Luzia MG',
@@ -7934,7 +7933,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            55 => 
+            55 =>
             array (
                 'id' => 557,
                 'name' => 'Contagem Santa Maria MG',
@@ -7949,7 +7948,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            56 => 
+            56 =>
             array (
                 'id' => 558,
                 'name' => 'Contagem Santa Terezinha MG',
@@ -7963,7 +7962,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            57 => 
+            57 =>
             array (
                 'id' => 559,
                 'name' => 'Contagem Santo Antônio MG',
@@ -7978,7 +7977,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            58 => 
+            58 =>
             array (
                 'id' => 560,
                 'name' => 'Contagem São Caetano MG',
@@ -7993,7 +7992,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            59 => 
+            59 =>
             array (
                 'id' => 561,
                 'name' => 'Contagem São Gonçalo MG',
@@ -8008,7 +8007,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            60 => 
+            60 =>
             array (
                 'id' => 562,
                 'name' => 'Contagem São Gotardo MG',
@@ -8023,7 +8022,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            61 => 
+            61 =>
             array (
                 'id' => 563,
                 'name' => 'Contagem São Joaquim MG',
@@ -8038,7 +8037,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            62 => 
+            62 =>
             array (
                 'id' => 564,
                 'name' => 'Contagem São Joaquim 3ª Seção MG',
@@ -8052,7 +8051,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            63 => 
+            63 =>
             array (
                 'id' => 565,
                 'name' => 'Contagem São Mateus MG',
@@ -8067,7 +8066,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            64 => 
+            64 =>
             array (
                 'id' => 566,
                 'name' => 'Contagem São Sebastião MG',
@@ -8082,7 +8081,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            65 => 
+            65 =>
             array (
                 'id' => 567,
                 'name' => 'Contagem São Sebastião - 2ª Seção MG',
@@ -8096,7 +8095,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            66 => 
+            66 =>
             array (
                 'id' => 568,
                 'name' => 'Contagem Sapucaia MG',
@@ -8111,7 +8110,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            67 => 
+            67 =>
             array (
                 'id' => 569,
                 'name' => 'Contagem Sapucaia 2 MG',
@@ -8126,7 +8125,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            68 => 
+            68 =>
             array (
                 'id' => 570,
                 'name' => 'Contagem Sapucaias 3 MG',
@@ -8141,7 +8140,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            69 => 
+            69 =>
             array (
                 'id' => 571,
                 'name' => 'Contagem Serrano MG',
@@ -8156,7 +8155,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            70 => 
+            70 =>
             array (
                 'id' => 572,
                 'name' => 'Contagem Solar do Madeira MG',
@@ -8170,7 +8169,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            71 => 
+            71 =>
             array (
                 'id' => 573,
                 'name' => 'Contagem Tapera MG',
@@ -8185,7 +8184,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            72 => 
+            72 =>
             array (
                 'id' => 574,
                 'name' => 'Contagem Tijuca MG',
@@ -8200,7 +8199,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            73 => 
+            73 =>
             array (
                 'id' => 575,
                 'name' => 'Contagem Três Barras MG',
@@ -8215,7 +8214,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            74 => 
+            74 =>
             array (
                 'id' => 576,
                 'name' => 'Contagem Tropical MG',
@@ -8230,7 +8229,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            75 => 
+            75 =>
             array (
                 'id' => 577,
                 'name' => 'Contagem Tupã MG',
@@ -8245,7 +8244,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            76 => 
+            76 =>
             array (
                 'id' => 578,
                 'name' => 'Contagem Vale das Amendoeiras MG',
@@ -8259,7 +8258,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            77 => 
+            77 =>
             array (
                 'id' => 579,
                 'name' => 'Contagem Vale das Orquídeas MG',
@@ -8273,7 +8272,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            78 => 
+            78 =>
             array (
                 'id' => 580,
                 'name' => 'Contagem Vera Cruz MG',
@@ -8288,7 +8287,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            79 => 
+            79 =>
             array (
                 'id' => 581,
                 'name' => 'Contagem Vila Barroquinha MG',
@@ -8302,7 +8301,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            80 => 
+            80 =>
             array (
                 'id' => 582,
                 'name' => 'Contagem Vila Beatriz MG',
@@ -8317,7 +8316,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            81 => 
+            81 =>
             array (
                 'id' => 583,
                 'name' => 'Contagem Vila Beija-Flor MG',
@@ -8331,7 +8330,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            82 => 
+            82 =>
             array (
                 'id' => 584,
                 'name' => 'Contagem Vila Belém MG',
@@ -8346,7 +8345,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            83 => 
+            83 =>
             array (
                 'id' => 585,
                 'name' => 'Contagem Vila Beneves MG',
@@ -8361,7 +8360,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            84 => 
+            84 =>
             array (
                 'id' => 586,
                 'name' => 'Contagem Vila Boa Esperança MG',
@@ -8375,7 +8374,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            85 => 
+            85 =>
             array (
                 'id' => 587,
                 'name' => 'Contagem Vila Boa Vista MG',
@@ -8389,7 +8388,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            86 => 
+            86 =>
             array (
                 'id' => 588,
                 'name' => 'Contagem Vila Cristina MG',
@@ -8404,7 +8403,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            87 => 
+            87 =>
             array (
                 'id' => 589,
                 'name' => 'Contagem Vila Feliz MG',
@@ -8419,7 +8418,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            88 => 
+            88 =>
             array (
                 'id' => 590,
                 'name' => 'Contagem Vila Francisco Mariano MG',
@@ -8433,7 +8432,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            89 => 
+            89 =>
             array (
                 'id' => 591,
                 'name' => 'Contagem Vila Ipê Amarelo MG',
@@ -8447,7 +8446,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            90 => 
+            90 =>
             array (
                 'id' => 592,
                 'name' => 'Contagem Vila Itália MG',
@@ -8462,7 +8461,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            91 => 
+            91 =>
             array (
                 'id' => 593,
                 'name' => 'Contagem Vila Líder MG',
@@ -8477,7 +8476,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            92 => 
+            92 =>
             array (
                 'id' => 594,
                 'name' => 'Contagem Vila Magdalena MG',
@@ -8491,7 +8490,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            93 => 
+            93 =>
             array (
                 'id' => 595,
                 'name' => 'Contagem Vila Militar MG',
@@ -8506,7 +8505,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            94 => 
+            94 =>
             array (
                 'id' => 596,
                 'name' => 'Contagem Vila Morro Vermelho MG',
@@ -8520,7 +8519,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            95 => 
+            95 =>
             array (
                 'id' => 597,
                 'name' => 'Contagem Vila Nova Esperança MG',
@@ -8534,7 +8533,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            96 => 
+            96 =>
             array (
                 'id' => 598,
                 'name' => 'Contagem Vila Panamá MG',
@@ -8549,7 +8548,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            97 => 
+            97 =>
             array (
                 'id' => 599,
                 'name' => 'Contagem Vila Paris MG',
@@ -8564,7 +8563,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            98 => 
+            98 =>
             array (
                 'id' => 600,
                 'name' => 'Contagem Vila Renascer MG',
@@ -8579,7 +8578,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            99 => 
+            99 =>
             array (
                 'id' => 601,
                 'name' => 'Contagem Vila Ruy Barbosa MG',
@@ -8593,7 +8592,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            100 => 
+            100 =>
             array (
                 'id' => 602,
                 'name' => 'Contagem Vila Santa Luzia MG',
@@ -8607,7 +8606,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            101 => 
+            101 =>
             array (
                 'id' => 603,
                 'name' => 'Contagem Vila São José MG',
@@ -8622,7 +8621,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            102 => 
+            102 =>
             array (
                 'id' => 604,
                 'name' => 'Contagem Vila São Paulo MG',
@@ -8636,7 +8635,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            103 => 
+            103 =>
             array (
                 'id' => 605,
                 'name' => 'Contagem Vila Universal MG',
@@ -8650,7 +8649,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            104 => 
+            104 =>
             array (
                 'id' => 606,
                 'name' => 'Contagem Zonas Industriais do Riacho MG',
@@ -8664,7 +8663,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            105 => 
+            105 =>
             array (
                 'id' => 607,
                 'name' => 'Nova Lima',
@@ -8679,7 +8678,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            106 => 
+            106 =>
             array (
                 'id' => 608,
                 'name' => 'Nova Lima Alphaville - Lagoa dos Ingleses MG',
@@ -8693,7 +8692,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            107 => 
+            107 =>
             array (
                 'id' => 609,
                 'name' => 'Nova Lima Alto do Gaia MG',
@@ -8708,7 +8707,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            108 => 
+            108 =>
             array (
                 'id' => 610,
                 'name' => 'Nova Lima Alvorada MG',
@@ -8723,7 +8722,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            109 => 
+            109 =>
             array (
                 'id' => 611,
                 'name' => 'Nova Lima Balneário Água Limpa MG',
@@ -8737,7 +8736,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            110 => 
+            110 =>
             array (
                 'id' => 612,
                 'name' => 'Nova Lima Barra do Céu MG',
@@ -8752,7 +8751,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            111 => 
+            111 =>
             array (
                 'id' => 613,
                 'name' => 'Nova Lima Bela Fama MG',
@@ -8767,7 +8766,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            112 => 
+            112 =>
             array (
                 'id' => 614,
                 'name' => 'Nova Lima Bom Jardim MG',
@@ -8782,7 +8781,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            113 => 
+            113 =>
             array (
                 'id' => 615,
                 'name' => 'Nova Lima Bonfim MG',
@@ -8797,7 +8796,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            114 => 
+            114 =>
             array (
                 'id' => 616,
                 'name' => 'Nova Lima Bosque Residencial do Jambreiro MG',
@@ -8811,7 +8810,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            115 => 
+            115 =>
             array (
                 'id' => 617,
                 'name' => 'Nova Lima Cabeceiras MG',
@@ -8826,7 +8825,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            116 => 
+            116 =>
             array (
                 'id' => 618,
                 'name' => 'Nova Lima Campo do Pires MG',
@@ -8840,7 +8839,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            117 => 
+            117 =>
             array (
                 'id' => 619,
                 'name' => 'Nova Lima Capela Velha MG',
@@ -8855,7 +8854,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            118 => 
+            118 =>
             array (
                 'id' => 620,
                 'name' => 'Nova Lima Cascalho MG',
@@ -8870,7 +8869,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            119 => 
+            119 =>
             array (
                 'id' => 621,
                 'name' => 'Nova Lima Centro MG',
@@ -8885,7 +8884,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            120 => 
+            120 =>
             array (
                 'id' => 622,
                 'name' => 'Nova Lima Chácara Bom Retiro MG',
@@ -8899,7 +8898,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            121 => 
+            121 =>
             array (
                 'id' => 623,
                 'name' => 'Nova Lima Chácara Luiz Daniel MG',
@@ -8913,7 +8912,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            122 => 
+            122 =>
             array (
                 'id' => 624,
                 'name' => 'Nova Lima Cristais Curitiba MG',
@@ -8927,7 +8926,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            123 => 
+            123 =>
             array (
                 'id' => 625,
                 'name' => 'Nova Lima Cruzeiro MG',
@@ -8942,7 +8941,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            124 => 
+            124 =>
             array (
                 'id' => 626,
                 'name' => 'Nova Lima Distrito Industrial Bela Fama MG',
@@ -8956,7 +8955,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            125 => 
+            125 =>
             array (
                 'id' => 627,
                 'name' => 'Nova Lima Estância Estoril 2 MG',
@@ -8970,7 +8969,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            126 => 
+            126 =>
             array (
                 'id' => 628,
                 'name' => 'Nova Lima Galo Novo MG',
@@ -8985,7 +8984,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            127 => 
+            127 =>
             array (
                 'id' => 629,
                 'name' => 'Nova Lima Honório Bicalho MG',
@@ -8999,7 +8998,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            128 => 
+            128 =>
             array (
                 'id' => 630,
                 'name' => 'Nova Lima Ipê MG',
@@ -9014,7 +9013,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            129 => 
+            129 =>
             array (
                 'id' => 631,
                 'name' => 'Nova Lima Jardim Canadá MG',
@@ -9028,7 +9027,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            130 => 
+            130 =>
             array (
                 'id' => 632,
                 'name' => 'Nova Lima Jardim das Mangabeiras MG',
@@ -9042,7 +9041,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            131 => 
+            131 =>
             array (
                 'id' => 633,
                 'name' => 'Nova Lima Jardim Monte Verde MG',
@@ -9056,7 +9055,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            132 => 
+            132 =>
             array (
                 'id' => 634,
                 'name' => 'Nova Lima Jardim Serrano MG',
@@ -9070,7 +9069,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            133 => 
+            133 =>
             array (
                 'id' => 635,
                 'name' => 'Nova Lima Jardinaves MG',
@@ -9085,7 +9084,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            134 => 
+            134 =>
             array (
                 'id' => 636,
                 'name' => 'Nova Lima Lagoa do Miguelão MG',
@@ -9099,7 +9098,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            135 => 
+            135 =>
             array (
                 'id' => 637,
                 'name' => 'Nova Lima Matadouro MG',
@@ -9114,7 +9113,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            136 => 
+            136 =>
             array (
                 'id' => 638,
                 'name' => 'Nova Lima Mina D\'água 2 MG',
@@ -9128,7 +9127,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            137 => 
+            137 =>
             array (
                 'id' => 639,
                 'name' => 'Nova Lima Mina de Águas Claras MG',
@@ -9142,7 +9141,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            138 => 
+            138 =>
             array (
                 'id' => 640,
                 'name' => 'Nova Lima Mingú MG',
@@ -9157,7 +9156,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            139 => 
+            139 =>
             array (
                 'id' => 641,
                 'name' => 'Nova Lima Mirante da Mata MG',
@@ -9171,7 +9170,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            140 => 
+            140 =>
             array (
                 'id' => 642,
                 'name' => 'Nova Lima Nossa Senhora de Fátima MG',
@@ -9185,7 +9184,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            141 => 
+            141 =>
             array (
                 'id' => 643,
                 'name' => 'Nova Lima Olaria MG',
@@ -9200,7 +9199,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            142 => 
+            142 =>
             array (
                 'id' => 644,
                 'name' => 'Nova Lima Oswaldo Barbosa Pena 2 MG',
@@ -9214,7 +9213,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            143 => 
+            143 =>
             array (
                 'id' => 645,
                 'name' => 'Nova Lima Ouro Velho Mansões MG',
@@ -9228,7 +9227,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            144 => 
+            144 =>
             array (
                 'id' => 646,
                 'name' => 'Nova Lima Parque do Tumbá MG',
@@ -9242,7 +9241,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            145 => 
+            145 =>
             array (
                 'id' => 647,
                 'name' => 'Nova Lima Pasárgada MG',
@@ -9257,7 +9256,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            146 => 
+            146 =>
             array (
                 'id' => 648,
                 'name' => 'Nova Lima Pasto da Balança MG',
@@ -9271,7 +9270,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            147 => 
+            147 =>
             array (
                 'id' => 649,
                 'name' => 'Nova Lima Quintas MG',
@@ -9286,7 +9285,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            148 => 
+            148 =>
             array (
                 'id' => 650,
                 'name' => 'Nova Lima Quintas do Morro MG',
@@ -9300,7 +9299,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            149 => 
+            149 =>
             array (
                 'id' => 651,
                 'name' => 'Nova Lima Quintas do Sol MG',
@@ -9314,7 +9313,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            150 => 
+            150 =>
             array (
                 'id' => 652,
                 'name' => 'Nova Lima Riviera MG',
@@ -9329,7 +9328,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            151 => 
+            151 =>
             array (
                 'id' => 653,
                 'name' => 'Nova Lima Santa Rita MG',
@@ -9344,7 +9343,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            152 => 
+            152 =>
             array (
                 'id' => 654,
                 'name' => 'Nova Lima São Sebastião das Águas Claras MG',
@@ -9358,7 +9357,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            153 => 
+            153 =>
             array (
                 'id' => 655,
                 'name' => 'Nova Lima Serra do Curral MG',
@@ -9372,7 +9371,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            154 => 
+            154 =>
             array (
                 'id' => 656,
                 'name' => 'Nova Lima Serra do Curral Del Rey MG',
@@ -9386,7 +9385,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            155 => 
+            155 =>
             array (
                 'id' => 657,
                 'name' => 'Nova Lima Solar da Lagoa MG',
@@ -9400,7 +9399,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            156 => 
+            156 =>
             array (
                 'id' => 658,
                 'name' => 'Nova Lima Unidade de Vizinhanças Quintas Morro do Chapéu MG',
@@ -9414,7 +9413,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            157 => 
+            157 =>
             array (
                 'id' => 659,
                 'name' => 'Nova Lima Vale da Esperança MG',
@@ -9428,7 +9427,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            158 => 
+            158 =>
             array (
                 'id' => 660,
                 'name' => 'Nova Lima Vale do Sereno MG',
@@ -9442,7 +9441,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            159 => 
+            159 =>
             array (
                 'id' => 661,
                 'name' => 'Nova Lima Vale do Sol MG',
@@ -9457,7 +9456,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            160 => 
+            160 =>
             array (
                 'id' => 662,
                 'name' => 'Nova Lima Vale dos Cristais MG',
@@ -9471,7 +9470,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            161 => 
+            161 =>
             array (
                 'id' => 663,
                 'name' => 'Nova Lima Veredas das Geraes MG',
@@ -9485,7 +9484,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            162 => 
+            162 =>
             array (
                 'id' => 664,
                 'name' => 'Nova Lima Vila Campestre MG',
@@ -9499,7 +9498,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            163 => 
+            163 =>
             array (
                 'id' => 665,
                 'name' => 'Nova Lima Vila Castela-2ª Etapa MG',
@@ -9513,7 +9512,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            164 => 
+            164 =>
             array (
                 'id' => 666,
                 'name' => 'Nova Lima Vila da Serra MG',
@@ -9527,7 +9526,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            165 => 
+            165 =>
             array (
                 'id' => 667,
                 'name' => 'Nova Lima Vila Del Rey MG',
@@ -9542,7 +9541,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            166 => 
+            166 =>
             array (
                 'id' => 668,
                 'name' => 'Nova Lima Vila Industrial 1 MG',
@@ -9556,7 +9555,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            167 => 
+            167 =>
             array (
                 'id' => 669,
                 'name' => 'Nova Lima Vila Industrial 2 MG',
@@ -9570,7 +9569,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            168 => 
+            168 =>
             array (
                 'id' => 670,
                 'name' => 'Nova Lima Vila Ipê Amarelo MG',
@@ -9584,7 +9583,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            169 => 
+            169 =>
             array (
                 'id' => 671,
                 'name' => 'Nova Lima Vila Marise MG',
@@ -9599,7 +9598,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            170 => 
+            170 =>
             array (
                 'id' => 672,
                 'name' => 'Nova Lima Vila Monte Castelo MG',
@@ -9613,7 +9612,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            171 => 
+            171 =>
             array (
                 'id' => 673,
                 'name' => 'Nova Lima Vila Nova Suíça MG',
@@ -9627,7 +9626,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            172 => 
+            172 =>
             array (
                 'id' => 674,
                 'name' => 'Nova Lima Vila Odete MG',
@@ -9642,7 +9641,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            173 => 
+            173 =>
             array (
                 'id' => 675,
                 'name' => 'Nova Lima Vila Operária MG',
@@ -9656,7 +9655,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            174 => 
+            174 =>
             array (
                 'id' => 676,
                 'name' => 'Nova Lima Vila Padre Valeriano MG',
@@ -9670,7 +9669,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            175 => 
+            175 =>
             array (
                 'id' => 677,
                 'name' => 'Nova Lima Vila São Luiz MG',
@@ -9684,7 +9683,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            176 => 
+            176 =>
             array (
                 'id' => 678,
                 'name' => 'Nova Lima Village Sans Souci MG',
@@ -9698,7 +9697,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            177 => 
+            177 =>
             array (
                 'id' => 679,
                 'name' => 'Nova Lima Ville de Montagne MG',
@@ -9712,7 +9711,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            178 => 
+            178 =>
             array (
                 'id' => 680,
                 'name' => 'Vespasiano',
@@ -9727,7 +9726,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            179 => 
+            179 =>
             array (
                 'id' => 681,
                 'name' => 'Sabará',
@@ -9742,7 +9741,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            180 => 
+            180 =>
             array (
                 'id' => 682,
                 'name' => 'Sabará Adelmolândia MG',
@@ -9757,7 +9756,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            181 => 
+            181 =>
             array (
                 'id' => 683,
                 'name' => 'Sabará Água Férrea MG',
@@ -9772,7 +9771,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            182 => 
+            182 =>
             array (
                 'id' => 684,
                 'name' => 'Sabará Alto do Cabral MG',
@@ -9787,7 +9786,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            183 => 
+            183 =>
             array (
                 'id' => 685,
                 'name' => 'Sabará Alto do Fidalgo MG',
@@ -9802,7 +9801,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            184 => 
+            184 =>
             array (
                 'id' => 686,
                 'name' => 'Sabará Alvorada MG',
@@ -9817,7 +9816,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            185 => 
+            185 =>
             array (
                 'id' => 687,
                 'name' => 'Sabará Ana Lúcia MG',
@@ -9832,7 +9831,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            186 => 
+            186 =>
             array (
                 'id' => 688,
                 'name' => 'Sabará Área Rural de Sabará MG',
@@ -9846,7 +9845,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            187 => 
+            187 =>
             array (
                 'id' => 689,
                 'name' => 'Sabará Borba Gato MG',
@@ -9861,7 +9860,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            188 => 
+            188 =>
             array (
                 'id' => 690,
                 'name' => 'Sabará Borges MG',
@@ -9876,7 +9875,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            189 => 
+            189 =>
             array (
                 'id' => 691,
                 'name' => 'Sabará Caieira MG',
@@ -9891,7 +9890,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            190 => 
+            190 =>
             array (
                 'id' => 692,
                 'name' => 'Sabará Centro MG',
@@ -9906,7 +9905,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            191 => 
+            191 =>
             array (
                 'id' => 693,
                 'name' => 'Sabará Conjunto Morada da Serra MG',
@@ -9920,7 +9919,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            192 => 
+            192 =>
             array (
                 'id' => 694,
                 'name' => 'Sabará Córrego da Ilha MG',
@@ -9935,7 +9934,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            193 => 
+            193 =>
             array (
                 'id' => 695,
                 'name' => 'Sabará Distrito Industrial Operário Raimundo Fantini MG',
@@ -9949,7 +9948,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            194 => 
+            194 =>
             array (
                 'id' => 696,
                 'name' => 'Sabará Distrito Industrial Simão da Cunha MG',
@@ -9963,7 +9962,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            195 => 
+            195 =>
             array (
                 'id' => 697,
                 'name' => 'Sabará Esplanada MG',
@@ -9978,7 +9977,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            196 => 
+            196 =>
             array (
                 'id' => 698,
                 'name' => 'Sabará Fogo Apagou MG',
@@ -9993,7 +9992,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            197 => 
+            197 =>
             array (
                 'id' => 699,
             'name' => 'Sabará General Carneiro (Chacreamento Ipê Amarelo) MG',
@@ -10007,7 +10006,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            198 => 
+            198 =>
             array (
                 'id' => 700,
                 'name' => 'Sabará Granja de Freitas MG',
@@ -10021,7 +10020,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            199 => 
+            199 =>
             array (
                 'id' => 701,
                 'name' => 'Sabará Itacolomi MG',
@@ -10036,7 +10035,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            200 => 
+            200 =>
             array (
                 'id' => 702,
                 'name' => 'Sabará Jardim Castanheiras MG',
@@ -10050,7 +10049,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            201 => 
+            201 =>
             array (
                 'id' => 703,
                 'name' => 'Sabará Mangabeiras MG',
@@ -10065,7 +10064,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            202 => 
+            202 =>
             array (
                 'id' => 704,
                 'name' => 'Sabará Mangueiras MG',
@@ -10080,7 +10079,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            203 => 
+            203 =>
             array (
                 'id' => 705,
                 'name' => 'Sabará Morro da Cruz MG',
@@ -10095,7 +10094,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            204 => 
+            204 =>
             array (
                 'id' => 706,
                 'name' => 'Sabará Morro São Francisco MG',
@@ -10109,7 +10108,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            205 => 
+            205 =>
             array (
                 'id' => 707,
                 'name' => 'Sabará Nações Unidas MG',
@@ -10124,7 +10123,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            206 => 
+            206 =>
             array (
                 'id' => 708,
                 'name' => 'Sabará Nossa Senhora da Conceição MG',
@@ -10138,7 +10137,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            207 => 
+            207 =>
             array (
                 'id' => 709,
                 'name' => 'Sabará Nossa Senhora de Fátima MG',
@@ -10152,7 +10151,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            208 => 
+            208 =>
             array (
                 'id' => 710,
                 'name' => 'Sabará Nossa Senhora do Ó MG',
@@ -10166,7 +10165,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            209 => 
+            209 =>
             array (
                 'id' => 711,
                 'name' => 'Sabará Nova Vista MG',
@@ -10181,7 +10180,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            210 => 
+            210 =>
             array (
                 'id' => 712,
                 'name' => 'Sabará Novo Alvorada MG',
@@ -10196,7 +10195,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            211 => 
+            211 =>
             array (
                 'id' => 713,
                 'name' => 'Sabará Novo Horizonte MG',
@@ -10211,7 +10210,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            212 => 
+            212 =>
             array (
                 'id' => 714,
                 'name' => 'Sabará Novo Santa Inês MG',
@@ -10226,7 +10225,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            213 => 
+            213 =>
             array (
                 'id' => 715,
                 'name' => 'Sabará Paciência MG',
@@ -10241,7 +10240,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            214 => 
+            214 =>
             array (
                 'id' => 716,
                 'name' => 'Sabará Padre Chiquinho MG',
@@ -10256,7 +10255,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            215 => 
+            215 =>
             array (
                 'id' => 717,
                 'name' => 'Sabará Pompeu MG',
@@ -10271,7 +10270,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            216 => 
+            216 =>
             array (
                 'id' => 718,
                 'name' => 'Sabará Praia dos Bandeirantes MG',
@@ -10285,7 +10284,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            217 => 
+            217 =>
             array (
                 'id' => 719,
                 'name' => 'Sabará Rio Negro MG',
@@ -10300,7 +10299,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            218 => 
+            218 =>
             array (
                 'id' => 720,
                 'name' => 'Sabará Roça Grande MG',
@@ -10315,7 +10314,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            219 => 
+            219 =>
             array (
                 'id' => 721,
                 'name' => 'Sabará Rosário MG',
@@ -10330,7 +10329,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            220 => 
+            220 =>
             array (
                 'id' => 722,
                 'name' => 'Sabará Santana MG',
@@ -10345,7 +10344,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            221 => 
+            221 =>
             array (
                 'id' => 723,
             'name' => 'Sabará Santo Antônio (Roça Grande) MG',
@@ -10359,7 +10358,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            222 => 
+            222 =>
             array (
                 'id' => 724,
                 'name' => 'Sabará São Francisco MG',
@@ -10374,7 +10373,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            223 => 
+            223 =>
             array (
                 'id' => 725,
                 'name' => 'Sabará São José MG',
@@ -10389,7 +10388,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            224 => 
+            224 =>
             array (
                 'id' => 726,
                 'name' => 'Sabará Siderúrgica MG',
@@ -10404,7 +10403,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            225 => 
+            225 =>
             array (
                 'id' => 727,
                 'name' => 'Sabará Sobradinho MG',
@@ -10419,7 +10418,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            226 => 
+            226 =>
             array (
                 'id' => 728,
                 'name' => 'Sabará Terra Santa MG',
@@ -10434,7 +10433,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            227 => 
+            227 =>
             array (
                 'id' => 729,
                 'name' => 'Sabará Valparaíso MG',
@@ -10449,7 +10448,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            228 => 
+            228 =>
             array (
                 'id' => 730,
                 'name' => 'Sabará Vila Amélia Moreira MG',
@@ -10463,7 +10462,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            229 => 
+            229 =>
             array (
                 'id' => 731,
                 'name' => 'Sabará Vila Bom Retiro MG',
@@ -10478,7 +10477,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            230 => 
+            230 =>
             array (
                 'id' => 732,
                 'name' => 'Sabará Vila Campinas MG',
@@ -10493,7 +10492,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            231 => 
+            231 =>
             array (
                 'id' => 733,
                 'name' => 'Sabará Vila dos Coqueiros MG',
@@ -10507,7 +10506,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            232 => 
+            232 =>
             array (
                 'id' => 734,
                 'name' => 'Sabará Vila Esperança MG',
@@ -10522,7 +10521,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            233 => 
+            233 =>
             array (
                 'id' => 735,
                 'name' => 'Sabará Vila Eugênio Rossi MG',
@@ -10536,7 +10535,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            234 => 
+            234 =>
             array (
                 'id' => 736,
                 'name' => 'Sabará Vila Francisco de Moura MG',
@@ -10550,7 +10549,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            235 => 
+            235 =>
             array (
                 'id' => 737,
                 'name' => 'Sabará Vila Marzagão MG',
@@ -10565,7 +10564,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            236 => 
+            236 =>
             array (
                 'id' => 738,
                 'name' => 'Sabará Vila Michel MG',
@@ -10580,7 +10579,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            237 => 
+            237 =>
             array (
                 'id' => 739,
                 'name' => 'Sabará Vila Nova Vista MG',
@@ -10595,7 +10594,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            238 => 
+            238 =>
             array (
                 'id' => 740,
                 'name' => 'Sabará Vila Rica MG',
@@ -10610,7 +10609,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            239 => 
+            239 =>
             array (
                 'id' => 741,
                 'name' => 'Sabará Vila Santa Cruz MG',
@@ -10625,7 +10624,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            240 => 
+            240 =>
             array (
                 'id' => 742,
                 'name' => 'Sabará Vila Santa Rita MG',
@@ -10640,7 +10639,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            241 => 
+            241 =>
             array (
                 'id' => 743,
                 'name' => 'Sabará Vila Santo Antônio MG',
@@ -10654,7 +10653,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            242 => 
+            242 =>
             array (
                 'id' => 744,
                 'name' => 'Sabará Vila Santo Antônio de Pádua MG',
@@ -10668,7 +10667,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            243 => 
+            243 =>
             array (
                 'id' => 745,
                 'name' => 'Sabará Vila São Sebastião MG',
@@ -10682,7 +10681,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            244 => 
+            244 =>
             array (
                 'id' => 746,
                 'name' => 'Sabará Villa Real MG',
@@ -10697,7 +10696,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            245 => 
+            245 =>
             array (
                 'id' => 747,
                 'name' => 'Lagoa Santa',
@@ -10712,7 +10711,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            246 => 
+            246 =>
             array (
                 'id' => 748,
                 'name' => 'Caeté',
@@ -10727,7 +10726,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            247 => 
+            247 =>
             array (
                 'id' => 749,
                 'name' => 'Betim',
@@ -10742,7 +10741,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            248 => 
+            248 =>
             array (
                 'id' => 750,
                 'name' => 'Betim Açude MG',
@@ -10757,7 +10756,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            249 => 
+            249 =>
             array (
                 'id' => 751,
                 'name' => 'Betim Alta Villa MG',
@@ -10772,7 +10771,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            250 => 
+            250 =>
             array (
                 'id' => 752,
                 'name' => 'Betim Alto das Flores MG',
@@ -10787,7 +10786,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            251 => 
+            251 =>
             array (
                 'id' => 753,
                 'name' => 'Betim Alvorada MG',
@@ -10802,7 +10801,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            252 => 
+            252 =>
             array (
                 'id' => 754,
                 'name' => 'Betim Amarante MG',
@@ -10817,7 +10816,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            253 => 
+            253 =>
             array (
                 'id' => 755,
                 'name' => 'Betim Amazonas MG',
@@ -10832,7 +10831,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            254 => 
+            254 =>
             array (
                 'id' => 756,
                 'name' => 'Betim Angola MG',
@@ -10847,7 +10846,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            255 => 
+            255 =>
             array (
                 'id' => 757,
                 'name' => 'Betim Área Rural de Betim MG',
@@ -10861,7 +10860,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            256 => 
+            256 =>
             array (
                 'id' => 758,
                 'name' => 'Betim Aroeiras MG',
@@ -10876,7 +10875,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            257 => 
+            257 =>
             array (
                 'id' => 759,
                 'name' => 'Betim Arquipélago Verde MG',
@@ -10890,7 +10889,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            258 => 
+            258 =>
             array (
                 'id' => 760,
                 'name' => 'Betim Bandeirinhas MG',
@@ -10905,7 +10904,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            259 => 
+            259 =>
             array (
                 'id' => 761,
                 'name' => 'Betim Betim Industrial MG',
@@ -10920,7 +10919,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            260 => 
+            260 =>
             array (
                 'id' => 762,
                 'name' => 'Betim Bodocó MG',
@@ -10935,7 +10934,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            261 => 
+            261 =>
             array (
                 'id' => 763,
                 'name' => 'Betim Bom Repouso MG',
@@ -10950,7 +10949,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            262 => 
+            262 =>
             array (
                 'id' => 764,
                 'name' => 'Betim Bom Retiro MG',
@@ -10965,7 +10964,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            263 => 
+            263 =>
             array (
                 'id' => 765,
                 'name' => 'Betim Brasiléia MG',
@@ -10980,7 +10979,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            264 => 
+            264 =>
             array (
                 'id' => 766,
                 'name' => 'Betim Brodoski MG',
@@ -10995,7 +10994,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            265 => 
+            265 =>
             array (
                 'id' => 767,
                 'name' => 'Betim Cachoeira MG',
@@ -11010,7 +11009,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            266 => 
+            266 =>
             array (
                 'id' => 768,
                 'name' => 'Betim Califórnia MG',
@@ -11025,7 +11024,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            267 => 
+            267 =>
             array (
                 'id' => 769,
                 'name' => 'Betim Campos Elíseos MG',
@@ -11040,7 +11039,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            268 => 
+            268 =>
             array (
                 'id' => 770,
                 'name' => 'Betim Capelinha MG',
@@ -11055,7 +11054,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            269 => 
+            269 =>
             array (
                 'id' => 771,
                 'name' => 'Betim Casa Amarela MG',
@@ -11070,7 +11069,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            270 => 
+            270 =>
             array (
                 'id' => 772,
                 'name' => 'Betim Centro MG',
@@ -11085,7 +11084,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            271 => 
+            271 =>
             array (
                 'id' => 773,
                 'name' => 'Betim Chácara MG',
@@ -11100,7 +11099,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            272 => 
+            272 =>
             array (
                 'id' => 774,
                 'name' => 'Betim Charneca MG',
@@ -11115,7 +11114,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            273 => 
+            273 =>
             array (
                 'id' => 775,
                 'name' => 'Betim Cidade Verde MG',
@@ -11130,7 +11129,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            274 => 
+            274 =>
             array (
                 'id' => 776,
                 'name' => 'Betim Citrolândia MG',
@@ -11145,7 +11144,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            275 => 
+            275 =>
             array (
                 'id' => 777,
                 'name' => 'Betim Colônia Santa Isabel MG',
@@ -11159,7 +11158,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            276 => 
+            276 =>
             array (
                 'id' => 778,
                 'name' => 'Betim Conjunto Habitacional Bueno Franco MG',
@@ -11173,7 +11172,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            277 => 
+            277 =>
             array (
                 'id' => 779,
                 'name' => 'Betim Conjunto Habitacional Celso Alves Pedrosa MG',
@@ -11187,7 +11186,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            278 => 
+            278 =>
             array (
                 'id' => 780,
                 'name' => 'Betim Conjunto Habitacional Dicalino Cabral MG',
@@ -11201,7 +11200,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            279 => 
+            279 =>
             array (
                 'id' => 781,
                 'name' => 'Betim Conjunto Habitacional Homero Gil MG',
@@ -11215,7 +11214,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            280 => 
+            280 =>
             array (
                 'id' => 782,
                 'name' => 'Betim Conjunto Habitacional Jalila Conceição Pedrosa MG',
@@ -11229,7 +11228,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            281 => 
+            281 =>
             array (
                 'id' => 783,
                 'name' => 'Betim Conjunto Habitacional José Gomes de Castro MG',
@@ -11243,7 +11242,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            282 => 
+            282 =>
             array (
                 'id' => 784,
                 'name' => 'Betim Cruzeiro MG',
@@ -11258,7 +11257,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            283 => 
+            283 =>
             array (
                 'id' => 785,
                 'name' => 'Betim Cruzeiro do Sul MG',
@@ -11273,7 +11272,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            284 => 
+            284 =>
             array (
                 'id' => 786,
                 'name' => 'Betim Decamão MG',
@@ -11288,7 +11287,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            285 => 
+            285 =>
             array (
                 'id' => 787,
                 'name' => 'Betim Distrito Industrial Bandeirinhas MG',
@@ -11302,7 +11301,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            286 => 
+            286 =>
             array (
                 'id' => 788,
                 'name' => 'Betim Distrito Industrial Jardim Piemont Norte MG',
@@ -11316,7 +11315,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            287 => 
+            287 =>
             array (
                 'id' => 789,
                 'name' => 'Betim Distrito Industrial Jardim Piemont Sul MG',
@@ -11330,7 +11329,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            288 => 
+            288 =>
             array (
                 'id' => 790,
                 'name' => 'Betim Distrito Industrial Paulo Camilo Norte MG',
@@ -11344,7 +11343,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            289 => 
+            289 =>
             array (
                 'id' => 791,
                 'name' => 'Betim Distrito Industrial Paulo Camilo Sul MG',
@@ -11358,7 +11357,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            290 => 
+            290 =>
             array (
                 'id' => 792,
                 'name' => 'Betim Dom Bosco MG',
@@ -11373,7 +11372,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            291 => 
+            291 =>
             array (
                 'id' => 793,
                 'name' => 'Betim Duque de Caxias MG',
@@ -11388,7 +11387,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            292 => 
+            292 =>
             array (
                 'id' => 794,
                 'name' => 'Betim Espírito Santo MG',
@@ -11403,7 +11402,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            293 => 
+            293 =>
             array (
                 'id' => 795,
                 'name' => 'Betim Estância do Sereno PTB MG',
@@ -11417,7 +11416,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            294 => 
+            294 =>
             array (
                 'id' => 796,
                 'name' => 'Betim Estância do Sereno Sede MG',
@@ -11431,7 +11430,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            295 => 
+            295 =>
             array (
                 'id' => 797,
                 'name' => 'Betim Filadélfia MG',
@@ -11446,7 +11445,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            296 => 
+            296 =>
             array (
                 'id' => 798,
                 'name' => 'Betim Flores e Florestas MG',
@@ -11460,7 +11459,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            297 => 
+            297 =>
             array (
                 'id' => 799,
                 'name' => 'Betim Gentileza MG',
@@ -11475,7 +11474,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            298 => 
+            298 =>
             array (
                 'id' => 800,
                 'name' => 'Betim Granja Verde MG',
@@ -11490,7 +11489,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            299 => 
+            299 =>
             array (
                 'id' => 801,
                 'name' => 'Betim Guanabara MG',
@@ -11505,7 +11504,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            300 => 
+            300 =>
             array (
                 'id' => 802,
                 'name' => 'Betim Guarujá MG',
@@ -11520,7 +11519,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            301 => 
+            301 =>
             array (
                 'id' => 803,
                 'name' => 'Betim Guarujá Mansões MG',
@@ -11535,7 +11534,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            302 => 
+            302 =>
             array (
                 'id' => 804,
                 'name' => 'Betim Horto MG',
@@ -11550,7 +11549,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            303 => 
+            303 =>
             array (
                 'id' => 805,
                 'name' => 'Betim Icaivera MG',
@@ -11565,7 +11564,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            304 => 
+            304 =>
             array (
                 'id' => 806,
                 'name' => 'Betim Imbiruçu MG',
@@ -11580,7 +11579,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            305 => 
+            305 =>
             array (
                 'id' => 807,
                 'name' => 'Betim Ingá MG',
@@ -11595,7 +11594,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            306 => 
+            306 =>
             array (
                 'id' => 808,
                 'name' => 'Betim Ingá Alto MG',
@@ -11610,7 +11609,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            307 => 
+            307 =>
             array (
                 'id' => 809,
                 'name' => 'Betim Itacolomi MG',
@@ -11625,7 +11624,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            308 => 
+            308 =>
             array (
                 'id' => 810,
                 'name' => 'Betim Jardim Brasília MG',
@@ -11640,7 +11639,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            309 => 
+            309 =>
             array (
                 'id' => 811,
                 'name' => 'Betim Jardim Casa Branca MG',
@@ -11654,7 +11653,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            310 => 
+            310 =>
             array (
                 'id' => 812,
                 'name' => 'Betim Jardim da Cidade MG',
@@ -11669,7 +11668,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            311 => 
+            311 =>
             array (
                 'id' => 813,
                 'name' => 'Betim Jardim das Alterosas - 2ª Seção MG',
@@ -11683,7 +11682,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            312 => 
+            312 =>
             array (
                 'id' => 814,
                 'name' => 'Betim Jardim das Alterosas 1ª Seção MG',
@@ -11697,7 +11696,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            313 => 
+            313 =>
             array (
                 'id' => 815,
                 'name' => 'Betim Jardim Nazareno MG',
@@ -11712,7 +11711,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            314 => 
+            314 =>
             array (
                 'id' => 816,
                 'name' => 'Betim Jardim Teresópolis MG',
@@ -11726,7 +11725,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            315 => 
+            315 =>
             array (
                 'id' => 817,
                 'name' => 'Betim Laranjeiras MG',
@@ -11741,7 +11740,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            316 => 
+            316 =>
             array (
                 'id' => 818,
                 'name' => 'Betim Marimbá MG',
@@ -11756,7 +11755,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            317 => 
+            317 =>
             array (
                 'id' => 819,
                 'name' => 'Betim Marmeleiros MG',
@@ -11771,7 +11770,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            318 => 
+            318 =>
             array (
                 'id' => 820,
                 'name' => 'Betim Monte Verde MG',
@@ -11786,7 +11785,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            319 => 
+            319 =>
             array (
                 'id' => 821,
                 'name' => 'Betim Morada do Trevo MG',
@@ -11801,7 +11800,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            320 => 
+            320 =>
             array (
                 'id' => 822,
                 'name' => 'Betim Niterói MG',
@@ -11816,7 +11815,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            321 => 
+            321 =>
             array (
                 'id' => 823,
                 'name' => 'Betim Nova Baden MG',
@@ -11831,7 +11830,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            322 => 
+            322 =>
             array (
                 'id' => 824,
                 'name' => 'Betim Novo Horizonte MG',
@@ -11846,7 +11845,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            323 => 
+            323 =>
             array (
                 'id' => 825,
                 'name' => 'Betim Paquetá MG',
@@ -11861,7 +11860,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            324 => 
+            324 =>
             array (
                 'id' => 826,
                 'name' => 'Betim Parque das Acácias MG',
@@ -11875,7 +11874,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            325 => 
+            325 =>
             array (
                 'id' => 827,
                 'name' => 'Betim Parque das Indústrias MG',
@@ -11889,7 +11888,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            326 => 
+            326 =>
             array (
                 'id' => 828,
             'name' => 'Betim Parque do Cedro (Icaivera) MG',
@@ -11903,7 +11902,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            327 => 
+            327 =>
             array (
                 'id' => 829,
                 'name' => 'Betim Parque Ipiranga MG',
@@ -11918,7 +11917,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            328 => 
+            328 =>
             array (
                 'id' => 830,
                 'name' => 'Betim Paulo Camilo MG',
@@ -11933,7 +11932,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            329 => 
+            329 =>
             array (
                 'id' => 831,
                 'name' => 'Betim Petrópolis MG',
@@ -11948,7 +11947,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            330 => 
+            330 =>
             array (
                 'id' => 832,
                 'name' => 'Betim Petrovale MG',
@@ -11963,7 +11962,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            331 => 
+            331 =>
             array (
                 'id' => 833,
                 'name' => 'Betim Pimentas MG',
@@ -11978,7 +11977,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            332 => 
+            332 =>
             array (
                 'id' => 834,
                 'name' => 'Betim Pingo D\'água MG',
@@ -11993,7 +11992,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            333 => 
+            333 =>
             array (
                 'id' => 835,
                 'name' => 'Betim Ponte Alta MG',
@@ -12008,7 +12007,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            334 => 
+            334 =>
             array (
                 'id' => 836,
                 'name' => 'Betim Presidente Kennedy MG',
@@ -12022,7 +12021,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            335 => 
+            335 =>
             array (
                 'id' => 837,
                 'name' => 'Betim Quintas do Godoy MG',
@@ -12037,7 +12036,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            336 => 
+            336 =>
             array (
                 'id' => 838,
                 'name' => 'Betim Renascer MG',
@@ -12052,7 +12051,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            337 => 
+            337 =>
             array (
                 'id' => 839,
                 'name' => 'Betim Residencial Lagoa MG',
@@ -12066,7 +12065,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            338 => 
+            338 =>
             array (
                 'id' => 840,
                 'name' => 'Betim Residencial Montserrat MG',
@@ -12080,7 +12079,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            339 => 
+            339 =>
             array (
                 'id' => 841,
                 'name' => 'Betim Residencial Taquaril MG',
@@ -12094,7 +12093,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            340 => 
+            340 =>
             array (
                 'id' => 842,
                 'name' => 'Betim Riacho 3 MG',
@@ -12109,7 +12108,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            341 => 
+            341 =>
             array (
                 'id' => 843,
                 'name' => 'Betim Salomé MG',
@@ -12124,7 +12123,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            342 => 
+            342 =>
             array (
                 'id' => 844,
                 'name' => 'Betim Santa Cruz MG',
@@ -12139,7 +12138,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            343 => 
+            343 =>
             array (
                 'id' => 845,
                 'name' => 'Betim Santa Fé MG',
@@ -12154,7 +12153,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            344 => 
+            344 =>
             array (
                 'id' => 846,
                 'name' => 'Betim Santa Inês MG',
@@ -12169,7 +12168,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            345 => 
+            345 =>
             array (
                 'id' => 847,
                 'name' => 'Betim Santa Lúcia MG',
@@ -12184,7 +12183,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            346 => 
+            346 =>
             array (
                 'id' => 848,
                 'name' => 'Betim Santo Afonso MG',
@@ -12199,7 +12198,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            347 => 
+            347 =>
             array (
                 'id' => 849,
                 'name' => 'Betim Santo Antônio MG',
@@ -12214,7 +12213,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            348 => 
+            348 =>
             array (
                 'id' => 850,
                 'name' => 'Betim São Caetano MG',
@@ -12229,7 +12228,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            349 => 
+            349 =>
             array (
                 'id' => 851,
                 'name' => 'Betim São Cristóvão MG',
@@ -12244,7 +12243,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            350 => 
+            350 =>
             array (
                 'id' => 852,
                 'name' => 'Betim São João MG',
@@ -12259,7 +12258,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            351 => 
+            351 =>
             array (
                 'id' => 853,
                 'name' => 'Betim São Jorge MG',
@@ -12274,7 +12273,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            352 => 
+            352 =>
             array (
                 'id' => 854,
                 'name' => 'Betim São Luiz MG',
@@ -12289,7 +12288,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            353 => 
+            353 =>
             array (
                 'id' => 855,
                 'name' => 'Betim São Marcos MG',
@@ -12304,7 +12303,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            354 => 
+            354 =>
             array (
                 'id' => 856,
                 'name' => 'Betim São Salvador MG',
@@ -12319,7 +12318,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            355 => 
+            355 =>
             array (
                 'id' => 857,
                 'name' => 'Betim São Sebastião MG',
@@ -12334,7 +12333,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            356 => 
+            356 =>
             array (
                 'id' => 858,
                 'name' => 'Betim Saraiva MG',
@@ -12349,7 +12348,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            357 => 
+            357 =>
             array (
                 'id' => 859,
                 'name' => 'Betim Senhora das Graças MG',
@@ -12363,7 +12362,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            358 => 
+            358 =>
             array (
                 'id' => 860,
                 'name' => 'Betim Senhora de Fátima MG',
@@ -12377,7 +12376,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            359 => 
+            359 =>
             array (
                 'id' => 861,
                 'name' => 'Betim Teixeirinha MG',
@@ -12392,7 +12391,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            360 => 
+            360 =>
             array (
                 'id' => 862,
                 'name' => 'Betim Vale Verde MG',
@@ -12407,7 +12406,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            361 => 
+            361 =>
             array (
                 'id' => 863,
                 'name' => 'Betim Vargem das Flores MG',
@@ -12421,7 +12420,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            362 => 
+            362 =>
             array (
                 'id' => 864,
                 'name' => 'Betim Vianópolis MG',
@@ -12436,7 +12435,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            363 => 
+            363 =>
             array (
                 'id' => 865,
                 'name' => 'Betim Vila Alpina MG',
@@ -12451,7 +12450,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            364 => 
+            364 =>
             array (
                 'id' => 866,
                 'name' => 'Betim Vila Boa Esperança MG',
@@ -12465,7 +12464,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            365 => 
+            365 =>
             array (
                 'id' => 867,
                 'name' => 'Betim Vila Cristina MG',
@@ -12480,7 +12479,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            366 => 
+            366 =>
             array (
                 'id' => 868,
                 'name' => 'Betim Vila das Flores MG',
@@ -12495,7 +12494,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            367 => 
+            367 =>
             array (
                 'id' => 869,
                 'name' => 'Betim Vila Universal MG',
@@ -12510,7 +12509,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            368 => 
+            368 =>
             array (
                 'id' => 870,
                 'name' => 'Betim Vila Verde MG',
@@ -12525,7 +12524,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            369 => 
+            369 =>
             array (
                 'id' => 871,
                 'name' => 'Ribeirão das Neves',
@@ -12540,7 +12539,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            370 => 
+            370 =>
             array (
                 'id' => 872,
             'name' => 'Ribeirão das Neves Adriana (Justinópolis) MG',
@@ -12554,7 +12553,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            371 => 
+            371 =>
             array (
                 'id' => 873,
                 'name' => 'Ribeirão das Neves Alicante MG',
@@ -12568,7 +12567,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            372 => 
+            372 =>
             array (
                 'id' => 874,
                 'name' => 'Ribeirão das Neves Alterosa MG',
@@ -12582,7 +12581,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            373 => 
+            373 =>
             array (
                 'id' => 875,
                 'name' => 'Ribeirão das Neves Área Rural de Ribeirão das Neves MG',
@@ -12596,7 +12595,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            374 => 
+            374 =>
             array (
                 'id' => 876,
             'name' => 'Ribeirão das Neves Areias (Justinópolis) MG',
@@ -12610,7 +12609,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            375 => 
+            375 =>
             array (
                 'id' => 877,
                 'name' => 'Ribeirão das Neves Areias de Baixo MG',
@@ -12624,7 +12623,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            376 => 
+            376 =>
             array (
                 'id' => 878,
             'name' => 'Ribeirão das Neves Atalaia (Justinópolis) MG',
@@ -12638,7 +12637,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            377 => 
+            377 =>
             array (
                 'id' => 879,
                 'name' => 'Ribeirão das Neves Barcelona MG',
@@ -12652,7 +12651,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            378 => 
+            378 =>
             array (
                 'id' => 880,
                 'name' => 'Ribeirão das Neves Bela Vista MG',
@@ -12666,7 +12665,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            379 => 
+            379 =>
             array (
                 'id' => 881,
                 'name' => 'Ribeirão das Neves Belo Vale MG',
@@ -12680,7 +12679,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            380 => 
+            380 =>
             array (
                 'id' => 882,
                 'name' => 'Ribeirão das Neves Belvedere MG',
@@ -12694,7 +12693,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            381 => 
+            381 =>
             array (
                 'id' => 883,
                 'name' => 'Ribeirão das Neves Boa Vista MG',
@@ -12708,7 +12707,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            382 => 
+            382 =>
             array (
                 'id' => 884,
                 'name' => 'Ribeirão das Neves Bom Sossego MG',
@@ -12722,7 +12721,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            383 => 
+            383 =>
             array (
                 'id' => 885,
             'name' => 'Ribeirão das Neves Botafogo (Justinópolis) MG',
@@ -12736,7 +12735,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            384 => 
+            384 =>
             array (
                 'id' => 886,
             'name' => 'Ribeirão das Neves Braúna ( Justinópolis) MG',
@@ -12750,7 +12749,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            385 => 
+            385 =>
             array (
                 'id' => 887,
                 'name' => 'Ribeirão das Neves Caiapós MG',
@@ -12764,7 +12763,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            386 => 
+            386 =>
             array (
                 'id' => 888,
                 'name' => 'Ribeirão das Neves Campos Silveira MG',
@@ -12778,7 +12777,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            387 => 
+            387 =>
             array (
                 'id' => 889,
                 'name' => 'Ribeirão das Neves Canoas MG',
@@ -12792,7 +12791,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            388 => 
+            388 =>
             array (
                 'id' => 890,
                 'name' => 'Ribeirão das Neves Centro MG',
@@ -12806,7 +12805,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            389 => 
+            389 =>
             array (
                 'id' => 891,
             'name' => 'Ribeirão das Neves Centro (Justinópolis) MG',
@@ -12820,7 +12819,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            390 => 
+            390 =>
             array (
                 'id' => 892,
                 'name' => 'Ribeirão das Neves Centro Comercial de Justinópolis MG',
@@ -12834,7 +12833,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            391 => 
+            391 =>
             array (
                 'id' => 893,
             'name' => 'Ribeirão das Neves Cerejeira (Justinópolis) MG',
@@ -12848,7 +12847,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            392 => 
+            392 =>
             array (
                 'id' => 894,
             'name' => 'Ribeirão das Neves Céu Anil (Justinópolis) MG',
@@ -12862,7 +12861,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            393 => 
+            393 =>
             array (
                 'id' => 895,
             'name' => 'Ribeirão das Neves Chácaras Bom Retiro (Justinópolis) MG',
@@ -12876,7 +12875,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            394 => 
+            394 =>
             array (
                 'id' => 896,
                 'name' => 'Ribeirão das Neves Chácaras do Baú MG',
@@ -12890,7 +12889,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            395 => 
+            395 =>
             array (
                 'id' => 897,
                 'name' => 'Ribeirão das Neves Cidade Neviana MG',
@@ -12904,7 +12903,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            396 => 
+            396 =>
             array (
                 'id' => 898,
             'name' => 'Ribeirão das Neves Condomínio Recanto dos Pássaros (Justinópolis) MG',
@@ -12918,7 +12917,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            397 => 
+            397 =>
             array (
                 'id' => 899,
                 'name' => 'Ribeirão das Neves Condomínio Vale do Ouro MG',
@@ -12932,7 +12931,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            398 => 
+            398 =>
             array (
                 'id' => 900,
                 'name' => 'Ribeirão das Neves Conjunto Henrique Sapori MG',
@@ -12946,7 +12945,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            399 => 
+            399 =>
             array (
                 'id' => 901,
             'name' => 'Ribeirão das Neves Conjunto Nova Pampulha (Justinópolis) MG',
@@ -12960,7 +12959,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            400 => 
+            400 =>
             array (
                 'id' => 902,
             'name' => 'Ribeirão das Neves Cristais (Justinópolis) MG',
@@ -12974,7 +12973,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            401 => 
+            401 =>
             array (
                 'id' => 903,
                 'name' => 'Ribeirão das Neves Cruzeiro MG',
@@ -12988,7 +12987,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            402 => 
+            402 =>
             array (
                 'id' => 904,
                 'name' => 'Ribeirão das Neves Distrito Industrial João de Almeida MG',
@@ -13002,7 +13001,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            403 => 
+            403 =>
             array (
                 'id' => 905,
                 'name' => 'Ribeirão das Neves Dona Clara MG',
@@ -13016,7 +13015,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            404 => 
+            404 =>
             array (
                 'id' => 906,
                 'name' => 'Ribeirão das Neves Dona Clarice MG',
@@ -13030,7 +13029,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            405 => 
+            405 =>
             array (
                 'id' => 907,
             'name' => 'Ribeirão das Neves Eliane (Justinópolis) MG',
@@ -13044,7 +13043,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            406 => 
+            406 =>
             array (
                 'id' => 908,
             'name' => 'Ribeirão das Neves Elizabeth (Justinópolis) MG',
@@ -13058,7 +13057,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            407 => 
+            407 =>
             array (
                 'id' => 909,
             'name' => 'Ribeirão das Neves Esperança (Justinópolis) MG',
@@ -13072,7 +13071,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            408 => 
+            408 =>
             array (
                 'id' => 910,
                 'name' => 'Ribeirão das Neves Everest MG',
@@ -13086,7 +13085,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            409 => 
+            409 =>
             array (
                 'id' => 911,
                 'name' => 'Ribeirão das Neves Fazenda Castro MG',
@@ -13100,7 +13099,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            410 => 
+            410 =>
             array (
                 'id' => 912,
             'name' => 'Ribeirão das Neves Felixlândia (Justinópolis) MG',
@@ -13114,7 +13113,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            411 => 
+            411 =>
             array (
                 'id' => 913,
             'name' => 'Ribeirão das Neves Flamengo (Justinópolis) MG',
@@ -13128,7 +13127,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            412 => 
+            412 =>
             array (
                 'id' => 914,
                 'name' => 'Ribeirão das Neves Florença MG',
@@ -13142,7 +13141,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            413 => 
+            413 =>
             array (
                 'id' => 915,
             'name' => 'Ribeirão das Neves Fortaleza (Justinópolis) MG',
@@ -13156,7 +13155,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            414 => 
+            414 =>
             array (
                 'id' => 916,
                 'name' => 'Ribeirão das Neves Franciscadriângela MG',
@@ -13170,7 +13169,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            415 => 
+            415 =>
             array (
                 'id' => 917,
                 'name' => 'Ribeirão das Neves Girassol MG',
@@ -13184,7 +13183,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            416 => 
+            416 =>
             array (
                 'id' => 918,
             'name' => 'Ribeirão das Neves Granjas Primavera (Justinópolis) MG',
@@ -13198,7 +13197,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            417 => 
+            417 =>
             array (
                 'id' => 919,
             'name' => 'Ribeirão das Neves Guadalajara (Justinópolis) MG',
@@ -13212,7 +13211,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            418 => 
+            418 =>
             array (
                 'id' => 920,
             'name' => 'Ribeirão das Neves Hawaí (Justinópolis) MG',
@@ -13226,7 +13225,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            419 => 
+            419 =>
             array (
                 'id' => 921,
                 'name' => 'Ribeirão das Neves Iolanda MG',
@@ -13240,7 +13239,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            420 => 
+            420 =>
             array (
                 'id' => 922,
                 'name' => 'Ribeirão das Neves Itapoã MG',
@@ -13254,7 +13253,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            421 => 
+            421 =>
             array (
                 'id' => 923,
             'name' => 'Ribeirão das Neves Jardim Alvorada (Justinópolis) MG',
@@ -13268,7 +13267,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            422 => 
+            422 =>
             array (
                 'id' => 924,
                 'name' => 'Ribeirão das Neves Jardim Colonial MG',
@@ -13282,7 +13281,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            423 => 
+            423 =>
             array (
                 'id' => 925,
             'name' => 'Ribeirão das Neves Jardim de Alá (Justinópolis) MG',
@@ -13296,7 +13295,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            424 => 
+            424 =>
             array (
                 'id' => 926,
             'name' => 'Ribeirão das Neves Jardim Florência (Justinópolis) MG',
@@ -13310,7 +13309,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            425 => 
+            425 =>
             array (
                 'id' => 927,
                 'name' => 'Ribeirão das Neves Jardim Primavera MG',
@@ -13324,7 +13323,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            426 => 
+            426 =>
             array (
                 'id' => 928,
             'name' => 'Ribeirão das Neves Jardim São Judas Tadeu (Justinópolis) MG',
@@ -13338,7 +13337,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            427 => 
+            427 =>
             array (
                 'id' => 929,
                 'name' => 'Ribeirão das Neves Jardim Verona MG',
@@ -13352,7 +13351,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            428 => 
+            428 =>
             array (
                 'id' => 930,
                 'name' => 'Ribeirão das Neves José Maria da Costa MG',
@@ -13366,7 +13365,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            429 => 
+            429 =>
             array (
                 'id' => 931,
             'name' => 'Ribeirão das Neves Kátia (Justinópolis) MG',
@@ -13380,7 +13379,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            430 => 
+            430 =>
             array (
                 'id' => 932,
             'name' => 'Ribeirão das Neves Labanca (Justinópolis) MG',
@@ -13394,7 +13393,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            431 => 
+            431 =>
             array (
                 'id' => 933,
             'name' => 'Ribeirão das Neves Lagoa (Justinópolis) MG',
@@ -13408,7 +13407,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            432 => 
+            432 =>
             array (
                 'id' => 934,
             'name' => 'Ribeirão das Neves Landi (Justinópolis) MG',
@@ -13422,7 +13421,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            433 => 
+            433 =>
             array (
                 'id' => 935,
             'name' => 'Ribeirão das Neves Landi 2ª Seção (Justinópolis) MG',
@@ -13436,7 +13435,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            434 => 
+            434 =>
             array (
                 'id' => 936,
             'name' => 'Ribeirão das Neves Laredo (Justinópolis) MG',
@@ -13450,7 +13449,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            435 => 
+            435 =>
             array (
                 'id' => 937,
                 'name' => 'Ribeirão das Neves Liberdade MG',
@@ -13464,7 +13463,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            436 => 
+            436 =>
             array (
                 'id' => 938,
             'name' => 'Ribeirão das Neves Lidici (Justinópolis) MG',
@@ -13478,7 +13477,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            437 => 
+            437 =>
             array (
                 'id' => 939,
             'name' => 'Ribeirão das Neves Luana (Justinópolis) MG',
@@ -13492,7 +13491,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            438 => 
+            438 =>
             array (
                 'id' => 940,
             'name' => 'Ribeirão das Neves Luar da Pampulha (Justinópolis) MG',
@@ -13506,7 +13505,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            439 => 
+            439 =>
             array (
                 'id' => 941,
             'name' => 'Ribeirão das Neves Maracanã (Justinópolis) MG',
@@ -13520,7 +13519,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            440 => 
+            440 =>
             array (
                 'id' => 942,
             'name' => 'Ribeirão das Neves Maracanã II (Justinópolis) MG',
@@ -13534,7 +13533,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            441 => 
+            441 =>
             array (
                 'id' => 943,
             'name' => 'Ribeirão das Neves Maria Helena (Justinópolis) MG',
@@ -13548,7 +13547,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            442 => 
+            442 =>
             array (
                 'id' => 944,
             'name' => 'Ribeirão das Neves Maria Helena 2 (Justinópolis) MG',
@@ -13562,7 +13561,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            443 => 
+            443 =>
             array (
                 'id' => 945,
             'name' => 'Ribeirão das Neves Menezes (Justinópolis) MG',
@@ -13576,7 +13575,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            444 => 
+            444 =>
             array (
                 'id' => 946,
                 'name' => 'Ribeirão das Neves Metropolitano MG',
@@ -13590,7 +13589,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            445 => 
+            445 =>
             array (
                 'id' => 947,
                 'name' => 'Ribeirão das Neves Monte Verde MG',
@@ -13604,7 +13603,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            446 => 
+            446 =>
             array (
                 'id' => 948,
                 'name' => 'Ribeirão das Neves Nápoli MG',
@@ -13618,7 +13617,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            447 => 
+            447 =>
             array (
                 'id' => 949,
                 'name' => 'Ribeirão das Neves Nossa Senhora da Conceição MG',
@@ -13632,7 +13631,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            448 => 
+            448 =>
             array (
                 'id' => 950,
             'name' => 'Ribeirão das Neves Nossa Senhora da Piedade (Justinópolis) MG',
@@ -13646,7 +13645,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            449 => 
+            449 =>
             array (
                 'id' => 951,
                 'name' => 'Ribeirão das Neves Nossa Senhora das Neves MG',
@@ -13660,7 +13659,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            450 => 
+            450 =>
             array (
                 'id' => 952,
                 'name' => 'Ribeirão das Neves Nossa Senhora de Fátima MG',
@@ -13674,7 +13673,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            451 => 
+            451 =>
             array (
                 'id' => 953,
                 'name' => 'Ribeirão das Neves Nova União MG',
@@ -13688,7 +13687,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            452 => 
+            452 =>
             array (
                 'id' => 954,
             'name' => 'Ribeirão das Neves Novo Laredo (Justinópolis) MG',
@@ -13702,7 +13701,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            453 => 
+            453 =>
             array (
                 'id' => 955,
             'name' => 'Ribeirão das Neves Papine (Justinópolis) MG',
@@ -13716,7 +13715,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            454 => 
+            454 =>
             array (
                 'id' => 956,
             'name' => 'Ribeirão das Neves Paraíso das Piabas (Justinópolis) MG',
@@ -13730,7 +13729,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            455 => 
+            455 =>
             array (
                 'id' => 957,
             'name' => 'Ribeirão das Neves Pedra Branca (Justinópolis) MG',
@@ -13744,7 +13743,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            456 => 
+            456 =>
             array (
                 'id' => 958,
             'name' => 'Ribeirão das Neves Penha (Justinópolis) MG',
@@ -13758,7 +13757,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            457 => 
+            457 =>
             array (
                 'id' => 959,
                 'name' => 'Ribeirão das Neves Porto Seguro MG',
@@ -13772,7 +13771,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            458 => 
+            458 =>
             array (
                 'id' => 960,
                 'name' => 'Ribeirão das Neves Quintas de Vera Cruz MG',
@@ -13786,7 +13785,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            459 => 
+            459 =>
             array (
                 'id' => 961,
                 'name' => 'Ribeirão das Neves Quintas do Lago MG',
@@ -13800,7 +13799,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            460 => 
+            460 =>
             array (
                 'id' => 962,
                 'name' => 'Ribeirão das Neves Rosana MG',
@@ -13814,7 +13813,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            461 => 
+            461 =>
             array (
                 'id' => 963,
                 'name' => 'Ribeirão das Neves Rosaneves MG',
@@ -13828,7 +13827,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            462 => 
+            462 =>
             array (
                 'id' => 964,
             'name' => 'Ribeirão das Neves Rosimeire (Justinópolis) MG',
@@ -13842,7 +13841,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            463 => 
+            463 =>
             array (
                 'id' => 965,
                 'name' => 'Ribeirão das Neves San Genaro MG',
@@ -13856,7 +13855,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            464 => 
+            464 =>
             array (
                 'id' => 966,
                 'name' => 'Ribeirão das Neves San Marino MG',
@@ -13870,7 +13869,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            465 => 
+            465 =>
             array (
                 'id' => 967,
                 'name' => 'Ribeirão das Neves San Remo MG',
@@ -13884,7 +13883,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            466 => 
+            466 =>
             array (
                 'id' => 968,
             'name' => 'Ribeirão das Neves Santa Branca (Justinópolis) MG',
@@ -13898,7 +13897,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            467 => 
+            467 =>
             array (
                 'id' => 969,
             'name' => 'Ribeirão das Neves Santa Fé (Justinópolis) MG',
@@ -13912,7 +13911,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            468 => 
+            468 =>
             array (
                 'id' => 970,
             'name' => 'Ribeirão das Neves Santa Isabel (Justinópolis) MG',
@@ -13926,7 +13925,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            469 => 
+            469 =>
             array (
                 'id' => 971,
             'name' => 'Ribeirão das Neves Santa Margarida (Justinópolis) MG',
@@ -13940,7 +13939,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            470 => 
+            470 =>
             array (
                 'id' => 972,
                 'name' => 'Ribeirão das Neves Santa Marta MG',
@@ -13954,7 +13953,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            471 => 
+            471 =>
             array (
                 'id' => 973,
                 'name' => 'Ribeirão das Neves Santa Martinha MG',
@@ -13968,7 +13967,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            472 => 
+            472 =>
             array (
                 'id' => 974,
                 'name' => 'Ribeirão das Neves Santa Matilde MG',
@@ -13982,7 +13981,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            473 => 
+            473 =>
             array (
                 'id' => 975,
                 'name' => 'Ribeirão das Neves Santa Paula MG',
@@ -13996,7 +13995,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            474 => 
+            474 =>
             array (
                 'id' => 976,
             'name' => 'Ribeirão das Neves Santana (Justinópolis) MG',
@@ -14010,7 +14009,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            475 => 
+            475 =>
             array (
                 'id' => 977,
                 'name' => 'Ribeirão das Neves Santana 2 MG',
@@ -14024,7 +14023,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            476 => 
+            476 =>
             array (
                 'id' => 978,
                 'name' => 'Ribeirão das Neves Santinho MG',
@@ -14038,7 +14037,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            477 => 
+            477 =>
             array (
                 'id' => 979,
                 'name' => 'Ribeirão das Neves Santo Antônio MG',
@@ -14052,7 +14051,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            478 => 
+            478 =>
             array (
                 'id' => 980,
                 'name' => 'Ribeirão das Neves São Geraldo MG',
@@ -14066,7 +14065,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            479 => 
+            479 =>
             array (
                 'id' => 981,
             'name' => 'Ribeirão das Neves São Januário (Justinópolis) MG',
@@ -14080,7 +14079,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            480 => 
+            480 =>
             array (
                 'id' => 982,
             'name' => 'Ribeirão das Neves São João de Deus (Justinópolis) MG',
@@ -14094,7 +14093,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            481 => 
+            481 =>
             array (
                 'id' => 983,
             'name' => 'Ribeirão das Neves São José (Justinópolis ) MG',
@@ -14108,7 +14107,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            482 => 
+            482 =>
             array (
                 'id' => 984,
                 'name' => 'Ribeirão das Neves São Judas Tadeu MG',
@@ -14122,7 +14121,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            483 => 
+            483 =>
             array (
                 'id' => 985,
                 'name' => 'Ribeirão das Neves São Luiz MG',
@@ -14136,7 +14135,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            484 => 
+            484 =>
             array (
                 'id' => 986,
             'name' => 'Ribeirão das Neves São Miguel Arcanjo (Justinópolis) MG',
@@ -14150,7 +14149,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            485 => 
+            485 =>
             array (
                 'id' => 987,
                 'name' => 'Ribeirão das Neves São Pedro MG',
@@ -14164,7 +14163,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            486 => 
+            486 =>
             array (
                 'id' => 988,
                 'name' => 'Ribeirão das Neves Savassi MG',
@@ -14178,7 +14177,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            487 => 
+            487 =>
             array (
                 'id' => 989,
                 'name' => 'Ribeirão das Neves Severina MG',
@@ -14192,7 +14191,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            488 => 
+            488 =>
             array (
                 'id' => 990,
             'name' => 'Ribeirão das Neves Sevilha (1ª Seção) MG',
@@ -14206,7 +14205,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            489 => 
+            489 =>
             array (
                 'id' => 991,
             'name' => 'Ribeirão das Neves Sevilha (2ª Seção) MG',
@@ -14220,7 +14219,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            490 => 
+            490 =>
             array (
                 'id' => 992,
                 'name' => 'Ribeirão das Neves Soares MG',
@@ -14234,7 +14233,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            491 => 
+            491 =>
             array (
                 'id' => 993,
             'name' => 'Ribeirão das Neves Sônia (Justinópolis) MG',
@@ -14248,7 +14247,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            492 => 
+            492 =>
             array (
                 'id' => 994,
                 'name' => 'Ribeirão das Neves Status MG',
@@ -14262,7 +14261,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            493 => 
+            493 =>
             array (
                 'id' => 995,
             'name' => 'Ribeirão das Neves Suely (Justinópolis) MG',
@@ -14276,7 +14275,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            494 => 
+            494 =>
             array (
                 'id' => 996,
             'name' => 'Ribeirão das Neves Tancredo Neves (Justinópolis) MG',
@@ -14290,7 +14289,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            495 => 
+            495 =>
             array (
                 'id' => 997,
                 'name' => 'Ribeirão das Neves Tânia MG',
@@ -14304,7 +14303,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            496 => 
+            496 =>
             array (
                 'id' => 998,
             'name' => 'Ribeirão das Neves Tocantins (Justinópolis) MG',
@@ -14318,7 +14317,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            497 => 
+            497 =>
             array (
                 'id' => 999,
             'name' => 'Ribeirão das Neves Tony (Justinópolis) MG',
@@ -14332,7 +14331,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            498 => 
+            498 =>
             array (
                 'id' => 1000,
             'name' => 'Ribeirão das Neves Tropical (Justinópolis) MG',
@@ -14346,7 +14345,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            499 => 
+            499 =>
             array (
                 'id' => 1001,
             'name' => 'Ribeirão das Neves Urca (Justinópolis) MG',
@@ -14362,7 +14361,7 @@ class CitiesTableSeeder extends Seeder
             ),
         ));
         \DB::table('cities')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1002,
                 'name' => 'Ribeirão das Neves Vale da Prata MG',
@@ -14376,7 +14375,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 1003,
                 'name' => 'Ribeirão das Neves Vale das Acácias MG',
@@ -14390,7 +14389,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 1004,
                 'name' => 'Ribeirão das Neves Vale Verde MG',
@@ -14404,7 +14403,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 1005,
                 'name' => 'Ribeirão das Neves Várzea Alegre MG',
@@ -14418,7 +14417,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 1006,
                 'name' => 'Ribeirão das Neves Veneza MG',
@@ -14432,7 +14431,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 1007,
             'name' => 'Ribeirão das Neves Vera Lúcia (Justinópolis) MG',
@@ -14446,7 +14445,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 1008,
                 'name' => 'Ribeirão das Neves Vereda MG',
@@ -14460,7 +14459,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 1009,
                 'name' => 'Ribeirão das Neves Verônica MG',
@@ -14474,7 +14473,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 1010,
             'name' => 'Ribeirão das Neves Viena (Justinópolis) MG',
@@ -14488,7 +14487,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 1011,
                 'name' => 'Ribeirão das Neves Vila Aparecida MG',
@@ -14502,7 +14501,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 1012,
                 'name' => 'Ribeirão das Neves Vila Bispo de Maura MG',
@@ -14516,7 +14515,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 1013,
             'name' => 'Ribeirão das Neves Vila Delma (Justinópolis) MG',
@@ -14530,7 +14529,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 1014,
                 'name' => 'Ribeirão das Neves Vila do Cacique MG',
@@ -14544,7 +14543,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 1015,
                 'name' => 'Ribeirão das Neves Vila do Sapé MG',
@@ -14558,7 +14557,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 1016,
                 'name' => 'Ribeirão das Neves Vila Esplanada MG',
@@ -14572,7 +14571,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 1017,
                 'name' => 'Ribeirão das Neves Vila Fluminense MG',
@@ -14586,7 +14585,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 1018,
                 'name' => 'Ribeirão das Neves Vila Mariana MG',
@@ -14600,7 +14599,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 1019,
             'name' => 'Ribeirão das Neves Vila Real (Justinópolis) MG',
@@ -14614,7 +14613,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 1020,
             'name' => 'Ribeirão das Neves Vila Santa Branca (Justinópolis) MG',
@@ -14628,7 +14627,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 1021,
             'name' => 'Ribeirão das Neves Vila Santa Cruz (Justinópolis) MG',
@@ -14642,7 +14641,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 1022,
                 'name' => 'Ribeirão das Neves Vila Terezópolis MG',
@@ -14656,7 +14655,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 1023,
             'name' => 'Ribeirão das Neves Vilage dos Chalés (Justinópolis) MG',
@@ -14670,7 +14669,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 1024,
             'name' => 'Ribeirão das Neves Xangrilá (Justinópolis) MG',
@@ -14684,7 +14683,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 1025,
                 'name' => 'Ibirité',
@@ -14699,7 +14698,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 1026,
                 'name' => 'Ibirité Águia Dourada MG',
@@ -14714,7 +14713,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 1027,
                 'name' => 'Ibirité Alvorada - 1ª Seção MG',
@@ -14728,7 +14727,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 1028,
                 'name' => 'Ibirité Alvorada - 2ª Seção MG',
@@ -14742,7 +14741,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 1029,
                 'name' => 'Ibirité Alvorada - 3ª Seção MG',
@@ -14756,7 +14755,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 1030,
                 'name' => 'Ibirité Alvorada - 4ª Seção MG',
@@ -14770,7 +14769,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 1031,
                 'name' => 'Ibirité Alvorada - 5ª Seção MG',
@@ -14784,7 +14783,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 1032,
             'name' => 'Ibirité Aparecida (Parque Durval de Barros) MG',
@@ -14798,7 +14797,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 1033,
                 'name' => 'Ibirité Área Rural de Ibirité MG',
@@ -14812,7 +14811,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 1034,
             'name' => 'Ibirité Bela Vista (Parque Durval de Barros) MG',
@@ -14826,7 +14825,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 1035,
                 'name' => 'Ibirité Boa Vista MG',
@@ -14841,7 +14840,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 1036,
                 'name' => 'Ibirité Bosques de Ibirité MG',
@@ -14855,7 +14854,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 1037,
                 'name' => 'Ibirité Camargos MG',
@@ -14870,7 +14869,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 1038,
                 'name' => 'Ibirité Campos Filho MG',
@@ -14885,7 +14884,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 1039,
                 'name' => 'Ibirité Canaã - 1ª Seção MG',
@@ -14899,7 +14898,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 1040,
                 'name' => 'Ibirité Canaã - 2ª Seção MG',
@@ -14913,7 +14912,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 1041,
                 'name' => 'Ibirité Canal MG',
@@ -14928,7 +14927,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 1042,
                 'name' => 'Ibirité Canoas MG',
@@ -14943,7 +14942,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 1043,
             'name' => 'Ibirité Cascata (Parque Durval de Barros) MG',
@@ -14957,7 +14956,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 1044,
                 'name' => 'Ibirité Central Park MG',
@@ -14972,7 +14971,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 1045,
                 'name' => 'Ibirité Centro MG',
@@ -14987,7 +14986,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 1046,
                 'name' => 'Ibirité Chácara MG',
@@ -15002,7 +15001,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 1047,
                 'name' => 'Ibirité Condomínio Bela Vista MG',
@@ -15016,7 +15015,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 1048,
             'name' => 'Ibirité Condomínio das Palmeiras (Parque Durval de Barros) MG',
@@ -15030,7 +15029,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 1049,
                 'name' => 'Ibirité Cruzeiro MG',
@@ -15045,7 +15044,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 1050,
                 'name' => 'Ibirité Déa Marly MG',
@@ -15060,7 +15059,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            49 => 
+            49 =>
             array (
                 'id' => 1051,
             'name' => 'Ibirité Distrito Industrial (Parque Durval de Barros) MG',
@@ -15074,7 +15073,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            50 => 
+            50 =>
             array (
                 'id' => 1052,
                 'name' => 'Ibirité Distrito Industrial de Ibirité MG',
@@ -15088,7 +15087,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            51 => 
+            51 =>
             array (
                 'id' => 1053,
                 'name' => 'Ibirité Distrito Industrial Marsil MG',
@@ -15102,7 +15101,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            52 => 
+            52 =>
             array (
                 'id' => 1054,
             'name' => 'Ibirité Eldorado (Parque Durval de Barros) MG',
@@ -15116,7 +15115,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            53 => 
+            53 =>
             array (
                 'id' => 1055,
                 'name' => 'Ibirité Giácomo Aluotto MG',
@@ -15130,7 +15129,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            54 => 
+            54 =>
             array (
                 'id' => 1056,
             'name' => 'Ibirité Guanabara (Parque Durval de Barros) MG',
@@ -15144,7 +15143,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            55 => 
+            55 =>
             array (
                 'id' => 1057,
             'name' => 'Ibirité Industrial - 4ª Seção (Parque Durval de Barros) MG',
@@ -15158,7 +15157,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            56 => 
+            56 =>
             array (
                 'id' => 1058,
                 'name' => 'Ibirité Ipiranga MG',
@@ -15173,7 +15172,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            57 => 
+            57 =>
             array (
                 'id' => 1059,
                 'name' => 'Ibirité Jaçanã MG',
@@ -15188,7 +15187,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            58 => 
+            58 =>
             array (
                 'id' => 1060,
                 'name' => 'Ibirité Jardim das Flores MG',
@@ -15202,7 +15201,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            59 => 
+            59 =>
             array (
                 'id' => 1061,
                 'name' => 'Ibirité Jardim das Oliveiras MG',
@@ -15216,7 +15215,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            60 => 
+            60 =>
             array (
                 'id' => 1062,
             'name' => 'Ibirité Jardim das Rosas - 1ª Seção (Parque Durval de Barros) MG',
@@ -15230,7 +15229,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            61 => 
+            61 =>
             array (
                 'id' => 1063,
             'name' => 'Ibirité Jardim das Rosas - 2ª Seção (Parque Durval de Barros) MG',
@@ -15244,7 +15243,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            62 => 
+            62 =>
             array (
                 'id' => 1064,
                 'name' => 'Ibirité Jardim Ibirité MG',
@@ -15259,7 +15258,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            63 => 
+            63 =>
             array (
                 'id' => 1065,
             'name' => 'Ibirité Jardim Industrial (Parque Durval de Barros) MG',
@@ -15273,7 +15272,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            64 => 
+            64 =>
             array (
                 'id' => 1066,
                 'name' => 'Ibirité Jardim Ipê MG',
@@ -15288,7 +15287,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            65 => 
+            65 =>
             array (
                 'id' => 1067,
                 'name' => 'Ibirité Jardim Monsenhor Horta - 1ª Seção MG',
@@ -15302,7 +15301,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            66 => 
+            66 =>
             array (
                 'id' => 1068,
                 'name' => 'Ibirité Jardim Monsenhor Horta - 2ª Seção MG',
@@ -15316,7 +15315,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            67 => 
+            67 =>
             array (
                 'id' => 1069,
                 'name' => 'Ibirité Jardim Montanhês MG',
@@ -15330,7 +15329,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            68 => 
+            68 =>
             array (
                 'id' => 1070,
                 'name' => 'Ibirité Jardim Montreal - 1ª Seção MG',
@@ -15344,7 +15343,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            69 => 
+            69 =>
             array (
                 'id' => 1071,
                 'name' => 'Ibirité Jardim Rosário MG',
@@ -15359,7 +15358,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            70 => 
+            70 =>
             array (
                 'id' => 1072,
             'name' => 'Ibirité José do Prado (Parque Durval de Barros) MG',
@@ -15373,7 +15372,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            71 => 
+            71 =>
             array (
                 'id' => 1073,
                 'name' => 'Ibirité Lago Azul - 1ª Seção MG',
@@ -15387,7 +15386,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            72 => 
+            72 =>
             array (
                 'id' => 1074,
                 'name' => 'Ibirité Lago Azul - 2ª Seção MG',
@@ -15401,7 +15400,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            73 => 
+            73 =>
             array (
                 'id' => 1075,
                 'name' => 'Ibirité Lago Azul - 3ª Seção MG',
@@ -15415,7 +15414,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            74 => 
+            74 =>
             array (
                 'id' => 1076,
             'name' => 'Ibirité Lajinha (Parque Durval de Barros) MG',
@@ -15429,7 +15428,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            75 => 
+            75 =>
             array (
                 'id' => 1077,
                 'name' => 'Ibirité Los Angeles MG',
@@ -15444,7 +15443,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            76 => 
+            76 =>
             array (
                 'id' => 1078,
                 'name' => 'Ibirité Macaúbas MG',
@@ -15459,7 +15458,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            77 => 
+            77 =>
             array (
                 'id' => 1079,
                 'name' => 'Ibirité Marilândia - 1ª Seção MG',
@@ -15473,7 +15472,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            78 => 
+            78 =>
             array (
                 'id' => 1080,
                 'name' => 'Ibirité Marilândia - 2ª Seção MG',
@@ -15487,7 +15486,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            79 => 
+            79 =>
             array (
                 'id' => 1081,
                 'name' => 'Ibirité Marilândia - 3ª Seção MG',
@@ -15501,7 +15500,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            80 => 
+            80 =>
             array (
                 'id' => 1082,
                 'name' => 'Ibirité Morada da Serra MG',
@@ -15515,7 +15514,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            81 => 
+            81 =>
             array (
                 'id' => 1083,
                 'name' => 'Ibirité Morada do Sol MG',
@@ -15530,7 +15529,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            82 => 
+            82 =>
             array (
                 'id' => 1084,
                 'name' => 'Ibirité Nascimento MG',
@@ -15545,7 +15544,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            83 => 
+            83 =>
             array (
                 'id' => 1085,
                 'name' => 'Ibirité Nossa Senhora de Fátima MG',
@@ -15559,7 +15558,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            84 => 
+            84 =>
             array (
                 'id' => 1086,
                 'name' => 'Ibirité Nossa Senhora de Lourdes MG',
@@ -15573,7 +15572,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            85 => 
+            85 =>
             array (
                 'id' => 1087,
                 'name' => 'Ibirité Novo Barreirinho MG',
@@ -15587,7 +15586,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            86 => 
+            86 =>
             array (
                 'id' => 1088,
                 'name' => 'Ibirité Novo Horizonte MG',
@@ -15602,7 +15601,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            87 => 
+            87 =>
             array (
                 'id' => 1089,
                 'name' => 'Ibirité Ouro Negro MG',
@@ -15617,7 +15616,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            88 => 
+            88 =>
             array (
                 'id' => 1090,
             'name' => 'Ibirité Palmares - 1ª Seção (Parque Durval de Barros) MG',
@@ -15631,7 +15630,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            89 => 
+            89 =>
             array (
                 'id' => 1091,
             'name' => 'Ibirité Palmares - 2ª Seção (Parque Durval de Barros) MG',
@@ -15645,7 +15644,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            90 => 
+            90 =>
             array (
                 'id' => 1092,
             'name' => 'Ibirité Palmares - 4ª Seção (Parque Durval de Barros) MG',
@@ -15659,7 +15658,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            91 => 
+            91 =>
             array (
                 'id' => 1093,
             'name' => 'Ibirité Palmeiras (Parque Durval de Barros) MG',
@@ -15673,7 +15672,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            92 => 
+            92 =>
             array (
                 'id' => 1094,
                 'name' => 'Ibirité Pantana MG',
@@ -15688,7 +15687,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            93 => 
+            93 =>
             array (
                 'id' => 1095,
                 'name' => 'Ibirité Parque Afonso de Matos MG',
@@ -15702,7 +15701,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            94 => 
+            94 =>
             array (
                 'id' => 1096,
                 'name' => 'Ibirité Parque Antônio Amábile MG',
@@ -15716,7 +15715,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            95 => 
+            95 =>
             array (
                 'id' => 1097,
             'name' => 'Ibirité Parque Duval de Barros (Parque Durval de Barros) MG',
@@ -15730,7 +15729,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            96 => 
+            96 =>
             array (
                 'id' => 1098,
                 'name' => 'Ibirité Parque Elizabeth MG',
@@ -15744,7 +15743,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            97 => 
+            97 =>
             array (
                 'id' => 1099,
                 'name' => 'Ibirité Parque Estrela do Sul MG',
@@ -15758,7 +15757,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            98 => 
+            98 =>
             array (
                 'id' => 1100,
                 'name' => 'Ibirité Parque Jardim 1º de Outubro MG',
@@ -15772,7 +15771,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            99 => 
+            99 =>
             array (
                 'id' => 1101,
             'name' => 'Ibirité Petrolina (Parque Durval de Barros) MG',
@@ -15786,7 +15785,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            100 => 
+            100 =>
             array (
                 'id' => 1102,
                 'name' => 'Ibirité Petrovale - 1ª Seção MG',
@@ -15800,7 +15799,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            101 => 
+            101 =>
             array (
                 'id' => 1103,
                 'name' => 'Ibirité Petrovale - 2ª Seção MG',
@@ -15814,7 +15813,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            102 => 
+            102 =>
             array (
                 'id' => 1104,
             'name' => 'Ibirité Piratininga (Parque Durval de Barros) MG',
@@ -15828,7 +15827,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            103 => 
+            103 =>
             array (
                 'id' => 1105,
                 'name' => 'Ibirité Primavera MG',
@@ -15843,7 +15842,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            104 => 
+            104 =>
             array (
                 'id' => 1106,
             'name' => 'Ibirité Professor Washington Pires (Parque Durval de Barros) MG',
@@ -15857,7 +15856,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            105 => 
+            105 =>
             array (
                 'id' => 1107,
                 'name' => 'Ibirité Quintas da Jangada - 2ª Seção MG',
@@ -15871,7 +15870,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            106 => 
+            106 =>
             array (
                 'id' => 1108,
                 'name' => 'Ibirité Quintas da Jangada - 3ª Seção MG',
@@ -15885,7 +15884,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            107 => 
+            107 =>
             array (
                 'id' => 1109,
                 'name' => 'Ibirité Recanto da Lagoa - 1ª Seção MG',
@@ -15899,7 +15898,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            108 => 
+            108 =>
             array (
                 'id' => 1110,
                 'name' => 'Ibirité Recanto da Lagoa - 2ª Seção MG',
@@ -15913,7 +15912,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            109 => 
+            109 =>
             array (
                 'id' => 1111,
                 'name' => 'Ibirité Recanto das Árvores MG',
@@ -15927,7 +15926,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            110 => 
+            110 =>
             array (
                 'id' => 1112,
                 'name' => 'Ibirité Recanto Verde MG',
@@ -15942,7 +15941,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            111 => 
+            111 =>
             array (
                 'id' => 1113,
                 'name' => 'Ibirité Recanto Verde - 2ª Seção MG',
@@ -15956,7 +15955,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            112 => 
+            112 =>
             array (
                 'id' => 1114,
                 'name' => 'Ibirité Redenção MG',
@@ -15971,7 +15970,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            113 => 
+            113 =>
             array (
                 'id' => 1115,
             'name' => 'Ibirité Residencial Lajinha (Parque Durval de Barros) MG',
@@ -15985,7 +15984,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            114 => 
+            114 =>
             array (
                 'id' => 1116,
                 'name' => 'Ibirité Residencial Metrópole MG',
@@ -15999,7 +15998,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            115 => 
+            115 =>
             array (
                 'id' => 1117,
             'name' => 'Ibirité Residencial Palmira (Parque Durval de Barros) MG',
@@ -16013,7 +16012,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            116 => 
+            116 =>
             array (
                 'id' => 1118,
                 'name' => 'Ibirité Residencial Serra Verde MG',
@@ -16027,7 +16026,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            117 => 
+            117 =>
             array (
                 'id' => 1119,
                 'name' => 'Ibirité Santa Maria MG',
@@ -16042,7 +16041,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            118 => 
+            118 =>
             array (
                 'id' => 1120,
                 'name' => 'Ibirité Santa Rita MG',
@@ -16057,7 +16056,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            119 => 
+            119 =>
             array (
                 'id' => 1121,
                 'name' => 'Ibirité Santa Terezinha MG',
@@ -16071,7 +16070,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            120 => 
+            120 =>
             array (
                 'id' => 1122,
                 'name' => 'Ibirité São Geraldo MG',
@@ -16086,7 +16085,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            121 => 
+            121 =>
             array (
                 'id' => 1123,
                 'name' => 'Ibirité São João MG',
@@ -16101,7 +16100,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            122 => 
+            122 =>
             array (
                 'id' => 1124,
             'name' => 'Ibirité São Judas Tadeu (Parque Durval de Barros) MG',
@@ -16115,7 +16114,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            123 => 
+            123 =>
             array (
                 'id' => 1125,
                 'name' => 'Ibirité São Pedro MG',
@@ -16130,7 +16129,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            124 => 
+            124 =>
             array (
                 'id' => 1126,
             'name' => 'Ibirité Serra Dourada (Parque Durval de Barros) MG',
@@ -16144,7 +16143,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            125 => 
+            125 =>
             array (
                 'id' => 1127,
             'name' => 'Ibirité Sol Nascente (Parque Durval de Barros) MG',
@@ -16158,7 +16157,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            126 => 
+            126 =>
             array (
                 'id' => 1128,
                 'name' => 'Ibirité Trevo MG',
@@ -16173,7 +16172,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            127 => 
+            127 =>
             array (
                 'id' => 1129,
                 'name' => 'Ibirité Várzea MG',
@@ -16188,7 +16187,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            128 => 
+            128 =>
             array (
                 'id' => 1130,
             'name' => 'Ibirité Vila Bugarim (Parque Durval de Barros) MG',
@@ -16202,7 +16201,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            129 => 
+            129 =>
             array (
                 'id' => 1131,
                 'name' => 'Ibirité Vila Canaã MG',
@@ -16217,7 +16216,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            130 => 
+            130 =>
             array (
                 'id' => 1132,
                 'name' => 'Ibirité Vila Candelária MG',
@@ -16231,7 +16230,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            131 => 
+            131 =>
             array (
                 'id' => 1133,
                 'name' => 'Ibirité Vila Carvalho MG',
@@ -16246,7 +16245,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            132 => 
+            132 =>
             array (
                 'id' => 1134,
                 'name' => 'Ibirité Vila dos Operários MG',
@@ -16260,7 +16259,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            133 => 
+            133 =>
             array (
                 'id' => 1135,
                 'name' => 'Ibirité Vila Escorpião MG',
@@ -16275,7 +16274,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            134 => 
+            134 =>
             array (
                 'id' => 1136,
             'name' => 'Ibirité Vila Ideal (Parque Durval de Barros) MG',
@@ -16289,7 +16288,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            135 => 
+            135 =>
             array (
                 'id' => 1137,
                 'name' => 'Ibirité Vila Nova Esperança - 1ª Seção MG',
@@ -16303,7 +16302,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            136 => 
+            136 =>
             array (
                 'id' => 1138,
                 'name' => 'Ibirité Vila Nova Esperança - 2ª Seção MG',
@@ -16317,7 +16316,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            137 => 
+            137 =>
             array (
                 'id' => 1139,
                 'name' => 'Ibirité Vila Nova Esperança - 3ª Seção MG',
@@ -16331,7 +16330,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            138 => 
+            138 =>
             array (
                 'id' => 1140,
                 'name' => 'Ibirité Vila Nova Esperança - 4ª Seção MG',
@@ -16345,7 +16344,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            139 => 
+            139 =>
             array (
                 'id' => 1141,
                 'name' => 'Ibirité Vila Nunes MG',
@@ -16360,7 +16359,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            140 => 
+            140 =>
             array (
                 'id' => 1142,
                 'name' => 'Ibirité Vila Ouro Negro MG',
@@ -16374,7 +16373,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            141 => 
+            141 =>
             array (
                 'id' => 1143,
             'name' => 'Ibirité Vila Petrolina (Parque Durval de Barros) MG',
@@ -16388,7 +16387,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            142 => 
+            142 =>
             array (
                 'id' => 1144,
                 'name' => 'Ibirité Vila Pinheiros MG',
@@ -16403,7 +16402,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            143 => 
+            143 =>
             array (
                 'id' => 1145,
                 'name' => 'Ibirité Vila Rosário MG',
@@ -16418,7 +16417,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            144 => 
+            144 =>
             array (
                 'id' => 1146,
                 'name' => 'Ibirité Vila São Luiz MG',
@@ -16433,7 +16432,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            145 => 
+            145 =>
             array (
                 'id' => 1147,
             'name' => 'Ibirité Vila Serra Dourada (Parque Durval de Barros) MG',
@@ -16447,7 +16446,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            146 => 
+            146 =>
             array (
                 'id' => 1148,
                 'name' => 'Ibirité Vista Alegre - 1ª Seção MG',
@@ -16461,7 +16460,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            147 => 
+            147 =>
             array (
                 'id' => 1149,
                 'name' => 'Ibirité Vista Alegre - 2ª Seção MG',
@@ -16475,7 +16474,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            148 => 
+            148 =>
             array (
                 'id' => 1150,
                 'name' => 'BH',
@@ -16490,7 +16489,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            149 => 
+            149 =>
             array (
                 'id' => 1151,
                 'name' => 'Sete Lagoas',
@@ -16505,7 +16504,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            150 => 
+            150 =>
             array (
                 'id' => 1152,
                 'name' => 'Sete Lagoas Aeroporto Industrial MG',
@@ -16519,7 +16518,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            151 => 
+            151 =>
             array (
                 'id' => 1153,
                 'name' => 'Sete Lagoas Alex Paiva MG',
@@ -16533,7 +16532,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            152 => 
+            152 =>
             array (
                 'id' => 1154,
                 'name' => 'Sete Lagoas Alto Coqueiral MG',
@@ -16547,7 +16546,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            153 => 
+            153 =>
             array (
                 'id' => 1155,
                 'name' => 'Sete Lagoas Alvorada MG',
@@ -16562,7 +16561,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            154 => 
+            154 =>
             array (
                 'id' => 1156,
                 'name' => 'Sete Lagoas Anchieta MG',
@@ -16577,7 +16576,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            155 => 
+            155 =>
             array (
                 'id' => 1157,
                 'name' => 'Sete Lagoas Área Rural de Sete Lagoas MG',
@@ -16591,7 +16590,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            156 => 
+            156 =>
             array (
                 'id' => 1158,
                 'name' => 'Sete Lagoas Areias MG',
@@ -16606,7 +16605,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            157 => 
+            157 =>
             array (
                 'id' => 1159,
                 'name' => 'Sete Lagoas Bandeirante MG',
@@ -16620,7 +16619,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            158 => 
+            158 =>
             array (
                 'id' => 1160,
                 'name' => 'Sete Lagoas Barreiro MG',
@@ -16635,7 +16634,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            159 => 
+            159 =>
             array (
                 'id' => 1161,
                 'name' => 'Sete Lagoas Barreiro de Baixo MG',
@@ -16649,7 +16648,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            160 => 
+            160 =>
             array (
                 'id' => 1162,
                 'name' => 'Sete Lagoas Barreiro de Cima MG',
@@ -16663,7 +16662,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            161 => 
+            161 =>
             array (
                 'id' => 1163,
                 'name' => 'Sete Lagoas Bela Vista 2 MG',
@@ -16677,7 +16676,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            162 => 
+            162 =>
             array (
                 'id' => 1164,
                 'name' => 'Sete Lagoas Bela Vista 3 MG',
@@ -16691,7 +16690,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            163 => 
+            163 =>
             array (
                 'id' => 1165,
                 'name' => 'Sete Lagoas Bela Vista l MG',
@@ -16705,13 +16704,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            164 => 
+            164 =>
             array (
                 'id' => 1166,
                 'name' => 'Sete Lagoas Belo Vale MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Belo Vale MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4095673;-44.2248607\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Belo Vale MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Belo Vale MG\' />
+',
                 'slug' => 'sete-lagoas-belo-vale-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -16719,7 +16719,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            165 => 
+            165 =>
             array (
                 'id' => 1167,
                 'name' => 'Sete Lagoas Belo Vale ll MG',
@@ -16733,7 +16733,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            166 => 
+            166 =>
             array (
                 'id' => 1168,
                 'name' => 'Sete Lagoas Blue Garden Safira MG',
@@ -16747,13 +16747,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            167 => 
+            167 =>
             array (
                 'id' => 1169,
                 'name' => 'Sete Lagoas Boa Vista MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Boa Vista MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4599302;-44.2347356\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Boa Vista MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Boa Vista MG\' />
+',
                 'slug' => 'sete-lagoas-boa-vista-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -16761,7 +16762,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            168 => 
+            168 =>
             array (
                 'id' => 1170,
                 'name' => 'Sete Lagoas Bom Jardim MG',
@@ -16775,13 +16776,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            169 => 
+            169 =>
             array (
                 'id' => 1171,
                 'name' => 'Sete Lagoas Bom Jesus MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Bom Jesus MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4448814;-44.2306116\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Bom Jesus MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Bom Jesus MG\' />
+',
                 'slug' => 'sete-lagoas-bom-jesus-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -16789,7 +16791,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            170 => 
+            170 =>
             array (
                 'id' => 1172,
                 'name' => 'Sete Lagoas Bouganvile l MG',
@@ -16803,7 +16805,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            171 => 
+            171 =>
             array (
                 'id' => 1173,
                 'name' => 'Sete Lagoas Bouganvile ll MG',
@@ -16817,7 +16819,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            172 => 
+            172 =>
             array (
                 'id' => 1174,
                 'name' => 'Sete Lagoas Brasília MG',
@@ -16832,7 +16834,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            173 => 
+            173 =>
             array (
                 'id' => 1175,
                 'name' => 'Sete Lagoas Braz Filizola MG',
@@ -16846,7 +16848,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            174 => 
+            174 =>
             array (
                 'id' => 1176,
                 'name' => 'Sete Lagoas Brejão MG',
@@ -16861,7 +16863,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            175 => 
+            175 =>
             array (
                 'id' => 1177,
                 'name' => 'Sete Lagoas Brejinho MG',
@@ -16876,7 +16878,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            176 => 
+            176 =>
             array (
                 'id' => 1178,
                 'name' => 'Sete Lagoas Campo de Aviação MG',
@@ -16890,7 +16892,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            177 => 
+            177 =>
             array (
                 'id' => 1179,
                 'name' => 'Sete Lagoas Canaã MG',
@@ -16905,7 +16907,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            178 => 
+            178 =>
             array (
                 'id' => 1180,
                 'name' => 'Sete Lagoas Canadá MG',
@@ -16920,7 +16922,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            179 => 
+            179 =>
             array (
                 'id' => 1181,
                 'name' => 'Sete Lagoas Canada 2 MG',
@@ -16935,7 +16937,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            180 => 
+            180 =>
             array (
                 'id' => 1182,
                 'name' => 'Sete Lagoas Catarina MG',
@@ -16950,7 +16952,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            181 => 
+            181 =>
             array (
                 'id' => 1183,
                 'name' => 'Sete Lagoas CDI MG',
@@ -16965,7 +16967,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            182 => 
+            182 =>
             array (
                 'id' => 1184,
                 'name' => 'Sete Lagoas Cedro e Cachoeira MG',
@@ -16979,7 +16981,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            183 => 
+            183 =>
             array (
                 'id' => 1185,
                 'name' => 'Sete Lagoas Centro MG',
@@ -16994,7 +16996,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            184 => 
+            184 =>
             array (
                 'id' => 1186,
                 'name' => 'Sete Lagoas Chácara do Paiva MG',
@@ -17008,7 +17010,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            185 => 
+            185 =>
             array (
                 'id' => 1187,
                 'name' => 'Sete Lagoas Chácara Esplanada do Moinho MG',
@@ -17022,7 +17024,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            186 => 
+            186 =>
             array (
                 'id' => 1188,
                 'name' => 'Sete Lagoas Chácaras Coronel Manoel Marques Ferreira MG',
@@ -17036,7 +17038,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            187 => 
+            187 =>
             array (
                 'id' => 1189,
                 'name' => 'Sete Lagoas Cidade de Deus MG',
@@ -17050,7 +17052,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            188 => 
+            188 =>
             array (
                 'id' => 1190,
                 'name' => 'Sete Lagoas Cidade Nova MG',
@@ -17064,7 +17066,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            189 => 
+            189 =>
             array (
                 'id' => 1191,
                 'name' => 'Sete Lagoas Condomínio Lago Azul MG',
@@ -17078,7 +17080,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            190 => 
+            190 =>
             array (
                 'id' => 1192,
                 'name' => 'Sete Lagoas Condomínio Lagoas do Moinho MG',
@@ -17092,7 +17094,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            191 => 
+            191 =>
             array (
                 'id' => 1193,
                 'name' => 'Sete Lagoas Conjunto Habitacional Bernardo Valadares Vasconcelos MG',
@@ -17106,7 +17108,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            192 => 
+            192 =>
             array (
                 'id' => 1194,
                 'name' => 'Sete Lagoas Dante Lanza MG',
@@ -17120,7 +17122,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            193 => 
+            193 =>
             array (
                 'id' => 1195,
                 'name' => 'Sete Lagoas Distrito Industrial MG',
@@ -17134,7 +17136,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            194 => 
+            194 =>
             array (
                 'id' => 1196,
                 'name' => 'Sete Lagoas Distrito Industrial Norte MG',
@@ -17148,13 +17150,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            195 => 
+            195 =>
             array (
                 'id' => 1197,
                 'name' => 'Sete Lagoas Dona Dora MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Dona Dora MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4717296;-44.2340674\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Dona Dora MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Dona Dora MG\' />
+',
                 'slug' => 'sete-lagoas-dona-dora-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -17162,7 +17165,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            196 => 
+            196 =>
             array (
                 'id' => 1198,
                 'name' => 'Sete Lagoas Eldorado MG',
@@ -17177,7 +17180,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            197 => 
+            197 =>
             array (
                 'id' => 1199,
                 'name' => 'Sete Lagoas Emília MG',
@@ -17192,7 +17195,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            198 => 
+            198 =>
             array (
                 'id' => 1200,
                 'name' => 'Sete Lagoas Esmeraldas MG',
@@ -17206,7 +17209,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            199 => 
+            199 =>
             array (
                 'id' => 1201,
                 'name' => 'Sete Lagoas Esmeraldas 2 MG',
@@ -17220,13 +17223,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            200 => 
+            200 =>
             array (
                 'id' => 1202,
                 'name' => 'Sete Lagoas Esperança MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Esperança MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4386290;-44.2390497\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Esperança MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Esperança MG\' />
+',
                 'slug' => 'sete-lagoas-esperanca-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -17234,7 +17238,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            201 => 
+            201 =>
             array (
                 'id' => 1203,
                 'name' => 'Sete Lagoas Fátima MG',
@@ -17249,7 +17253,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            202 => 
+            202 =>
             array (
                 'id' => 1204,
                 'name' => 'Sete Lagoas Fazenda Velha MG',
@@ -17263,7 +17267,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            203 => 
+            203 =>
             array (
                 'id' => 1205,
                 'name' => 'Sete Lagoas Flora Bela Parque Residencial MG',
@@ -17277,7 +17281,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            204 => 
+            204 =>
             array (
                 'id' => 1206,
                 'name' => 'Sete Lagoas Flórida MG',
@@ -17292,7 +17296,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            205 => 
+            205 =>
             array (
                 'id' => 1207,
                 'name' => 'Sete Lagoas Funcionários MG',
@@ -17306,7 +17310,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            206 => 
+            206 =>
             array (
                 'id' => 1208,
                 'name' => 'Sete Lagoas Glória MG',
@@ -17321,7 +17325,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            207 => 
+            207 =>
             array (
                 'id' => 1209,
                 'name' => 'Sete Lagoas Henrique Nery MG',
@@ -17335,7 +17339,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            208 => 
+            208 =>
             array (
                 'id' => 1210,
                 'name' => 'Sete Lagoas Honorina Pontes MG',
@@ -17349,7 +17353,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            209 => 
+            209 =>
             array (
                 'id' => 1211,
                 'name' => 'Sete Lagoas Industrial MG',
@@ -17363,7 +17367,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            210 => 
+            210 =>
             array (
                 'id' => 1212,
                 'name' => 'Sete Lagoas Indústrias MG',
@@ -17377,7 +17381,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            211 => 
+            211 =>
             array (
                 'id' => 1213,
                 'name' => 'Sete Lagoas Indústrias 2 MG',
@@ -17391,7 +17395,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            212 => 
+            212 =>
             array (
                 'id' => 1214,
                 'name' => 'Sete Lagoas Interlagos 1 MG',
@@ -17405,7 +17409,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            213 => 
+            213 =>
             array (
                 'id' => 1215,
                 'name' => 'Sete Lagoas Interlagos 2 MG',
@@ -17419,7 +17423,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            214 => 
+            214 =>
             array (
                 'id' => 1216,
                 'name' => 'Sete Lagoas Iporanga MG',
@@ -17434,7 +17438,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            215 => 
+            215 =>
             array (
                 'id' => 1217,
                 'name' => 'Sete Lagoas Iporanga 2 MG',
@@ -17448,7 +17452,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            216 => 
+            216 =>
             array (
                 'id' => 1218,
                 'name' => 'Sete Lagoas Itapoã MG',
@@ -17463,7 +17467,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            217 => 
+            217 =>
             array (
                 'id' => 1219,
                 'name' => 'Sete Lagoas Itapoã 2 MG',
@@ -17478,7 +17482,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            218 => 
+            218 =>
             array (
                 'id' => 1220,
                 'name' => 'Sete Lagoas Jardim Arizona MG',
@@ -17492,7 +17496,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            219 => 
+            219 =>
             array (
                 'id' => 1221,
                 'name' => 'Sete Lagoas Jardim Cambuí MG',
@@ -17506,7 +17510,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            220 => 
+            220 =>
             array (
                 'id' => 1222,
                 'name' => 'Sete Lagoas Jardim dos Pequis MG',
@@ -17520,7 +17524,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            221 => 
+            221 =>
             array (
                 'id' => 1223,
                 'name' => 'Sete Lagoas Jardim Europa MG',
@@ -17534,7 +17538,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            222 => 
+            222 =>
             array (
                 'id' => 1224,
                 'name' => 'Sete Lagoas Jardim Primavera 2 MG',
@@ -17548,7 +17552,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            223 => 
+            223 =>
             array (
                 'id' => 1225,
                 'name' => 'Sete Lagoas Jardim Primavera l MG',
@@ -17562,7 +17566,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            224 => 
+            224 =>
             array (
                 'id' => 1226,
                 'name' => 'Sete Lagoas Jardim Universitário MG',
@@ -17576,7 +17580,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            225 => 
+            225 =>
             array (
                 'id' => 1227,
                 'name' => 'Sete Lagoas JK MG',
@@ -17591,7 +17595,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            226 => 
+            226 =>
             array (
                 'id' => 1228,
                 'name' => 'Sete Lagoas Kwait MG',
@@ -17606,7 +17610,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            227 => 
+            227 =>
             array (
                 'id' => 1229,
                 'name' => 'Sete Lagoas Lontra MG',
@@ -17621,13 +17625,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            228 => 
+            228 =>
             array (
                 'id' => 1230,
                 'name' => 'Sete Lagoas Lontrinha MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Lontrinha MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4765720;-44.2273573\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Lontrinha MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Lontrinha MG\' />
+',
                 'slug' => 'sete-lagoas-lontrinha-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -17635,7 +17640,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            229 => 
+            229 =>
             array (
                 'id' => 1231,
                 'name' => 'Sete Lagoas Luxemburgo MG',
@@ -17649,7 +17654,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            230 => 
+            230 =>
             array (
                 'id' => 1232,
                 'name' => 'Sete Lagoas Mangabeiras MG',
@@ -17663,7 +17668,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            231 => 
+            231 =>
             array (
                 'id' => 1233,
                 'name' => 'Sete Lagoas Manoa MG',
@@ -17678,7 +17683,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            232 => 
+            232 =>
             array (
                 'id' => 1234,
                 'name' => 'Sete Lagoas Mata Grande MG',
@@ -17692,7 +17697,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            233 => 
+            233 =>
             array (
                 'id' => 1235,
                 'name' => 'Sete Lagoas Monte Carlo MG',
@@ -17706,7 +17711,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            234 => 
+            234 =>
             array (
                 'id' => 1236,
                 'name' => 'Sete Lagoas Montreal MG',
@@ -17721,7 +17726,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            235 => 
+            235 =>
             array (
                 'id' => 1237,
                 'name' => 'Sete Lagoas Montreal 2 MG',
@@ -17735,7 +17740,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            236 => 
+            236 =>
             array (
                 'id' => 1238,
                 'name' => 'Sete Lagoas Morro do Claro MG',
@@ -17749,7 +17754,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            237 => 
+            237 =>
             array (
                 'id' => 1239,
                 'name' => 'Sete Lagoas New York MG',
@@ -17764,7 +17769,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            238 => 
+            238 =>
             array (
                 'id' => 1240,
                 'name' => 'Sete Lagoas Nossa Senhora das Graças MG',
@@ -17778,7 +17783,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            239 => 
+            239 =>
             array (
                 'id' => 1241,
                 'name' => 'Sete Lagoas Nossa Senhora de Lourdes MG',
@@ -17792,7 +17797,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            240 => 
+            240 =>
             array (
                 'id' => 1242,
                 'name' => 'Sete Lagoas Nossa Senhora do Carmo MG',
@@ -17806,7 +17811,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            241 => 
+            241 =>
             array (
                 'id' => 1243,
                 'name' => 'Sete Lagoas Nossa Senhora do Carmo 2 MG',
@@ -17820,7 +17825,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            242 => 
+            242 =>
             array (
                 'id' => 1244,
                 'name' => 'Sete Lagoas Nova Cidade MG',
@@ -17834,7 +17839,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            243 => 
+            243 =>
             array (
                 'id' => 1245,
                 'name' => 'Sete Lagoas Nova Serrana MG',
@@ -17848,7 +17853,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            244 => 
+            244 =>
             array (
                 'id' => 1246,
                 'name' => 'Sete Lagoas Novo Horizonte MG',
@@ -17862,7 +17867,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            245 => 
+            245 =>
             array (
                 'id' => 1247,
                 'name' => 'Sete Lagoas Olinto Alvin MG',
@@ -17876,7 +17881,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            246 => 
+            246 =>
             array (
                 'id' => 1248,
                 'name' => 'Sete Lagoas Ondina Vasconcelos de Oliveira MG',
@@ -17890,7 +17895,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            247 => 
+            247 =>
             array (
                 'id' => 1249,
                 'name' => 'Sete Lagoas Orozimbo Macedo MG',
@@ -17904,7 +17909,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            248 => 
+            248 =>
             array (
                 'id' => 1250,
                 'name' => 'Sete Lagoas Ouro Branco MG',
@@ -17918,7 +17923,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            249 => 
+            249 =>
             array (
                 'id' => 1251,
                 'name' => 'Sete Lagoas Padre Teodoro MG',
@@ -17932,7 +17937,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            250 => 
+            250 =>
             array (
                 'id' => 1252,
                 'name' => 'Sete Lagoas Padre Teodoro ll MG',
@@ -17946,7 +17951,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            251 => 
+            251 =>
             array (
                 'id' => 1253,
                 'name' => 'Sete Lagoas Panorama MG',
@@ -17961,13 +17966,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            252 => 
+            252 =>
             array (
                 'id' => 1254,
                 'name' => 'Sete Lagoas Papavento MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Papavento MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4573800;-44.2416695\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Papavento MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Papavento MG\' />
+',
                 'slug' => 'sete-lagoas-papavento-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -17975,7 +17981,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            253 => 
+            253 =>
             array (
                 'id' => 1255,
                 'name' => 'Sete Lagoas Paredão MG',
@@ -17990,7 +17996,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            254 => 
+            254 =>
             array (
                 'id' => 1256,
                 'name' => 'Sete Lagoas Parque das Nogueiras MG',
@@ -18004,7 +18010,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            255 => 
+            255 =>
             array (
                 'id' => 1257,
                 'name' => 'Sete Lagoas Pedras MG',
@@ -18019,7 +18025,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            256 => 
+            256 =>
             array (
                 'id' => 1258,
                 'name' => 'Sete Lagoas Piedade MG',
@@ -18034,7 +18040,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            257 => 
+            257 =>
             array (
                 'id' => 1259,
                 'name' => 'Sete Lagoas Planalto MG',
@@ -18049,7 +18055,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            258 => 
+            258 =>
             array (
                 'id' => 1260,
                 'name' => 'Sete Lagoas Portal da Serra MG',
@@ -18063,13 +18069,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            259 => 
+            259 =>
             array (
                 'id' => 1261,
                 'name' => 'Sete Lagoas Primavera MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Primavera MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.3611525;-44.2540948\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Primavera MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Primavera MG\' />
+',
                 'slug' => 'sete-lagoas-primavera-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -18077,13 +18084,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            260 => 
+            260 =>
             array (
                 'id' => 1262,
                 'name' => 'Sete Lagoas Progresso MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Progresso MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4487565;-44.2566069\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Progresso MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Progresso MG\' />
+',
                 'slug' => 'sete-lagoas-progresso-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -18091,7 +18099,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            261 => 
+            261 =>
             array (
                 'id' => 1263,
                 'name' => 'Sete Lagoas Progresso 2 MG',
@@ -18105,13 +18113,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            262 => 
+            262 =>
             array (
                 'id' => 1264,
                 'name' => 'Sete Lagoas Quinducha MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas Quinducha MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4698909;-44.2671994\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas Quinducha MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas Quinducha MG\' />
+',
                 'slug' => 'sete-lagoas-quinducha-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -18119,7 +18128,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            263 => 
+            263 =>
             array (
                 'id' => 1265,
                 'name' => 'Sete Lagoas Quintas da Varginha MG',
@@ -18133,7 +18142,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            264 => 
+            264 =>
             array (
                 'id' => 1266,
                 'name' => 'Sete Lagoas Quintas do Lago 1 MG',
@@ -18147,7 +18156,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            265 => 
+            265 =>
             array (
                 'id' => 1267,
                 'name' => 'Sete Lagoas Quintas do Lago 2 MG',
@@ -18161,7 +18170,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            266 => 
+            266 =>
             array (
                 'id' => 1268,
                 'name' => 'Sete Lagoas Recanto da Gineta MG',
@@ -18175,7 +18184,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            267 => 
+            267 =>
             array (
                 'id' => 1269,
                 'name' => 'Sete Lagoas Recanto da Serra MG',
@@ -18189,7 +18198,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            268 => 
+            268 =>
             array (
                 'id' => 1270,
                 'name' => 'Sete Lagoas Recanto do Cedro MG',
@@ -18203,7 +18212,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            269 => 
+            269 =>
             array (
                 'id' => 1271,
                 'name' => 'Sete Lagoas Recanto do Itororó MG',
@@ -18217,7 +18226,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            270 => 
+            270 =>
             array (
                 'id' => 1272,
                 'name' => 'Sete Lagoas Recanto do Yassu MG',
@@ -18231,7 +18240,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            271 => 
+            271 =>
             array (
                 'id' => 1273,
                 'name' => 'Sete Lagoas Recanto São José MG',
@@ -18245,7 +18254,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            272 => 
+            272 =>
             array (
                 'id' => 1274,
                 'name' => 'Sete Lagoas Residencial Campestre MG',
@@ -18259,7 +18268,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            273 => 
+            273 =>
             array (
                 'id' => 1275,
                 'name' => 'Sete Lagoas Residencial Da Vinci MG',
@@ -18273,7 +18282,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            274 => 
+            274 =>
             array (
                 'id' => 1276,
                 'name' => 'Sete Lagoas Residencial Dona Sílvia 1 MG',
@@ -18287,7 +18296,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            275 => 
+            275 =>
             array (
                 'id' => 1277,
                 'name' => 'Sete Lagoas Residencial Ermitage MG',
@@ -18301,7 +18310,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            276 => 
+            276 =>
             array (
                 'id' => 1278,
                 'name' => 'Sete Lagoas Residencial Goiabeiras MG',
@@ -18315,7 +18324,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            277 => 
+            277 =>
             array (
                 'id' => 1279,
                 'name' => 'Sete Lagoas Residencial Pôr do Sol MG',
@@ -18329,7 +18338,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            278 => 
+            278 =>
             array (
                 'id' => 1280,
                 'name' => 'Sete Lagoas Residencial Portal do Moinho MG',
@@ -18343,7 +18352,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            279 => 
+            279 =>
             array (
                 'id' => 1281,
                 'name' => 'Sete Lagoas Riacho do Campo MG',
@@ -18357,7 +18366,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            280 => 
+            280 =>
             array (
                 'id' => 1282,
                 'name' => 'Sete Lagoas Santa Eliza MG',
@@ -18371,7 +18380,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            281 => 
+            281 =>
             array (
                 'id' => 1283,
                 'name' => 'Sete Lagoas Santa Felicidade MG',
@@ -18385,7 +18394,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            282 => 
+            282 =>
             array (
                 'id' => 1284,
                 'name' => 'Sete Lagoas Santa Helena MG',
@@ -18399,7 +18408,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            283 => 
+            283 =>
             array (
                 'id' => 1285,
                 'name' => 'Sete Lagoas Santa Luzia MG',
@@ -18413,7 +18422,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            284 => 
+            284 =>
             array (
                 'id' => 1286,
                 'name' => 'Sete Lagoas Santa Marcelina MG',
@@ -18427,7 +18436,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            285 => 
+            285 =>
             array (
                 'id' => 1287,
                 'name' => 'Sete Lagoas Santa Maria MG',
@@ -18441,7 +18450,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            286 => 
+            286 =>
             array (
                 'id' => 1288,
                 'name' => 'Sete Lagoas Santa Rita MG',
@@ -18455,7 +18464,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            287 => 
+            287 =>
             array (
                 'id' => 1289,
                 'name' => 'Sete Lagoas Santa Rita de Cássia MG',
@@ -18469,7 +18478,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            288 => 
+            288 =>
             array (
                 'id' => 1290,
                 'name' => 'Sete Lagoas Santa Rosa MG',
@@ -18483,7 +18492,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            289 => 
+            289 =>
             array (
                 'id' => 1291,
                 'name' => 'Sete Lagoas Santo Antônio MG',
@@ -18497,7 +18506,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            290 => 
+            290 =>
             array (
                 'id' => 1292,
                 'name' => 'Sete Lagoas São Cristóvão MG',
@@ -18511,7 +18520,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            291 => 
+            291 =>
             array (
                 'id' => 1293,
                 'name' => 'Sete Lagoas São Cristóvão 2 MG',
@@ -18525,13 +18534,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            292 => 
+            292 =>
             array (
                 'id' => 1294,
                 'name' => 'Sete Lagoas São Dimas MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas São Dimas MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4717523;-44.2511320\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas São Dimas MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas São Dimas MG\' />
+',
                 'slug' => 'sete-lagoas-sao-dimas-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -18539,7 +18549,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            293 => 
+            293 =>
             array (
                 'id' => 1295,
                 'name' => 'Sete Lagoas São Francisco de Assis MG',
@@ -18553,7 +18563,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            294 => 
+            294 =>
             array (
                 'id' => 1296,
                 'name' => 'Sete Lagoas São Geraldo MG',
@@ -18567,7 +18577,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            295 => 
+            295 =>
             array (
                 'id' => 1297,
                 'name' => 'Sete Lagoas São João MG',
@@ -18582,7 +18592,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            296 => 
+            296 =>
             array (
                 'id' => 1298,
                 'name' => 'Sete Lagoas São João 2 MG',
@@ -18596,13 +18606,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            297 => 
+            297 =>
             array (
                 'id' => 1299,
                 'name' => 'Sete Lagoas São Jorge MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas São Jorge MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4719475;-44.2565634\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas São Jorge MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas São Jorge MG\' />
+',
                 'slug' => 'sete-lagoas-sao-jorge-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -18610,7 +18621,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            298 => 
+            298 =>
             array (
                 'id' => 1300,
                 'name' => 'Sete Lagoas São José MG',
@@ -18625,13 +18636,14 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            299 => 
+            299 =>
             array (
                 'id' => 1301,
                 'name' => 'Sete Lagoas São Pedro MG',
                 'geoposition' => '<meta name=\'geo.placename\' content=\'Sete Lagoas São Pedro MG, MG, Brasil\' />
 <meta name=\'geo.position\' content=\'-19.4442421;-44.2361598\' />
-<meta name=\'geo.region\' content=\'BR-Sete Lagoas São Pedro MG\' />',
+<meta name=\'geo.region\' content=\'BR-Sete Lagoas São Pedro MG\' />
+',
                 'slug' => 'sete-lagoas-sao-pedro-mg',
                 'print' => 1,
                 'state_id' => '0',
@@ -18639,7 +18651,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            300 => 
+            300 =>
             array (
                 'id' => 1302,
                 'name' => 'Sete Lagoas São Sebastião MG',
@@ -18653,7 +18665,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            301 => 
+            301 =>
             array (
                 'id' => 1303,
                 'name' => 'Sete Lagoas São Vicente MG',
@@ -18667,7 +18679,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            302 => 
+            302 =>
             array (
                 'id' => 1304,
                 'name' => 'Sete Lagoas Silva Xavier MG',
@@ -18681,7 +18693,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            303 => 
+            303 =>
             array (
                 'id' => 1305,
                 'name' => 'Sete Lagoas Tamanduá MG',
@@ -18696,7 +18708,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            304 => 
+            304 =>
             array (
                 'id' => 1306,
                 'name' => 'Sete Lagoas Titamar MG',
@@ -18711,7 +18723,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            305 => 
+            305 =>
             array (
                 'id' => 1307,
                 'name' => 'Sete Lagoas Universitário MG',
@@ -18725,7 +18737,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            306 => 
+            306 =>
             array (
                 'id' => 1308,
                 'name' => 'Sete Lagoas Vale das Palmeiras MG',
@@ -18739,7 +18751,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            307 => 
+            307 =>
             array (
                 'id' => 1309,
                 'name' => 'Sete Lagoas Vale do Aritana MG',
@@ -18753,7 +18765,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            308 => 
+            308 =>
             array (
                 'id' => 1310,
                 'name' => 'Sete Lagoas Vapabuçu MG',
@@ -18768,7 +18780,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            309 => 
+            309 =>
             array (
                 'id' => 1311,
                 'name' => 'Sete Lagoas Várzea MG',
@@ -18783,7 +18795,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            310 => 
+            310 =>
             array (
                 'id' => 1312,
                 'name' => 'Sete Lagoas Várzea da Lagoa 2 MG',
@@ -18797,7 +18809,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            311 => 
+            311 =>
             array (
                 'id' => 1313,
                 'name' => 'Sete Lagoas Verde Vale MG',
@@ -18811,7 +18823,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            312 => 
+            312 =>
             array (
                 'id' => 1314,
                 'name' => 'Sete Lagoas Vila Brasil MG',
@@ -18825,7 +18837,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            313 => 
+            313 =>
             array (
                 'id' => 1315,
                 'name' => 'Sete Lagoas Vila Ipê MG',
@@ -18840,7 +18852,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            314 => 
+            314 =>
             array (
                 'id' => 1316,
                 'name' => 'Sete Lagoas Vila Santa Helena MG',
@@ -18854,7 +18866,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            315 => 
+            315 =>
             array (
                 'id' => 1317,
                 'name' => 'Pedro Leopoldo',
@@ -18869,7 +18881,7 @@ class CitiesTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            316 => 
+            316 =>
             array (
                 'id' => 1318,
                 'name' => 'Matozinhos',
@@ -18885,7 +18897,7 @@ class CitiesTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-        
-        
+
+
     }
 }

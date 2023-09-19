@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\SeoManualController;
 use App\Http\Controllers\Admin\SitemapController;
 use App\Http\Controllers\Site\SiteController;
+use App\Models\Sitemap;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -59,6 +60,7 @@ Route::post('/contatoenvia',[ContactController::class, 'store'])->name('site.con
 Route::get('/politicas-de-privacidade', [SiteController::class, 'policy'])->name('site.policy');
 Route::get('/termos-de-uso', [SiteController::class, 'terms'])->name('site.terms');
 Route::get('/mapa-do-site', [SiteController::class, 'mapadosite'])->name('site.mapadosite');
+Route::get('/gerasitemap', [SitemapController::class, 'gerasitemap'])->name('site.gerasitemap');
 Route::get('/{single}', [SiteController::class, 'single'])->name('site.single');
 
 Route::get('/{category:slug}/{service:slug}', [SiteController::class, 'services'])->name('site.servico');

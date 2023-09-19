@@ -30,6 +30,7 @@ return new class extends Migration
             $table->string('whatsapp')->nullable();
             $table->string('email')->nullable();
             $table->string('logoheader')->nullable();
+            $table->string('favicon')->nullable();
             $table->string('logofooter')->nullable();
             $table->string('banner_gif')->nullable();
             $table->string('image')->nullable();

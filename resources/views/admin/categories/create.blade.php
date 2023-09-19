@@ -6,19 +6,19 @@
 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-            <x-validation-errors class="mb-4" />
+
             <div class="bg-white overflow-hidden  sm:rounded-lg">
                 <div class="mt-4 p-8">
                     <h2><strong class="headings-color">Cadastrar Categoria</strong></h2>
                 </div>
 
-                <form method="POST" action="{{ route('categorias.store') }}" enctype="multipart/form-data">
+                <form name="form_main" method="POST" action="{{ route('categorias.store') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="card">
                         <div class="lg:flex">
                             <div class="lg:w-6/6 p-6">
 
-
+                                <x-validation-errors class="mb-4" />
 
                                 <div class="mt-3 ">
                                     <span class="form-label"></span>
@@ -45,22 +45,27 @@
                                 <label class="block">
                                     <span class="form-label">Nome</span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="name"
-                                        placeholder="Nome" >
+                                        placeholder="Nome" value="{{ old('name')}}">
                                 </label>
                                 <label class="block">
                                     <span class="form-label">Título</span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="title"
-                                        placeholder="Título" >
+                                        placeholder="Título" oninput="countText()" id="text" value="{{  old('title') }}">
+                                        <label for="characters">Caracteres: </label><span id="characters"></span>
+                                        <label for="words"> / Palavras: </label><span id="words"></span><br>
                                 </label>
                                 <label class="block">
                                     <span class="form-label">Descrição SEO</span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="seoDescription"
-                                        placeholder="Descrição SEO" >
+                                        placeholder="Descrição SEO" oninput="countText()" id="seoDescription" value="{{ old('seoDescription') }}">
+                                        <label for="characters">Caracteres: </label><span id="characters"></span>
+                                        <label for="words"> / Palavras: </label><span id="words"></span><br>
                                 </label>
                                 <label class="block">
                                     <div class="col-md-9">
                                         <span class="form-label">Conteúdo</span>
-                                        <textarea class="form-control bodyfield" id="description" placeholder="Insira o texto" name="description"></textarea>
+                                        <textarea class="form-control bodyfield" id="description" placeholder="Insira o texto" name="description" >{{ old('description') }}</textarea>
+
                                     </div>
                                 </label>
 
@@ -78,20 +83,36 @@
 
             </div>
         </div>
+
     </section>
 @endsection
 @section('scriptsfooter')
 <script src="{{ asset('/js/tinymce/tinymce.js') }}"></script>
+<script>
+    function countText() {
+  let text = document.form_main.title.value;
+  document.getElementById('characters').innerText = text.length;
+  document.getElementById('words').innerText = text.length == 0 ? 0 : text.split(/\s+/).length;
+    }
+  </script>
+  {{-- <script>
+    function countText() {
+  let text = document.form_main.seoDescription.value;
+  document.getElementById('character').innerText = seoDescription.length;
+  document.getElementById('word').innerText = seoDescription.length == 0 ? 0 : seoDescription.split(/\s+/).length;
+    }
+  </script> --}}
+
     <script>
         tinymce.init({
             selector: 'textarea.bodyfield',
             height: '600',
             menubar: 'false',
             plugins: [
-                'link', 'table', 'image', 'autoresize', 'lists', 'code'
+                'link', 'table', 'image', 'autoresize', 'lists', 'code', 'wordcount'
             ],
             toolbar: [
-                'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | table | link image | bullist numlist | code',
+                'wordcount | undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | table | link image | bullist numlist | code',
             ],
             content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
         });

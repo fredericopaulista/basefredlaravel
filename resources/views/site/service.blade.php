@@ -152,7 +152,7 @@
     ]
     }
     </script>
-    @foreach ($related as $related_service)
+
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -188,11 +188,12 @@
             "@type": "OfferCatalog",
             "name": "Serviço de Desentupidora",
             "itemListElement": [
+
               {
                 "@type": "OfferCatalog",
                 "name": "{{ $categoryc->name }} {{ $citydata->name }}",
                 "itemListElement": [
-
+                    @foreach ($related as $related_service)
           {
                     "@type": "Offer",
                     "itemOffered": {
@@ -202,6 +203,7 @@
                       "image": "{{ $related_service->getFirstMediaUrl('services') }}"
                     }
                   },
+                  @endforeach
 {
                     "@type": "Offer",
                     "itemOffered": {
@@ -215,7 +217,7 @@
           }
         }
         </script>
-        @endforeach
+
 @endsection
 
 @section('content')
@@ -327,13 +329,13 @@
 
                                 </div>
 
-                                <form action="" class="mt-3">
+                                {{-- <form action="" class="mt-3">
                                     <input type="text">
                                     <button type="submit"><i class="bi bi-search"></i></button>
-                                </form>
+                                </form> --}} 
                             </div><!-- End sidebar search formn-->
 
-                            <div class="sidebar-item categories">
+                             {{-- <div class="sidebar-item categories">
                                 <h3 class="sidebar-title">Categories</h3>
                                 <ul class="mt-3">
                                     <li><a href="#">General <span>(25)</span></a></li>
@@ -343,59 +345,28 @@
                                     <li><a href="#">Creative <span>(8)</span></a></li>
                                     <li><a href="#">Educaion <span>(14)</span></a></li>
                                 </ul>
-                            </div><!-- End sidebar categories-->
+                            </div><!-- End sidebar categories--> --}}
 
                             <div class="sidebar-item recent-posts">
-                                <h3 class="sidebar-title">Recent Posts</h3>
+                                <h3 class="sidebar-title">Serviços Relacionados {{ $servicec->name }}</h3>
 
                                 <div class="mt-3">
-
+                                    @foreach ($related as $related_service)
                                     <div class="post-item mt-3">
-                                        <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
+                                        <img src="{{ $related_service->getFirstMediaUrl('services') }}" alt="{{ $servicec->name }} {{ $citydata->name }}" class="flex-shrink-0">
                                         <div>
-                                            <h4><a href="blog-post.html">Nihil blanditiis at in nihil autem</a></h4>
-                                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                                        </div>
-                                    </div><!-- End recent post item-->
+                                            <h4><a title="{{ $servicec->name }} {{ $citydata->name }}" href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}">{{ $servicec->name }} {{ $citydata->name }}</a></h4>
 
-                                    <div class="post-item">
-                                        <img src="assets/img/blog/blog-recent-2.jpg" alt="" class="flex-shrink-0">
-                                        <div>
-                                            <h4><a href="blog-post.html">Quidem autem et impedit</a></h4>
-                                            <time datetime="2020-01-01">Jan 1, 2020</time>
                                         </div>
                                     </div><!-- End recent post item-->
+                                    @endforeach
 
-                                    <div class="post-item">
-                                        <img src="assets/img/blog/blog-recent-3.jpg" alt="" class="flex-shrink-0">
-                                        <div>
-                                            <h4><a href="blog-post.html">Id quia et et ut maxime similique occaecati ut</a>
-                                            </h4>
-                                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                                        </div>
-                                    </div><!-- End recent post item-->
-
-                                    <div class="post-item">
-                                        <img src="assets/img/blog/blog-recent-4.jpg" alt="" class="flex-shrink-0">
-                                        <div>
-                                            <h4><a href="blog-post.html">Laborum corporis quo dara net para</a></h4>
-                                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                                        </div>
-                                    </div><!-- End recent post item-->
-
-                                    <div class="post-item">
-                                        <img src="assets/img/blog/blog-recent-5.jpg" alt="" class="flex-shrink-0">
-                                        <div>
-                                            <h4><a href="blog-post.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                                        </div>
-                                    </div><!-- End recent post item-->
 
                                 </div>
 
                             </div><!-- End sidebar recent posts-->
 
-                            <div class="sidebar-item tags">
+                            {{-- <div class="sidebar-item tags">
                                 <h3 class="sidebar-title">Tags</h3>
                                 <ul class="mt-3">
                                     <li><a href="#">App</a></li>
@@ -410,43 +381,13 @@
                                     <li><a href="#">Tips</a></li>
                                     <li><a href="#">Marketing</a></li>
                                 </ul>
-                            </div><!-- End sidebar tags-->
+                            </div><!-- End sidebar tags--> --}}
 
                         </div><!-- End Blog Sidebar -->
 
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <h4 class="title" style="margin-top:20px;text-align:center;">Serviços Relacionados
-                        {{ $servicec->name }} {{ $citydata->name }}</h4><br>
-                    <div class="row gy-5">
-                        @foreach ($related as $related_service)
-                            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="service-item">
-                                    <div class="img">
-
-                                        <a
-                                            href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}">
-                                            <img src="{{ $related_service->getFirstMediaUrl('services') }}"
-                                                class="img-fluid" alt="{{ $related_service->title }}"></a>
-                                    </div>
-                                    <div class="details position-relative">
-                                        <div class="icon">
-                                            {{-- <i class="bi bi-chat-square-text"></i> --}}
-                                        </div>
-                                        <a href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}"
-                                            class="stretched-link">
-                                            <h3>{{ $related_service->title }}</h3>
-                                        </a>
-                                        <p>{{ $related_service->briefDescription }}</p>
-                                    </div>
-                                </div>
-                            </div><!-- End Service Item -->
-                        @endforeach
-
-
-                    </div>
-                </div>
+                {{--  --}}
             </div>
         </section><!-- End Blog Details Section -->
 

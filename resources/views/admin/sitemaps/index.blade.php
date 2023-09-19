@@ -59,7 +59,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <a href="{{ route('sitemap.edit', $sitemap->id) }}"
+                                                <a href="{{ $sitemap->url }}"
                                                     class="font-bold hover:text-primary text-sm">
                                                     {{ $sitemap->name }}</a>
 

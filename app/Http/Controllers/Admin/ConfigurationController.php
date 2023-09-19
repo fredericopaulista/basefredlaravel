@@ -69,6 +69,14 @@ class ConfigurationController extends Controller
 			$filePath = Storage::disk('public')->put('site/img', request()->file('banner_gif'));
             $data['banner_gif'] = $filePath;
 		}
+        if ($request->hasFile('favicon')) {
+			if (!empty($config->favicon)) {
+				Storage::disk('public')->delete($config->favicon);
+			}
+
+			$filePath = Storage::disk('public')->put('site/img', request()->file('favicon'));
+            $data['favicon'] = $filePath;
+		}
 
 		if ($request->hasFile('logofooter')) {
 			if (!empty($config->logofooter)) {
