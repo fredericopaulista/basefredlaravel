@@ -48,8 +48,11 @@
                                 <summary>
                                     <h2>{{ $category->name }} {{ $citydata->name }}</h2>
                                 </summary>
-
-                                <p>{!! $category->description !!}</p>
+                                @if (config('APP_CIDADE'))
+                                <p>{!! str_replace('geocity',' ' . config('APP_CIDADE'), $category->description) !!}</p>
+                                @else
+                                <p>{!! str_replace('geocity', '', $category->description) !!}</p>
+                                @endif
                             </details>
                         </label>
                     </div>

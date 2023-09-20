@@ -6,7 +6,7 @@
 @section('topscripts')
 @endsection
 @section('schema')
-<script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "WebSite",
@@ -19,7 +19,7 @@
       }
     }
     </script>
-<script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -57,8 +57,7 @@
             data-aos="zoom-out">
 
             <h2 style="color:#fff!important"><strong>ADVOCACIA EM BH</strong></h2>
-            <p style="color:#fff!important">Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates
-                similique aut.</p>
+            <p style="color:#fff!important">Os Melhores Advogados especialistas da Grande BH</p>
             <div class="d-flex">
                 {{-- <a href="#about" class="btn-get-started scrollto">Fale Conosco</a> --}}
                 @php $useragent=$_SERVER['HTTP_USER_AGENT']; @endphp
@@ -99,7 +98,10 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-activity icon"></i></div>
                             <h4><a href="" class="stretched-link">Competência Jurídica</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                            <p>A Competência Jurídica é a base sólida que permite aos advogados representar seus clientes
+                                com sucesso, dominando as regras e regulamentos que regem diferentes áreas do direito.<br>
+                                Nossa equipe de advogados experientes possui expertise em diversas áreas, assegurando que
+                                sua questão legal seja tratada com excelência e conhecimento especializado.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -107,7 +109,10 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
                             <h4><a href="" class="stretched-link">Ética Profissional</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>Como advogados comprometidos, pautamos nosso trabalho em padrões elevados de integridade,
+                                confidencialidade e respeito pelos princípios éticos que regem a profissão.<br> Nossa
+                                dedicação à ética assegura que representamos nossos clientes de maneira justa e responsável,
+                                cumprindo rigorosamente os mais altos padrões éticos da advocacia.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -115,7 +120,11 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
                             <h4><a href="" class="stretched-link">Excelência no Atendimento ao Cliente</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            <p>Nossa equipe está empenhada em oferecer um serviço jurídico de qualidade excepcional, que se
+                                destaca pelo cuidado, atenção e dedicação a cada cliente. Compreendemos suas necessidades
+                                específicas e trabalhamos incansavelmente para alcançar os melhores resultados legais,
+                                proporcionando tranquilidade e confiança em cada etapa do processo. Sua satisfação é nossa
+                                prioridade máxima.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -123,7 +132,10 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-broadcast icon"></i></div>
                             <h4><a href="" class="stretched-link">Eficiência Operacional</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                            <p>Nosso compromisso é oferecer serviços jurídicos eficazes e ágeis, otimizando recursos e
+                                prazos para atender às necessidades de nossos clientes de maneira eficiente. Com uma
+                                abordagem estratégica e focada, buscamos soluções legais de forma rápida e eficaz, sempre
+                                com a máxima dedicação à excelência em nossa prática profissional.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -144,20 +156,20 @@
 
                 <div class="row gy-5">
                     @foreach ($services as $service)
-
                         <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                             <div class="service-item">
                                 <div class="img">
 
                                     <a href="{{ route('site.single', $service->slug . $cityslug) }}">
-                                    <img src="{{ $service->getFirstMediaUrl('services') }}" class="img-fluid"
-                                        alt="{{ $service->title }}"></a>
+                                        <img src="{{ $service->getFirstMediaUrl('services') }}" class="img-fluid"
+                                            alt="{{ $service->title }}" title="{{ $service->title }}""></a>
                                 </div>
                                 <div class="details position-relative">
                                     <div class="icon">
                                         <i class="bi bi-chat-square-text"></i>
                                     </div>
-                                    <a href="#" class="stretched-link">
+                                    <a href="{{ route('site.single', $service->slug . $cityslug) }}" class="stretched-link"
+                                        alt="{{ $service->title }}" title="{{ $service->title }}">
                                         <h3>{{ $service->title }}</h3>
                                     </a>
                                     <p>{{ $service->briefDescription }}</p>
@@ -397,14 +409,37 @@
 
                 <div class="row g-5">
 
+
                     <div
                         class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-                        <h3>Alias sunt quas <em>Cupiditate</em> oluptas hic minima</h3>
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit
-                            anim id est laborum.</p>
-                        <a class="cta-btn align-self-start" href="#">Call To Action</a>
+                        <h3 style="font-size: 29px">Atendimento Especializado de Advogado {{ $city }}</h3>
+                        <p> Oferecemos consultoria e assessoria jurídica abrangente em diversas áreas, proporcionando
+                            soluções seguras e confiáveis para atender às suas necessidades.<br>
+                        <p>Nossa equipe se destaca pelo comprometimento, eficiência e qualidade em cada caso. </p>
+                        <p>Se você está em busca de orientação jurídica em Belo Horizonte, não hesite em entrar em contato
+                            com nossos especialistas.</p>
+                        <p>Estamos aqui para ajudar você a encontrar a melhor solução para o seu caso.</p>
+                        <p>Fale conosco agora e coloque seu assunto nas mãos de profissionais experientes.</p>
+
+                        @php $useragent=$_SERVER['HTTP_USER_AGENT']; @endphp
+                        @if (preg_match(
+                                '/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i',
+                                $useragent) ||
+                                preg_match(
+                                    '/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| ||a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i',
+                                    substr($useragent, 0, 4)))
+                            <a id="whats-fale-conosco"
+                                href="https://api.whatsapp.com/send?phone={{ $configuration->whatsapp }}&amp;text=Entrei em contato através do site {{ Request::url() }}"
+                                class="cta-btn align-self-start" title="Orçamento" target="_blank"
+                                style="background: #156527;"><i class="bi bi-whatsapp"></i>
+                                Fale Conosco</a>
+                        @else
+                            <a id="whats-fale-conosco"
+                                href="https://web.whatsapp.com/send?phone={{ $configuration->whatsapp }}&amp;text=Entrei em contato através do site {{ Request::url() }}"
+                                class="cta-btn align-self-start" title="Orçamento" target="_blank"
+                                style="background: #156527;"><i class="bi bi-whatsapp"></i>
+                                Fale Conosco</a>
+                        @endif
                     </div>
 
                     <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
@@ -484,93 +519,7 @@
                                 </div>
                             </div><!-- End testimonial item -->
                         @endforeach
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('site/assets/img/testimonials/testimonials-2.jpg ') }}"
-                                    class="testimonial-img" alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                    cillum
-                                    eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
-                                    culpa.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('site/assets/img/testimonials/testimonials-3.jpg ') }}"
-                                    class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                                    duis
-                                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('site/assets/img/testimonials/testimonials-4.jpg ') }}"
-                                    class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
-                                    minim
-                                    velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore
-                                    illum
-                                    veniam.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('site/assets/img/testimonials/testimonials-5.jpg ') }}"
-                                    class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                    veniam
-                                    enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore
-                                    nisi cillum quid.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+                        <!-- End testimonial item -->
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -592,8 +541,7 @@
                         <div class="content px-xl-5">
                             <h3> <strong>Dúvidas Frequentes</strong></h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                Listamos algumas das principais dúvidas que a maioria das pessoas tem. Confira
                             </p>
                         </div>
 
@@ -629,7 +577,7 @@
 
 
         <!-- ======= Recent Blog Posts Section ======= -->
-        <section id="recent-blog-posts" class="recent-blog-posts">
+        {{-- <section id="recent-blog-posts" class="recent-blog-posts">
 
             <div class="container" data-aos="fade-up">
 
@@ -693,7 +641,7 @@
 
             </div>
 
-        </section><!-- End Recent Blog Posts Section -->
+        </section><!-- End Recent Blog Posts Section --> --}}
 
         <!-- ======= Contact Section ======= -->
 

@@ -53,8 +53,11 @@
 
 
                             <div class="content">
-                                {{ $tag->body }}
-
+                                @if (config('APP_CIDADE'))
+                                    {!! str_replace('geocity', ' ' . config('APP_CIDADE'), $tag->body) !!}
+                                @else
+                                    <p>{!! str_replace('geocity', '', $tag->body) !!}</p>
+                                @endif
                                 <p>
                                     {!! $servicePhoto->description !!}
                                 </p>
@@ -101,7 +104,7 @@
 
                     <div class="col-lg-4">
 
-                        <div class="sidebar" >
+                        <div class="sidebar">
                             <div class="sidebar-item categories">
                                 <strong class="sidebar-title">Fale Conosco</strong>
                                 <div class="mt-3">
@@ -129,44 +132,46 @@
 
                             <!-- End Blog Sidebar -->
 
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-12">
-                    <h4 class="title" style="margin-top:20px;text-align:center;">Serviços Relacionados {{ $tag->name }} {{ $citydata->name }}</h4><br>
-                    <div class="row gy-5">
-                        @foreach ($related as $related_service)
-                            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="service-item">
-                                    <div class="img">
+                    <div class="col-lg-12">
+                        <h4 class="title" style="margin-top:20px;text-align:center;">Serviços Relacionados
+                            {{ $tag->name }} {{ $citydata->name }}</h4><br>
+                        <div class="row gy-5">
+                            @foreach ($related as $related_service)
+                                <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                                    <div class="service-item">
+                                        <div class="img">
 
-                                        <a
-                                            href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}">
-                                            <img src="{{ $related_service->getFirstMediaUrl('services') }}"
-                                                class="img-fluid" alt="{{ $related_service->title }}"></a>
-                                    </div>
-                                    <div class="details position-relative">
-                                        <div class="icon">
-                                            {{-- <i class="bi bi-chat-square-text"></i> --}}
+                                            <a
+                                                href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}">
+                                                <img src="{{ $related_service->getFirstMediaUrl('services') }}"
+                                                    class="img-fluid" alt="{{ $related_service->title }}"></a>
                                         </div>
-                                        <a href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}" class="stretched-link">
-                                            <h3>{{ $related_service->title }}</h3>
-                                        </a>
-                                        <p>{{ $related_service->briefDescription }}</p>
+                                        <div class="details position-relative">
+                                            <div class="icon">
+                                                {{-- <i class="bi bi-chat-square-text"></i> --}}
+                                            </div>
+                                            <a href="{{ route('site.servico', ['category' => $related_service->category->slug . $cityslug, 'service' => $related_service->slug . $cityslug]) }}"
+                                                class="stretched-link">
+                                                <h3>{{ $related_service->title }}</h3>
+                                            </a>
+                                            <p>{{ $related_service->briefDescription }}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!-- End Service Item -->
-                        @endforeach
+                                </div><!-- End Service Item -->
+                            @endforeach
 
 
+                        </div>
                     </div>
                 </div>
-            </div>
         </section><!-- End Blog Details Section -->
 
     </main><!-- End #main -->
 @endsection
 @section('scripts')
-{{-- <!-- jQuery -->
+    {{-- <!-- jQuery -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <!-- Scroll to Fixed JS -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollToFixed/1.0.8/jquery-scrolltofixed-min.js'></script>
@@ -206,5 +211,4 @@
       });
     }).scroll();
     </script> --}}
-
 @endsection
