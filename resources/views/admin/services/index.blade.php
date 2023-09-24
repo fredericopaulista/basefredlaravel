@@ -14,6 +14,9 @@
                         <a class="btn btn-success " href="{{ route('servicos.create') }}">
                             {{ __('Cadastrar Serviço') }}
                         </a>
+                        <a class="btn btn-success " href="{{ route('servicos.importar') }}">
+                            {{ __('Importar Serviço') }}
+                        </a>
                     </div>
                     <div class="card">
                         <div class="card-body">

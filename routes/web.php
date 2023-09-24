@@ -38,6 +38,8 @@ Route::middleware([
     Route::get('admin/categorias/{categoryId}/imagem/{photoId}/apagar',[CategoryController::class, 'deletePhoto'])->name('categorias.deletePhoto');
     Route::resource('admin/categorias', CategoryController::class);
     Route::resource('admin/servicos', ServiceController::class);
+    Route::get('admin/importar-servico', [ServiceController::class, 'ImportarServicos'])->name('servicos.importar');
+    Route::post('admin/servicos/importar', [ServiceController::class, 'import'])->name('servicos.import');
     Route::get('admin/servico/{serviceId}/faq/create', [ServiceController::class, 'createFaq'])->name('servicos.faq.create');
     Route::post('admin/servico/{serviceId}/faq/store', [ServiceController::class, 'storeFaq'])->name('servicos.faq.store');
     Route::get('admin/servico/{serviceId}/faqs', [ServiceController::class, 'showFaq'])->name('servicos.faq.show');

@@ -58,8 +58,8 @@
                                 </label>
                                 <label class="block">
                                     <span class="form-label">Breve Descrição</span>
-                                    <input class="form-input mt-1 block w-full placeholder-muted" name="briefDescription"
-                                        placeholder="Breve Descrição" value="{{ old('briefDescription') }}">
+                                    <textarea class="form-control bodyfield" id="briefDescription" placeholder="Insira o texto" name="briefDescription">{{ old('briefDescription') }}</textarea>
+                                    
                                 </label>
 
                                 <label class="block">

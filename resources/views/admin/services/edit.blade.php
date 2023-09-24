@@ -116,12 +116,6 @@
 @section('scriptsfooter')
     <script src="{{ asset('/js/tinymce/tinymce.js') }}"></script>
     <script>
-        // In your Javascript (external .js resource or <script> tag)
-        $(document).ready(function() {
-            $('.js-example-basic-single').select2();
-        });
-        </script>
-        <script>
         tinymce.init({
             selector: 'textarea.bodyfield',
             height: '600',
@@ -134,5 +128,6 @@
             ],
             content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
         });
-    </>
+    </script>
+
 @endsection

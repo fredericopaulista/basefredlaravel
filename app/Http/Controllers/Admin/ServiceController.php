@@ -10,7 +10,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreServiceRequest;
 use App\Http\Requests\UpdateServiceRequest;
+use App\Imports\ServicesImport;
 use RealRashid\SweetAlert\Facades\Alert;
+use Maatwebsite\Excel\Facades\Excel;
 
 
 class ServiceController extends Controller
@@ -116,7 +118,8 @@ class ServiceController extends Controller
 
             $tag = Tag::firstOrCreate(
                 ['name' => $newtag],
-                ['name' => $newtag]
+                ['body' => $newtag],
+                ['briefDescription' => $newtag]
             );
             $newtags->push([
                 'tag_id' => $tag->id
@@ -184,5 +187,18 @@ class ServiceController extends Controller
         return view('admin.services.faq.show', compact('serviceFaq'));
 
 
+    }
+    public function ImportarServicos(){
+
+
+        return view('admin.services.import');
+    }
+    public function import(Request $request){
+
+        Excel::import(new ServicesImport, $request->file('import_file'));
+
+        Alert::success('Parabéns', 'Upload realizado com sucesso.');
+
+        return redirect()->route('servicos.index');
     }
 }

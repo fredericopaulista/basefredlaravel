@@ -332,7 +332,7 @@
                                 {{-- <form action="" class="mt-3">
                                     <input type="text">
                                     <button type="submit"><i class="bi bi-search"></i></button>
-                                </form> --}} 
+                                </form> --}}
                             </div><!-- End sidebar search formn-->
 
                              {{-- <div class="sidebar-item categories">

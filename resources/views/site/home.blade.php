@@ -494,7 +494,7 @@
 
 
         <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials">
+        {{-- <section id="testimonials" class="testimonials">
             <div class="container" data-aos="fade-up">
 
                 <div class="testimonials-slider swiper">
@@ -526,7 +526,7 @@
                 </div>
 
             </div>
-        </section><!-- End Testimonials Section -->
+        </section><!-- End Testimonials Section --> --}}
 
 
         <!-- ======= F.A.Q Section ======= -->
