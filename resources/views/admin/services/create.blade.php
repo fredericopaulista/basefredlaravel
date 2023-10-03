@@ -26,7 +26,7 @@
                                         <label class="inline-flex items-center ">
                                             <input name="print" type="checkbox" value="1"
                                     {{ old('print') == 1 ? 'checked' : '0' }} class="form-radio" style="appearance: auto!important;">
-                                            <span class="ml-2">Ativar Serviço</span>
+                                            <span class="ml-2"><b>Ativar Serviço</b></span>
                                         </label>
                                     </div>
                                 </div>
@@ -37,34 +37,34 @@
                                             <input type="checkbox" class="form-radio" name="home" type="checkbox"
                                                 value="1" {{ old('home') == 1 ? 'checked' : '0' }}
                                                 style="appearance: auto!important;">
-                                            <span class="ml-2">Mostrar na Home</span>
+                                            <span class="ml-2"><b>Mostrar na Home</b></span>
                                         </label>
                                     </div>
                                 </div>
                                 <label class="block">
-                                    <span class="form-label">Nome</span>
+                                    <span class="form-label"><b>Nome</b></span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="name"
                                         placeholder="Nome" value="{{ old('name') }}">
                                 </label>
                                 <label class="block">
-                                    <span class="form-label">Título</span>
+                                    <span class="form-label"><b>Título</b></span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="title"
                                         placeholder="Título" value="{{ old('title') }}">
                                 </label>
                                 <label class="block">
-                                    <span class="form-label">Sub Título</span>
+                                    <span class="form-label"><b>Sub Título</b></span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="subtitle"
                                         placeholder="Sub Título" value="{{ old('subtitle') }}">
                                 </label>
                                 <label class="block">
-                                    <span class="form-label">Breve Descrição</span>
+                                    <span class="form-label"><b>Breve Descrição</b></span>
                                     <textarea class="form-control bodyfield" id="briefDescription" placeholder="Insira o texto" name="briefDescription">{{ old('briefDescription') }}</textarea>
-                                    
+
                                 </label>
 
                                 <label class="block">
                                     <div class="col-md-9">
-                                        <span class="form-label">Conteúdo</span>
+                                        <span class="form-label"><b>Conteúdo</b></span>
                                         <textarea class="form-control bodyfield" id="description" placeholder="Insira o texto" name="description">{{ old('description') }}</textarea>
                                     </div>
                                 </label>
@@ -74,17 +74,17 @@
                                     <x-input id="image" class="block mt-1 w-full" type="file" name="image" />
                                 </div>
                                 <label class="block">
-                                    <span class="form-label">Título Vídeo</span>
+                                    <span class="form-label"><b>Título Vídeo</b></span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="videoTitle"
                                         placeholder="Título Vídeo" value="{{ old('videoTitle') }}">
                                 </label>
                                 <label class="block">
-                                    <span class="form-label">Código Vídeo do Youtube</span>
+                                    <span class="form-label"><b>Código Vídeo do Youtube</b></span>
                                     <input class="form-input mt-1 block w-full placeholder-muted" name="video"
                                         placeholder="Código Vídeo do Youtube" value="{{ old('video') }}">
                                 </label>
                                 <label class="block">
-                                    <span class="form-label">Categoria</span><br>
+                                    <span class="form-label"><b>Categoria</b></span><br>
                                     @foreach ($categories as $category )
                                     <input id="category_id"  type="checkbox" class="form-radio" style="appearance: auto!important;" name="category_id"
                                     value="{{ $category->id }}" /> {{ $category->name }}
@@ -92,7 +92,7 @@
                                 @endforeach
                                 </label>
                                 <label class="block">
-                                    <span class="form-label">Tags</span><br>
+                                    <span class="form-label"><b>Tags</b></span><br>
                                     <input name="tags" id="tags" value="{{old('tags')}}" class="form-control">
                                 </label>
 

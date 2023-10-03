@@ -11,7 +11,7 @@
 
                         <div class="mb-1"><strong>{{ Auth::user()->name }}</strong></div>
 
-                        <small class="text-muted text-xs">ACCOUNT MANAGER</small>
+
                     </div>
 
                 </a>
@@ -19,15 +19,15 @@
             </div>
 
             {{-- <div class="sidebar-heading sidebar-m-t">Interno</div> --}}
-            <ul class="sidebar-menu" id="demos_menu">
+            {{-- <ul class="sidebar-menu" id="demos_menu">
                 <li class="sidebar-menu-item " @class(['active'=> request()->routeIs('dashboard') ])>
                     <a class="sidebar-menu-button" href="{{ route('dashboard') }}" @class(['active'=> request()->routeIs('dashboard') ])>
-                        <span class="sidebar-menu-text">{{ __('Dashboard') }}</span>
+                        <span class="sidebar-menu-text">{{ __('Fred') }}</span>
                     </a>
 
                 </li>
-            </ul>
-              <div class="sidebar-heading sidebar-m-t">Interno</div>
+            </ul> --}}
+              {{-- <div class="sidebar-heading sidebar-m-t">Interno</div> --}}
         <ul class="sidebar-menu" id="demos_menu">
                 <li class="sidebar-menu-item ">
                     <a class="sidebar-menu-button" href="{{ route('categorias.index') }}" :active="request()->routeIs('categorias.index')">
@@ -64,13 +64,13 @@
                         </li>
                 <li class="sidebar-menu-item ">
 
-                    <a class="sidebar-menu-button" href="{{ route('depoimentos.index') }}" :active="request()->routeIs('depoimentos.index')">
+                    <a class="sidebar-menu-button" href="{{ route('seomanual.index') }}" :active="request()->routeIs('seomanual.index')">
                         <span class="sidebar-menu-text">{{ __('Seo Manual') }}</span>
                     </a>
                 </li>
 
 
-                <div class="sidebar-heading sidebar-m-t">Definições Site</div>
+                {{-- <div class="sidebar-heading sidebar-m-t">Definições Site</div> --}}
                 <li class="sidebar-menu-item ">
                 <a class="sidebar-menu-button" href="{{ route('banners.index') }}" :active="request()->routeIs('banners.index')">
                     <span class="sidebar-menu-text">{{ __('Banners') }}</span>
@@ -82,6 +82,10 @@
                 <a class="sidebar-menu-button" href="{{ route('depoimentos.index') }}" :active="request()->routeIs('depoimentos.index')">
                     <span class="sidebar-menu-text">{{ __('Depoimentos') }}</span>
                 </a>
+                <a class="sidebar-menu-button" href="{{ route('portifolio.index') }}" :active="request()->routeIs('portifolio.index')">
+                    <span class="sidebar-menu-text">{{ __('Portifolio') }}</span>
+                </a>
+                
 
 
             </ul>

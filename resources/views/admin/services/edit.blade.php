@@ -98,7 +98,9 @@
                                 </label>
                                 <label class="block">
                                     <span class="form-label">Tags</span><br>
-                                    <input name="tags" id="tags" value="{{ $service->tags }}" class="form-control">
+
+                                    <input name="tags" id="tags" value="@foreach($service->tags as $tag) {{ $tag->name }}, @endforeach" class="form-control">
+
                                 </label>
 
                                 <button class="btn btn-success mb-6 mt-6 ml-8" type="submit">

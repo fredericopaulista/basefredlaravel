@@ -15,6 +15,7 @@ use App\Models\Faq;
 use App\Models\Page;
 use App\Models\Service;
 use App\Models\Tag;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
@@ -51,12 +52,12 @@ class SiteController extends Controller
 
 
          $services = Service::where('home', 1)->with('category')->get();
-
+        $testimonials = Testimonial::all();
         $faqs = Faq::all();
         $depoiments = Depoiments::all();
         $pages = Page::where('visible', 1)->get();
         }
-        return view('site.home', compact('faqs', 'depoiments', 'pages', 'cityslug', 'city', 'services'));
+        return view('site.home', compact('faqs', 'depoiments', 'pages', 'cityslug', 'city', 'services', 'testimonials'));
     }
 
     public function category($slug){
@@ -214,7 +215,7 @@ class SiteController extends Controller
 
             $services = Service::where('category_id',$category->id)->get();
 
-           
+
             return view('site.category',compact('category', 'services', 'cityslug', 'citydata'));
 
 

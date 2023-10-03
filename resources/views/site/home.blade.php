@@ -494,7 +494,8 @@
 
 
         <!-- ======= Testimonials Section ======= -->
-        {{-- <section id="testimonials" class="testimonials">
+        @if( $testimonials->count() > 0)
+        <section id="testimonials" class="testimonials">
             <div class="container" data-aos="fade-up">
 
                 <div class="testimonials-slider swiper">
@@ -526,8 +527,8 @@
                 </div>
 
             </div>
-        </section><!-- End Testimonials Section --> --}}
-
+        </section><!-- End Testimonials Section -->
+        @endif
 
         <!-- ======= F.A.Q Section ======= -->
         <section id="faq" class="faq">

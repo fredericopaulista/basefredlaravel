@@ -10,9 +10,9 @@
 
                 <section class="max-w-6xl  mx-auto px-4">
                     <div class="row">
-                        <h1 class="my-2">Categorias</h1>
-                        <a class="btn btn-success " href="{{ route('categorias.create') }}">
-                            {{ __('Cadastrar Categoria') }}
+                        <h1 class="my-2">Portifólio</h1>
+                        <a class="btn btn-success " href="{{ route('portifolio.create') }}">
+                            {{ __('Cadastrar Portifólio') }}
                         </a>
                     </div>
 
@@ -42,33 +42,33 @@
                                         <tr>
 
                                             <th>Imagem</th>
-                                            <th>Categoria</th>
+                                            <th>Nome</th>
                                             <th>Título</th>
                                             <th></th>
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($categories as $category)
+                                        @foreach ($portifolios as $portifolio)
                                             <tr>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                                     <div
                                                         class="bg-primary text-white w-12 h-12 rounded-full inline-flex items-center align-middle justify-center font-bold text-4xl mx-4">
                                                         <img width="70%" height="70%"
-                                                            src="{{ $category->getFirstMediaUrl('categories', 'thumb') }}">
+                                                            src="{{ $portifolio->getFirstMediaUrl('portifolios', 'thumb') }}">
                                                     </div>
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                                    <a href="{{ route('categorias.edit', $category->id) }}"
+                                                    <a href="{{ route('portifolio.edit', $portifolio->id) }}"
                                                         class="font-bold hover:text-primary text-sm">
-                                                        {{ $category->name }}</a>
+                                                        {{ $portifolio->name }}</a>
 
 
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                                     <div class="flex items-center">
 
-                                                        {{ $category->title }}
+                                                        {{ $portifolio->title }}
                                                     </div>
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
@@ -78,13 +78,13 @@
 
 
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900"><a class="btn btn-success"
-                                                        href="{{ route('categorias.edit', $category->id) }}"><i
+                                                        href="{{ route('portifolio.edit', $portifolio->id) }}"><i
                                                             class="material-icons mx-2"> edit</i>Editar</a>
 
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                                     <form method="post"
-                                                        action="{{ route('categorias.destroy', $category->id) }}">
+                                                        action="{{ route('portifolio.destroy', $portifolio->id) }}">
                                                         @csrf
                                                         @method('delete')
                                                         <button type="submit" class="btn btn-danger"><i

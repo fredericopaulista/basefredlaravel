@@ -62,8 +62,8 @@ class Service extends Model implements HasMedia
 
     public function tags(){
 
-    return $this->belongsToMany(Tag::class, 'service_tag');
-    }
+        return $this->belongsToMany(Tag::class, 'service_tag');
+        }
     public function servicefaqs(){
 
         return $this->hasMany(ServiceFaq::class);

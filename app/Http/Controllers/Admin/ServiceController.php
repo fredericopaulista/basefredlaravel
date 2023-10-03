@@ -10,9 +10,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreServiceRequest;
 use App\Http\Requests\UpdateServiceRequest;
-use App\Imports\ServicesImport;
+
 use RealRashid\SweetAlert\Facades\Alert;
-use Maatwebsite\Excel\Facades\Excel;
+
 
 
 class ServiceController extends Controller
@@ -64,7 +64,7 @@ class ServiceController extends Controller
             ]);
 
         }
-        $service->tags()->sync($newtags);
+        $service->tags()->attach($newtags);
 
 
         if($request->hasFile('image')){
@@ -99,6 +99,7 @@ class ServiceController extends Controller
         $tags = Tag::all();
         $service = Service::where('id', $id)->first();
         $media = $service->getMedia('services');
+
         return view('admin.services.edit', compact('service', 'media', 'categories', 'tags'));
 
     }
@@ -111,7 +112,7 @@ class ServiceController extends Controller
 
         $data = Service::where('id', $id)->first();
         $data->fill($request->validated());
-        $alltags = explode(',' , $request->tags);
+        $alltags = explode(', ' , $request->tags);
         $newtags = collect([]);
 
         foreach($alltags as $newtag){

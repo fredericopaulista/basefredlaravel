@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('seo_url');
             $table->string('seo_description');
             $table->string('seo_og_title');
-            $table->string('seo_og_image');
             $table->string('seo_og_description');
+            $table->string('seo_og_image')->nullable();
             $table->timestamps();
         });
     }

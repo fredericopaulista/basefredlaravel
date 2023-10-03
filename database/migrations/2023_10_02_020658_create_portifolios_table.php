@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('service_tag', function (Blueprint $table) {
+        Schema::create('portifolios', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('service_id')->nullable()->constrained();
-            $table->foreignId('tag_id')->nullable()->constrained();
+            $table->string('name');
+            $table->string('image');
+            $table->longText('description');
+            $table->string('site')->nullable();
+
+            $table->timestamps();
         });
     }
 
@@ -23,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('service_tag');
+        Schema::dropIfExists('portifolios');
     }
 };

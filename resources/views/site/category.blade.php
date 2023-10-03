@@ -49,9 +49,9 @@
                                     <h2>{{ $category->name }} {{ $citydata->name }}</h2>
                                 </summary>
                                 @if (config('APP_CIDADE'))
-                                <p>{!! str_replace('geocity',' ' . config('APP_CIDADE'), $category->description) !!}</p>
+                                {!! str_replace('geocity',' ' . config('APP_CIDADE'), $category->description) !!}</>
                                 @else
-                                <p>{!! str_replace('geocity', '', $category->description) !!}</p>
+                                {!! str_replace('geocity', '', $category->description) !!}
                                 @endif
                             </details>
                         </label>
@@ -88,9 +88,9 @@
 
 
                                         <div class="content">
-                                            <p>
-                                                {{ $service->briefDescription }}
-                                            </p>
+
+                                                {!! $service->briefDescription !!}
+
                                         </div>
 
                                         <div class="read-more mt-auto align-self-end">

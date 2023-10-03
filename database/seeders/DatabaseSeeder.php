@@ -22,12 +22,12 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersTableSeeder::class);
         $this->call(CitiesTableSeeder::class);
         $this->call(ConfigurationsTableSeeder::class);
-        $this->call(PagesTableSeeder::class);
+      //  $this->call(PagesTableSeeder::class);
         $this->call(CustomizationsTableSeeder::class);
-        
+
         $this->call(CategoriesTableSeeder::class);
-        $this->call(MediaTableSeeder::class);
-        $this->call(ServicesTableSeeder::class);
-        $this->call(TagsTableSeeder::class);
+       // $this->call(MediaTableSeeder::class);
+       // $this->call(ServicesTableSeeder::class);
+       // $this->call(TagsTableSeeder::class);
     }
 }

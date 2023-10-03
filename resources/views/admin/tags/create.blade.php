@@ -1,9 +1,16 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Categories') }}
-        </h2>
-    </x-slot>
+@extends('admin.layouts.app')
+@section('css')
+@endsection
+@section('content')
+    <section class="max-w-6xl  mx-auto px-4">
+
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+
+            <div class="bg-white overflow-hidden  sm:rounded-lg">
+                <div class="mt-4 p-8">
+                    <h2><strong class="headings-color">Cadastrar Tag</strong></h2>
+                </div>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -25,7 +32,7 @@
 
                         <input id="name"  type="checkbox" name="services[]"
                         value="{{ $service->id }}"
-                       
+
                          /> {{ $service->name }}
                          <br>
                          @endforeach
@@ -33,9 +40,9 @@
 
 
 
-                    <x-button class="ml-4 mb-4 mt-4">
+                    <button class="btn btn-success mb-6 mt-6 ml-8" type="submit">
                         {{ __('Cadastrar') }}
-                    </x-button>
+                    </button>
 
                 </form>
 
@@ -43,4 +50,7 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+            </div>
+        </div>
+    </section>
+    @endsection

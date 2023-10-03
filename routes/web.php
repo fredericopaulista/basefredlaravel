@@ -10,8 +10,10 @@ use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\DepoimentsController;
 use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\PortifolioController;
 use App\Http\Controllers\Admin\SeoManualController;
 use App\Http\Controllers\Admin\SitemapController;
+use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Site\SiteController;
 use App\Models\Sitemap;
 use Illuminate\Support\Facades\Route;
@@ -43,15 +45,17 @@ Route::middleware([
     Route::get('admin/servico/{serviceId}/faq/create', [ServiceController::class, 'createFaq'])->name('servicos.faq.create');
     Route::post('admin/servico/{serviceId}/faq/store', [ServiceController::class, 'storeFaq'])->name('servicos.faq.store');
     Route::get('admin/servico/{serviceId}/faqs', [ServiceController::class, 'showFaq'])->name('servicos.faq.show');
+    Route::resource('admin/portifolio', PortifolioController::class);
     Route::resource('admin/tags', TagController::class);
+    Route::resource('admin/depoimentos', DepoimentsController::class);
     Route::resource('admin/banners', BannerController::class);
     Route::resource('admin/faqs', FaqController::class);
-    Route::resource('admin/depoimentos', DepoimentsController::class);
     Route::resource('admin/configuracoes', ConfigurationController::class);
     Route::resource('admin/paginas', PageController::class);
     Route::resource('admin/customiza', CustomizationController::class);
     Route::resource('admin/seomanual', SeoManualController::class);
     Route::resource('admin/sitemap', SitemapController::class);
+
 });
 
 // Rotas do Site

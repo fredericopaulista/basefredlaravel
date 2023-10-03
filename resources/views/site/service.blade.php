@@ -251,7 +251,7 @@
 
                         <article class="blog-details">
                             <h2 class="title">{{ $servicec->name }} {{ $citydata->name }}</h2><br>
-                            <p>{{ $servicec->briefDescription }}</p>
+                            {!! $servicec->briefDescription !!}
                             <div class="post-img" style="margin-top: 10px">
                                 <img src="{{ $servicec->getFirstMediaUrl('services') }}"
                                     alt="{{ $servicec->name }} {{ $citydata->name }}" class="img-fluid">

@@ -173,6 +173,8 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Buglinjo\LaravelWebp\WebpServiceProvider::class,
 
 
     ])->toArray(),
@@ -191,7 +193,9 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
-        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+      //  'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Webp' => Buglinjo\LaravelWebp\Facades\Webp::class,
 
     ])->toArray(),
 
